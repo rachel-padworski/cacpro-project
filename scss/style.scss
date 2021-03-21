@@ -3,3 +3,125 @@
 @import "page";
 @import "home";
 @import "footer";
+
+@font-face {
+    font-family: Interstate;
+    src: local(Interstate-Regular),
+      url(/path/to/Interstate-Regular.woff2) format("woff2"),
+      url(/path/to/Interstate-Regular.woff) format("woff"),
+      url(/path/to/Interstate-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  
+  @font-face {
+    font-family: Interstate;
+    src: local(Interstate-Bold),
+      url(/path/to/Interstate-Bold.woff2) format("woff2"),
+      url(/path/to/Interstate-Bold.woff) format("woff"),
+      url(/path/to/Interstate-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  
+  @mixin h1leftwhite {
+    font-family: Interstate;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.07;
+    color: $white;
+  }
+  
+  @mixin h2centerblue {
+    font-family: Interstate;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-align: center;
+    color: $navy;
+  }
+  
+  @mixin h2leftblue {
+    font-family: Interstate;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: $navy;
+  }
+  
+  @mixin h3leftgrey {
+    font-family: Interstate;
+    font-size: 22px;
+    line-height: 1.36;
+    color: $blue-slate;
+  }
+  
+  @mixin h3leftblue {
+    font-family: Interstate;
+    font-size: 22px;
+    line-height: 1.36;
+    color: $navy;
+  }
+  
+  @mixin h3leftwhite {
+    font-family: Interstate;
+    font-size: 22px;
+    line-height: 1.36;
+    color: $light-periwinkle;
+  }
+  
+  @mixin h3centergrey {
+    font-family: Interstate;
+    font-size: 22px;
+    line-height: 1.36;
+    text-align: center;
+    color: $blue-slate;
+  }
+  
+  @mixin h5leftblue {
+    font-family: Interstate;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $navy;
+  }
+  
+  @mixin h5leftgrey {
+    font-family: Interstate;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $blue-slate;
+  }
+  
+  @mixin bodyleftblue {
+    font-family: Interstate;
+    font-size: 18px;
+    line-height: 1.67;
+    color: $navy;
+  }
+  
+  @mixin bodyleftgrey {
+    font-family: Interstate;
+    font-size: 18px;
+    line-height: 1.67;
+    color: $blue-slate;
+  }
+  
+  @mixin h4white {
+    font-family: Interstate;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $white;
+  }
+  
+  @mixin h4blue {
+    font-family: Interstate;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $navy;
+  }
