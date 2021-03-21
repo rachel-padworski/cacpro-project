@@ -132,4 +132,12 @@ require_once('include/shortcodes.php');
 require_once('include/ajaxcalls.php');	
 // pull in ajax calls
 require_once('include/cpt.php');
+
+// stylesheet
+function mit_files() {
+    wp_enqueue_style('main_stylesheet', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'mit_files');
+
+
 ?>

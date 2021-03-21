@@ -14,7 +14,6 @@ get_header(); ?>
 
 <div id="content" role="main">
 	<div class="container-fluid">
-
 	</div>
 </div> <!-- end #content -->
 
