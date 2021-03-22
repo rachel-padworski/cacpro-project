@@ -1,0 +1,21 @@
+/*
+ Theme Name: Westminster Theological Seminary
+ Version: 1.0
+ Author: Cross & Crown
+ Author URI: http://cacpro.com/
+ */
+/* header.scss */
+/* home.scss */
+/* footer.scss */
+@font-face {
+  font-family: Interstate;
+  src: local(Interstate-Regular), url(/path/to/Interstate-Regular.woff2) format("woff2"), url(/path/to/Interstate-Regular.woff) format("woff"), url(/path/to/Interstate-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: Interstate;
+  src: local(Interstate-Bold), url(/path/to/Interstate-Bold.woff2) format("woff2"), url(/path/to/Interstate-Bold.woff) format("woff"), url(/path/to/Interstate-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal; }
