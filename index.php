@@ -6,6 +6,12 @@
 		<?php the_content(); ?>
     <?php endwhile; else:?>
 	<?php endif; ?>					
-</div> <!-- end #content -->
+</div> 
+<div>
+  <h1>hellloooooo</h1>
+  <h2>anyone home??</h2>
+</div>
+
+<!-- end #content -->
 
 <?php get_footer(); ?>

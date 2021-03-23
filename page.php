@@ -6,6 +6,265 @@
 		<?php the_content(); ?>
     <?php endwhile; else:?>
 	<?php endif; ?>					
-</div> <!-- end #content -->
+</div> 
+
+
+<!-- Our Partners -->
+<?php if ( have_rows( 'partners_section' ) ) : ?>
+	<?php while ( have_rows( 'partners_section' ) ) : the_row(); ?>
+		<?php the_sub_field( 'partners_section_title' ); ?>
+		<?php if ( have_rows( 'partners' ) ) : ?>
+			<?php while ( have_rows( 'partners' ) ) : the_row(); ?>
+				<?php $dell = get_sub_field( 'dell' ); ?>
+				<?php if ( $dell ) : ?>
+					<img src="<?php echo esc_url( $dell['url'] ); ?>" alt="<?php echo esc_attr( $dell['alt'] ); ?>" />
+				<?php endif; ?>
+				<?php $lenovo = get_sub_field( 'lenovo' ); ?>
+				<?php if ( $lenovo ) : ?>
+					<img src="<?php echo esc_url( $lenovo['url'] ); ?>" alt="<?php echo esc_attr( $lenovo['alt'] ); ?>" />
+				<?php endif; ?>
+				<?php $sonic_wall = get_sub_field( 'sonic_wall' ); ?>
+				<?php if ( $sonic_wall ) : ?>
+					<img src="<?php echo esc_url( $sonic_wall['url'] ); ?>" alt="<?php echo esc_attr( $sonic_wall['alt'] ); ?>" />
+				<?php endif; ?>
+				<?php $datto = get_sub_field( 'datto' ); ?>
+				<?php if ( $datto ) : ?>
+					<img src="<?php echo esc_url( $datto['url'] ); ?>" alt="<?php echo esc_attr( $datto['alt'] ); ?>" />
+				<?php endif; ?>
+				<?php $apc = get_sub_field( 'apc' ); ?>
+				<?php if ( $apc ) : ?>
+					<img src="<?php echo esc_url( $apc['url'] ); ?>" alt="<?php echo esc_attr( $apc['alt'] ); ?>" />
+				<?php endif; ?>
+			<?php endwhile; ?>
+		<?php else : ?>
+			<?php // no rows found ?>
+		<?php endif; ?>
+	<?php endwhile; ?>
+<?php endif; ?>
+
+
+<!-- Services -->
+<?php if ( have_rows( 'services_section' ) ) : ?>
+	<?php while ( have_rows( 'services_section' ) ) : the_row(); ?>
+		<?php the_sub_field( 'services_section_title' ); ?>
+		<?php if ( have_rows( 'services' ) ) : ?>
+			<?php while ( have_rows( 'services' ) ) : the_row(); ?>
+				<?php if ( have_rows( 'servers' ) ) : ?>
+					<?php while ( have_rows( 'servers' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'data_backup_recovery' ) ) : ?>
+					<?php while ( have_rows( 'data_backup_recovery' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'workstations' ) ) : ?>
+					<?php while ( have_rows( 'workstations' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'networking' ) ) : ?>
+					<?php while ( have_rows( 'networking' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'microsoft_office_solutions' ) ) : ?>
+					<?php while ( have_rows( 'microsoft_office_solutions' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'cloud_solutions' ) ) : ?>
+					<?php while ( have_rows( 'cloud_solutions' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'voip_phone_systems' ) ) : ?>
+					<?php while ( have_rows( 'voip_phone_systems' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'video_surveillance_systems' ) ) : ?>
+					<?php while ( have_rows( 'video_surveillance_systems' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+			<?php endwhile; ?>
+		<?php else : ?>
+			<?php // no rows found ?>
+		<?php endif; ?>
+	<?php endwhile; ?>
+<?php endif; ?>
+
+
+<!-- Contract vs Non-Contract -->
+<?php if ( have_rows( 'contract_section' ) ) : ?>
+	<?php while ( have_rows( 'contract_section' ) ) : the_row(); ?>
+		<?php the_sub_field( 'contract_vs_non-contract_title' ); ?>
+		<?php if ( have_rows( 'contract_items' ) ) : ?>
+			<?php while ( have_rows( 'contract_items' ) ) : the_row(); ?>
+				<?php if ( have_rows( 'contract_item_1' ) ) : ?>
+					<?php while ( have_rows( 'contract_item_1' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'contract_item_2' ) ) : ?>
+					<?php while ( have_rows( 'contract_item_2' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'contract_item_3' ) ) : ?>
+					<?php while ( have_rows( 'contract_item_3' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'contract_item_4' ) ) : ?>
+					<?php while ( have_rows( 'contract_item_4' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'contract_item_5' ) ) : ?>
+					<?php while ( have_rows( 'contract_item_5' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php the_sub_field( 'icon' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+			<?php endwhile; ?>
+		<?php else : ?>
+			<?php // no rows found ?>
+		<?php endif; ?>
+		<?php if ( have_rows( 'non-contract_items' ) ) : ?>
+			<?php while ( have_rows( 'non-contract_items' ) ) : the_row(); ?>
+				<?php if ( have_rows( 'non-contract_item_1' ) ) : ?>
+					<?php while ( have_rows( 'non-contract_item_1' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'non-contract_item_2' ) ) : ?>
+					<?php while ( have_rows( 'non-contract_item_2' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'non-contract_item_3' ) ) : ?>
+					<?php while ( have_rows( 'non-contract_item_3' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'non-contract_item_4' ) ) : ?>
+					<?php while ( have_rows( 'non-contract_item_4' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'non-contract_item_5' ) ) : ?>
+					<?php while ( have_rows( 'non-contract_item_5' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php $icon = get_sub_field( 'icon' ); ?>
+						<?php if ( $icon ) : ?>
+							<img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+						<?php endif; ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+			<?php endwhile; ?>
+		<?php else : ?>
+			<?php // no rows found ?>
+		<?php endif; ?>
+		<?php $background_image = get_sub_field( 'background_image' ); ?>
+		<?php if ( $background_image ) : ?>
+			<img src="<?php echo esc_url( $background_image['url'] ); ?>" alt="<?php echo esc_attr( $background_image['alt'] ); ?>" />
+		<?php endif; ?>
+	<?php endwhile; ?>
+<?php endif; ?>
+
+
+<!-- Why Managed IT? -->
+<?php if ( have_rows( 'why_mit_section' ) ) : ?>
+	<?php while ( have_rows( 'why_mit_section' ) ) : the_row(); ?>
+		<?php the_sub_field( 'why_mit_section_title' ); ?>
+		<?php $why_mit_image = get_sub_field( 'why_mit_image' ); ?>
+		<?php if ( $why_mit_image ) : ?>
+			<img src="<?php echo esc_url( $why_mit_image['url'] ); ?>" alt="<?php echo esc_attr( $why_mit_image['alt'] ); ?>" />
+		<?php endif; ?>
+		<?php if ( have_rows( 'why_mit_list' ) ) : ?>
+			<?php while ( have_rows( 'why_mit_list' ) ) : the_row(); ?>
+				<?php if ( have_rows( 'budget_conscious' ) ) : ?>
+					<?php while ( have_rows( 'budget_conscious' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php $icon = get_sub_field( 'icon' ); ?>
+						<?php if ( $icon ) : ?>
+							<img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+						<?php endif; ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'personal_approach' ) ) : ?>
+					<?php while ( have_rows( 'personal_approach' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php $icon = get_sub_field( 'icon' ); ?>
+						<?php if ( $icon ) : ?>
+							<img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+						<?php endif; ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( 'stellar_service' ) ) : ?>
+					<?php while ( have_rows( 'stellar_service' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php $icon = get_sub_field( 'icon' ); ?>
+						<?php if ( $icon ) : ?>
+							<img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+						<?php endif; ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				<?php if ( have_rows( '247_support' ) ) : ?>
+					<?php while ( have_rows( '247_support' ) ) : the_row(); ?>
+						<?php the_sub_field( 'title' ); ?>
+						<?php $icon = get_sub_field( 'icon' ); ?>
+						<?php if ( $icon ) : ?>
+							<img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+						<?php endif; ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+			<?php endwhile; ?>
+		<?php else : ?>
+			<?php // no rows found ?>
+		<?php endif; ?>
+		<?php $why_mit_button = get_sub_field( 'why_mit_button' ); ?>
+		<?php if ( $why_mit_button ) : ?>
+			<a href="<?php echo esc_url( $why_mit_button['url'] ); ?>" target="<?php echo esc_attr( $why_mit_button['target'] ); ?>"><?php echo esc_html( $why_mit_button['title'] ); ?></a>
+		<?php endif; ?>
+	<?php endwhile; ?>
+<?php endif; ?>
+
+
+<!-- Testimonials -->
+<?php if ( have_rows( 'testimonials' ) ) : ?>
+	<?php while ( have_rows( 'testimonials' ) ) : the_row(); ?>
+		<?php if ( have_rows( 'testimonial_1' ) ) : ?>
+			<?php while ( have_rows( 'testimonial_1' ) ) : the_row(); ?>
+				<?php the_sub_field( 'icon' ); ?>
+				<?php the_sub_field( 'text' ); ?>
+				<?php $logo = get_sub_field( 'logo' ); ?>
+				<?php if ( $logo ) : ?>
+					<img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" />
+				<?php endif; ?>
+			<?php endwhile; ?>
+		<?php endif; ?>
+	<?php endwhile; ?>
+<?php else : ?>
+	<?php // no rows found ?>
+<?php endif; ?>
+
+
+<!-- end #content -->
 
 <?php get_footer(); ?>

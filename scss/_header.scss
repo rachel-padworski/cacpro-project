@@ -1,1 +1,206 @@
 /* header.scss */
+
+
+$navy: #202945;
+$sky: #f1f3f9;
+$light-periwinkle: #e2e3e6;
+$blue: #00a0df;
+$white: #ffffff;
+$blue-slate: #686e81;
+$navy-90: rgba(32, 41, 69, 0.9);
+
+
+@font-face {
+  font-family: Interstate;
+  src: local(Interstate-Regular),
+    url(/path/to/Interstate-Regular.woff2) format("woff2"),
+    url(/path/to/Interstate-Regular.woff) format("woff"),
+    url(/path/to/Interstate-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Interstate;
+  src: local(Interstate-Bold),
+    url(/path/to/Interstate-Bold.woff2) format("woff2"),
+    url(/path/to/Interstate-Bold.woff) format("woff"),
+    url(/path/to/Interstate-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@mixin h1leftwhite {
+  font-family: Interstate;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.07;
+  color: $white;
+}
+
+@mixin h2centerblue {
+  font-family: Interstate;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  text-align: center;
+  color: $navy;
+}
+
+@mixin h2leftblue {
+  font-family: Interstate;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  color: $navy;
+}
+
+@mixin h3leftgrey {
+  font-family: Interstate;
+  font-size: 22px;
+  line-height: 1.36;
+  color: $blue-slate;
+}
+
+@mixin h3leftblue {
+  font-family: Interstate;
+  font-size: 22px;
+  line-height: 1.36;
+  color: $navy;
+}
+
+@mixin h3leftwhite {
+  font-family: Interstate;
+  font-size: 22px;
+  line-height: 1.36;
+  color: $light-periwinkle;
+}
+
+@mixin h3centergrey {
+  font-family: Interstate;
+  font-size: 22px;
+  line-height: 1.36;
+  text-align: center;
+  color: $blue-slate;
+}
+
+@mixin h5leftblue {
+  font-family: Interstate;
+  font-size: 20px;
+  line-height: 1.5;
+  color: $navy;
+}
+
+@mixin h5leftgrey {
+  font-family: Interstate;
+  font-size: 20px;
+  line-height: 1.5;
+  color: $blue-slate;
+}
+
+@mixin bodyleftblue {
+  font-family: Interstate;
+  font-size: 18px;
+  line-height: 1.67;
+  color: $navy;
+}
+
+@mixin bodyleftgrey {
+  font-family: Interstate;
+  font-size: 18px;
+  line-height: 1.67;
+  color: $blue-slate;
+}
+
+@mixin h4white {
+  font-family: Interstate;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: $white;
+}
+
+@mixin h4blue {
+  font-family: Interstate;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: $navy;
+}
+
+
+
+.site-header {
+    width: 1135px;
+    height: 800px;
+    margin: 0 305px 58px 0;
+    padding: 191px 430px 191px 135px;
+    background-color: $navy-90;
+  }
+
+.logo {
+    width: 244px;
+    height: 59px;
+    margin: 0 886px 0 0;
+    object-fit: contain;
+}
+
+.title {
+    width: 570px;
+    height: 238px;
+    margin: 0 0 20px;
+    @include h1leftwhite;
+}
+
+.subtitle {
+  width: 570px;
+  height: 60px;
+  margin: 20px 0 50px;
+  @include h3leftwhite;
+}
+
+.support-btn {
+  width: 210px;
+  height: 50px;
+  margin: 5px 0 4px 886px;
+  object-fit: contain;
+  background-color: $blue;
+  color: $white;
+  border-color: $white;
+  padding: 17px 33px;
+  text-align: center;
+  @include h4white;
+  &:hover {
+    background-color: $white;
+    color: $navy;
+  }
+}
+
+.contact-btn {
+  width: 169px;
+  height: 50px;
+  margin: 50px 400px 0 1px;
+  object-fit: contain;
+  background-color: $navy;
+  color: $white;
+  border: $blue;
+  padding: 17px 35px;
+  align-content: center;
+  @include h4white;
+  &:hover {
+    background-color: $white;
+    color: $navy;
+  }
+}
+
+.banner-img {
+  width: 705px;
+  height: 550px;
+  margin: 34px 0 183px 735px;
+  object-fit: contain;
+}
+

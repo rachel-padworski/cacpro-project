@@ -5,14 +5,22 @@
     Author URI: http://cacpro.com/
 */
 
-// @import "compass";
-// @import "compass/reset";
+@import "compass";
+@import "compass/reset";
 
-// @import "baseline";
+@import "baseline";
 @import "header";
 @import "page";
 @import "home";
 @import "footer";
+
+$navy: #202945;
+$sky: #f1f3f9;
+$light-periwinkle: #e2e3e6;
+$blue: #00a0df;
+$white: #ffffff;
+$blue-slate: #686e81;
+$navy-90: rgba(32, 41, 69, 0.9);
 
 @font-face {
     font-family: Interstate;
