@@ -135,8 +135,13 @@ require_once('include/cpt.php');
 
 // stylesheet
 function mit_files() {
-    
-    wp_enqueue_style('main_style', get_stylesheet_directory_uri());
+    wp_register_style('style', get_template_directory_uri() . '/css/style.css', [], 1, 'all');
+    wp_enqueue_style('style');
+
+    wp_enqueue_script('jquery');
+
+    wp_register_script('script', get_template_directory_uri() . '/scss/style.scss', ['jquery'], 1, true);
+    wp_enqueue_script('script');
 }
 add_action('wp_enqueue_scripts', 'mit_files');
 

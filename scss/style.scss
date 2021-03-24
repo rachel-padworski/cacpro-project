@@ -23,22 +23,24 @@ $blue-slate: #686e81;
 $navy-90: rgba(32, 41, 69, 0.9);
 
 @font-face {
-    font-family: Interstate;
-    src: local(Interstate-Regular),
-      url(/path/to/Interstate-Regular.woff2) format("woff2"),
-      url(/path/to/Interstate-Regular.woff) format("woff"),
-      url(/path/to/Interstate-Regular.ttf) format("truetype");
+    font-family: "Interstate Greek and Cyrillic Reg";
+    src: "//cloud.typenetwork.com/projects/5441/fontface.css/";
+      // local(Interstate-Regular),
+      // url(/path/to/Interstate-Regular.woff2) format("woff2"),
+      // url(/path/to/Interstate-Regular.woff) format("woff"),
+      // url(/path/to/Interstate-Regular.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
   }
   
   @font-face {
-    font-family: Interstate;
-    src: local(Interstate-Bold),
-      url(/path/to/Interstate-Bold.woff2) format("woff2"),
-      url(/path/to/Interstate-Bold.woff) format("woff"),
-      url(/path/to/Interstate-Bold.ttf) format("truetype");
+    font-family: "Interstate Greek and Cyrillic Bd";
+    src: "//cloud.typenetwork.com/projects/5441/fontface.css/";
+      // local(Interstate-Bold),
+      // url(/path/to/Interstate-Bold.woff2) format("woff2"),
+      // url(/path/to/Interstate-Bold.woff) format("woff"),
+      // url(/path/to/Interstate-Bold.ttf) format("truetype");
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
