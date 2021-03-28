@@ -1,2 +1,86 @@
 /* page.scss */
 
+.partners-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    // margin: 0;
+
+    // position: relative;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+   
+    .partners-container-row {
+        display: flex;
+        // flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        h4 {
+            @include h4blue;
+            width: (100 / 6) * 1%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        img {
+            position: relative;
+            justify-content: space-between;
+            width: (100 / 6) * 1%;
+            padding-right: 15px;
+            padding-left: 15px;
+            .dell {
+                min-height: 47px;
+                min-width: 47px;
+            }
+            .lenovo {
+                min-height: 47px;
+                min-width: 63px;
+            }
+            .sonic-wall {
+                min-height: 16px;
+                min-width: 91px;
+            }
+            .datto {
+                min-height: 47px;
+                min-width: 50px;
+            }
+            .apc {
+                min-height: 59px;
+                min-width: 59px; 
+            }
+        }
+        
+    }
+}
+
+
+.services {
+    
+    // justify-content: center;
+    // align-items: center;
+
+    &__container {
+        display: grid;
+    }
+    &__header {
+        @include h4blue;
+        padding-bottom: 4rem;
+        // justify-content: center;
+        // align-content: center;
+    }
+    &__card {
+        // display: flex;
+        grid-template-rows: max-content 200px 1fr;
+    }
+    &__title {
+        @include h3leftblue;
+    }
+    &__icon {
+        // display: inline-block;
+    }
+}
+
+
+
+

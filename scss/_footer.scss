@@ -1,16 +1,9 @@
 /* footer.scss */
 
-$navy: #202945;
-$sky: #f1f3f9;
-$light-periwinkle: #e2e3e6;
-$blue: #00a0df;
-$white: #ffffff;
-$blue-slate: #686e81;
-$navy-90: rgba(32, 41, 69, 0.9);
-
 .site-footer {
     width: 1440px;
     height: 150px;
     padding: 58px 135px;
     background-color: $navy;
+    @import bodyleftgrey;
 }

@@ -10,100 +10,167 @@
 
 
 <!-- Our Partners -->
-<?php if ( have_rows( 'partners_section' ) ) : ?>
-	<?php while ( have_rows( 'partners_section' ) ) : the_row(); ?>
-		<?php the_sub_field( 'partners_section_title' ); ?>
-		<?php if ( have_rows( 'partners' ) ) : ?>
-			<?php while ( have_rows( 'partners' ) ) : the_row(); ?>
-				<?php $dell = get_sub_field( 'dell' ); ?>
-				<?php if ( $dell ) : ?>
-					<img src="<?php echo esc_url( $dell['url'] ); ?>" alt="<?php echo esc_attr( $dell['alt'] ); ?>" />
+<div class="partners-container">
+	<span class="partners-container-row">
+		<?php if ( have_rows( 'partners_section' ) ) : ?>
+			<?php while ( have_rows( 'partners_section' ) ) : the_row(); ?>
+			<div class="partners-container__title">
+				<h4 class="title" id="partners-section-title"><?php the_sub_field( 'partners_section_title' ); ?></h4>
+			</div>	
+			<div class="partners-container__logos">
+				<?php if ( have_rows( 'partners' ) ) : ?>
+					<?php while ( have_rows( 'partners' ) ) : the_row(); ?>
+						<?php $dell = get_sub_field( 'dell' ); ?>
+						<?php if ( $dell ) : ?>
+							<img class="dell" id="dell-logo" src="<?php echo esc_url( $dell['url'] ); ?>" alt="<?php echo esc_attr( $dell['alt'] ); ?>" />
+						<?php endif; ?>
+						<?php $lenovo = get_sub_field( 'lenovo' ); ?>
+						<?php if ( $lenovo ) : ?>
+							<img class="lenovo" id="lenovo-logo" src="<?php echo esc_url( $lenovo['url'] ); ?>" alt="<?php echo esc_attr( $lenovo['alt'] ); ?>" />
+						<?php endif; ?>
+						<?php $sonic_wall = get_sub_field( 'sonic_wall' ); ?>
+						<?php if ( $sonic_wall ) : ?>
+							<img class="sonic-wall" id="sonic-wall-logo" src="<?php echo esc_url( $sonic_wall['url'] ); ?>" alt="<?php echo esc_attr( $sonic_wall['alt'] ); ?>" />
+						<?php endif; ?>
+						<?php $datto = get_sub_field( 'datto' ); ?>
+						<?php if ( $datto ) : ?>
+							<img class="datto" id="datto-logo" src="<?php echo esc_url( $datto['url'] ); ?>" alt="<?php echo esc_attr( $datto['alt'] ); ?>" />
+						<?php endif; ?>
+						<?php $apc = get_sub_field( 'apc' ); ?>
+						<?php if ( $apc ) : ?>
+							<img class="apc" id="apc-logo" src="<?php echo esc_url( $apc['url'] ); ?>" alt="<?php echo esc_attr( $apc['alt'] ); ?>" />
+						<?php endif; ?>
+					<?php endwhile; ?>
+				<?php else : ?>
+					<?php // no rows found ?>
 				<?php endif; ?>
-				<?php $lenovo = get_sub_field( 'lenovo' ); ?>
-				<?php if ( $lenovo ) : ?>
-					<img src="<?php echo esc_url( $lenovo['url'] ); ?>" alt="<?php echo esc_attr( $lenovo['alt'] ); ?>" />
-				<?php endif; ?>
-				<?php $sonic_wall = get_sub_field( 'sonic_wall' ); ?>
-				<?php if ( $sonic_wall ) : ?>
-					<img src="<?php echo esc_url( $sonic_wall['url'] ); ?>" alt="<?php echo esc_attr( $sonic_wall['alt'] ); ?>" />
-				<?php endif; ?>
-				<?php $datto = get_sub_field( 'datto' ); ?>
-				<?php if ( $datto ) : ?>
-					<img src="<?php echo esc_url( $datto['url'] ); ?>" alt="<?php echo esc_attr( $datto['alt'] ); ?>" />
-				<?php endif; ?>
-				<?php $apc = get_sub_field( 'apc' ); ?>
-				<?php if ( $apc ) : ?>
-					<img src="<?php echo esc_url( $apc['url'] ); ?>" alt="<?php echo esc_attr( $apc['alt'] ); ?>" />
-				<?php endif; ?>
+			</div>	
 			<?php endwhile; ?>
-		<?php else : ?>
-			<?php // no rows found ?>
+
 		<?php endif; ?>
-	<?php endwhile; ?>
-<?php endif; ?>
+	</span>
+</div>
 
 
 <!-- Services -->
+<section class="services">
+	<div class="services__container">
+		
 
-<?php if ( have_rows( 'services_section' ) ) : ?>
-	<?php while ( have_rows( 'services_section' ) ) : the_row(); ?>
-		<?php the_sub_field( 'services_section_title' ); ?>
-		<?php if ( have_rows( 'services' ) ) : ?>
-			<?php while ( have_rows( 'services' ) ) : the_row(); ?>
-				<?php if ( have_rows( 'servers' ) ) : ?>
-					<?php while ( have_rows( 'servers' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'data_backup_recovery' ) ) : ?>
-					<?php while ( have_rows( 'data_backup_recovery' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'workstations' ) ) : ?>
-					<?php while ( have_rows( 'workstations' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'networking' ) ) : ?>
-					<?php while ( have_rows( 'networking' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'microsoft_office_solutions' ) ) : ?>
-					<?php while ( have_rows( 'microsoft_office_solutions' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'cloud_solutions' ) ) : ?>
-					<?php while ( have_rows( 'cloud_solutions' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'voip_phone_systems' ) ) : ?>
-					<?php while ( have_rows( 'voip_phone_systems' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'video_surveillance_systems' ) ) : ?>
-					<?php while ( have_rows( 'video_surveillance_systems' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-			<?php endwhile; ?>
-		<?php else : ?>
-			<?php // no rows found ?>
-		<?php endif; ?>
-	<?php endwhile; ?>
-<?php endif; ?>
+		<div class="services__header">
+		<?php if ( have_rows( 'services_section' ) ) : ?>
+			<?php while ( have_rows( 'services_section' ) ) : the_row(); ?>
+				<?php the_sub_field( 'services_section_title' ); ?>
+		</div>
+
+
+		<div class="services__cards">
+			<?php if ( have_rows( 'services' ) ) : ?>
+				<?php while ( have_rows( 'services' ) ) : the_row(); ?>
+						<?php if ( have_rows( 'servers' ) ) : ?>
+							<?php while ( have_rows( 'servers' ) ) : the_row(); ?>
+							<article class="services__card">
+								<h3 class="services__title">
+									<?php the_sub_field( 'title' ); ?>
+								</h3>
+								<i class="services__icon">
+									<?php the_sub_field( 'icon' ); ?>
+								</i>
+							</article>	
+							<?php endwhile; ?>
+						<?php endif; ?>
+						<?php if ( have_rows( 'data_backup_recovery' ) ) : ?>
+							<?php while ( have_rows( 'data_backup_recovery' ) ) : the_row(); ?>
+							<article class="services__card">
+								<h3 class="services__title">
+									<?php the_sub_field( 'title' ); ?>
+								</h3>
+								<i class="services__icon">
+									<?php the_sub_field( 'icon' ); ?>
+								</i>
+							</article>	
+							<?php endwhile; ?>
+						<?php endif; ?>
+						<?php if ( have_rows( 'workstations' ) ) : ?>
+							<?php while ( have_rows( 'workstations' ) ) : the_row(); ?>
+							<article class="services__card">
+								<h3 class="services__title">
+									<?php the_sub_field( 'title' ); ?>
+								</h3>
+								<i class="services__icon">
+									<?php the_sub_field( 'icon' ); ?>
+								</i>
+							</article>	
+							<?php endwhile; ?>
+						<?php endif; ?>
+						<?php if ( have_rows( 'networking' ) ) : ?>
+							<?php while ( have_rows( 'networking' ) ) : the_row(); ?>
+							<article class="services__card">
+								<h3 class="services__title">
+									<?php the_sub_field( 'title' ); ?>
+								</h3>
+								<i class="services__icon">
+									<?php the_sub_field( 'icon' ); ?>
+								</i>
+							</article>	
+							<?php endwhile; ?>
+						<?php endif; ?>
+						<?php if ( have_rows( 'microsoft_office_solutions' ) ) : ?>
+							<?php while ( have_rows( 'microsoft_office_solutions' ) ) : the_row(); ?>
+							<article class="services__card">
+								<h3 class="services__title">
+									<?php the_sub_field( 'title' ); ?>
+								</h3>
+								<i class="services__icon">
+									<?php the_sub_field( 'icon' ); ?>
+								</i>
+							</article>	
+							<?php endwhile; ?>
+						<?php endif; ?>
+						<?php if ( have_rows( 'cloud_solutions' ) ) : ?>
+							<?php while ( have_rows( 'cloud_solutions' ) ) : the_row(); ?>
+							<article class="services__card">
+								<h3 class="services__title">
+									<?php the_sub_field( 'title' ); ?>
+								</h3>
+								<i class="services__icon">
+									<?php the_sub_field( 'icon' ); ?>
+								</i>
+							</article>	
+							<?php endwhile; ?>
+						<?php endif; ?>
+						<?php if ( have_rows( 'voip_phone_systems' ) ) : ?>
+							<?php while ( have_rows( 'voip_phone_systems' ) ) : the_row(); ?>
+							<article class="services__card">
+								<h3 class="services__title">
+									<?php the_sub_field( 'title' ); ?>
+								</h3>
+								<i class="services__icon">
+									<?php the_sub_field( 'icon' ); ?>
+								</i>
+							</article>	
+							<?php endwhile; ?>
+						<?php endif; ?>
+						<?php if ( have_rows( 'video_surveillance_systems' ) ) : ?>
+							<?php while ( have_rows( 'video_surveillance_systems' ) ) : the_row(); ?>
+							<article class="services__card">
+								<h3 class="services__title">
+									<?php the_sub_field( 'title' ); ?>
+								</h3>
+								<i class="services__icon">
+									<?php the_sub_field( 'icon' ); ?>
+								</i>
+							</article>	
+							<?php endwhile; ?>
+						<?php endif; ?>
+				<?php endwhile; ?>
+			<?php else : ?>
+				<?php // no rows found ?>
+			<?php endif; ?>
+		<?php endwhile; ?>
+	<?php endif; ?>
+	</div>
+</section>
 
 
 <!-- Contract vs Non-Contract -->

@@ -1,0 +1,129 @@
+
+@font-face {
+  font-family: "Interstate Greek and Cyrillic Bd";
+  src: url(http://cloud.typenetwork.com/projects/5441/fontface.css/);
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Interstate Greek and Cyrillic Reg";
+  src: url(http://cloud.typenetwork.com/projects/5441/fontface.css/);
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+$navy: #202945;
+$sky: #f1f3f9;
+$light-periwinkle: #e2e3e6;
+$blue: #00a0df;
+$white: #ffffff;
+$blue-slate: #686e81;
+$navy-90: rgba(32, 41, 69, 0.9);
+
+
+
+  
+  @mixin h1leftwhite {
+    font-family: "Interstate Greek and Cyrillic Bd";
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.07;
+    color: $white;
+  }
+  
+  @mixin h2centerblue {
+    font-family: "Interstate Greek and Cyrillic Bd";
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-align: center;
+    color: $navy;
+  }
+  
+  @mixin h2leftblue {
+    font-family: "Interstate Greek and Cyrillic Bd";
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: $navy;
+  }
+  
+  @mixin h3leftgrey {
+    font-family: "Interstate Greek and Cyrillic Reg";
+    font-size: 22px;
+    line-height: 1.36;
+    color: $blue-slate;
+  }
+  
+  @mixin h3leftblue {
+    font-family: "Interstate Greek and Cyrillic Reg";
+    font-size: 22px;
+    line-height: 1.36;
+    color: $navy;
+  }
+  
+  @mixin h3leftwhite {
+    font-family: "Interstate Greek and Cyrillic Reg";
+    font-size: 22px;
+    line-height: 1.36;
+    color: $light-periwinkle;
+  }
+  
+  @mixin h3centergrey {
+    font-family: "Interstate Greek and Cyrillic Reg";
+    font-size: 22px;
+    line-height: 1.36;
+    text-align: center;
+    color: $blue-slate;
+  }
+  
+  @mixin h5leftblue {
+    font-family: "Interstate Greek and Cyrillic Reg";
+    font-size: 20px;
+    line-height: 1.5;
+    color: $navy;
+  }
+  
+  @mixin h5leftgrey {
+    font-family: "Interstate Greek and Cyrillic Reg";
+    font-size: 20px;
+    line-height: 1.5;
+    color: $blue-slate;
+  }
+  
+  @mixin bodyleftblue {
+    font-family: "Interstate Greek and Cyrillic Reg";
+    font-size: 18px;
+    line-height: 1.67;
+    color: $navy;
+  }
+  
+  @mixin bodyleftgrey {
+    font-family: "Interstate Greek and Cyrillic Reg";
+    font-size: 18px;
+    line-height: 1.67;
+    color: $blue-slate;
+  }
+  
+  @mixin h4white {
+    font-family: "Interstate Greek and Cyrillic Bd";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $white;
+  }
+  
+  @mixin h4blue {
+    font-family: "Interstate Greek and Cyrillic Bd";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $navy;
+  }
+
+ 

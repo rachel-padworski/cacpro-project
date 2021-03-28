@@ -119,6 +119,33 @@
             "return_format": "array"
         },
         {
+            "key": "field_605e584816c86",
+            "label": "Menu Button",
+            "name": "menu_button",
+            "type": "font-awesome",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "icon_sets": [
+                "fas",
+                "far"
+            ],
+            "custom_icon_set": "",
+            "default_label": "<i class=\"fas\"><\/i> bars",
+            "default_value": "fas fa-bars",
+            "save_format": "element",
+            "allow_null": 0,
+            "show_preview": 1,
+            "enqueue_fa": 0,
+            "fa_live_preview": "",
+            "choices": []
+        },
+        {
             "key": "field_6057567ad181c",
             "label": "Logo",
             "name": "logo",
@@ -2063,5 +2090,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616465207
+    "modified": 1616798570
 }

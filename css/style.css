@@ -5,6 +5,19 @@
  Author URI: http://cacpro.com/
  */
 @import "compass/reset";
+@import bodyleftgrey;
+@font-face {
+  font-family: "Interstate Greek and Cyrillic Bd";
+  src: url(http://cloud.typenetwork.com/projects/5441/fontface.css/);
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "Interstate Greek and Cyrillic Reg";
+  src: url(http://cloud.typenetwork.com/projects/5441/fontface.css/);
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal; }
 /*
  Body & HTML setup
  */
@@ -217,96 +230,162 @@ img {
     opacity: 1; } }
 
 /* header.scss */
-@font-face {
-  font-family: Interstate;
-  src: local(Interstate-Regular), url(/path/to/Interstate-Regular.woff2) format("woff2"), url(/path/to/Interstate-Regular.woff) format("woff"), url(/path/to/Interstate-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal; }
-@font-face {
-  font-family: Interstate;
-  src: local(Interstate-Bold), url(/path/to/Interstate-Bold.woff2) format("woff2"), url(/path/to/Interstate-Bold.woff) format("woff"), url(/path/to/Interstate-Bold.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal; }
-
 .site-header {
-  width: 1135px;
-  height: 800px;
-  margin: 0 305px 58px 0;
-  padding: 191px 430px 191px 135px;
-  background-color: rgba(32, 41, 69, 0.9); }
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: no-repeat top left;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .site-header__background {
+    z-index: -50;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%); }
+  .site-header__content {
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    display: flex; }
 
-.logo {
-  width: 244px;
-  height: 59px;
-  margin: 0 886px 0 0;
-  object-fit: contain; }
+.menu-container {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100vw;
+  padding: 2rem;
+  top: 0;
+  z-index: 1; }
+  .menu-container__logo {
+    max-width: 162px; }
+  .menu-container__btn {
+    max-width: 210px;
+    padding: 9px 25px;
+    background-color: #00a0df;
+    border: none;
+    text-align: center;
+    list-style-type: none;
+    font-family: "Interstate Greek and Cyrillic Bd";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff; }
+    .menu-container__btn:hover {
+      text-decoration: none;
+      background-color: #fff;
+      color: #202945; }
 
 .title {
-  width: 570px;
-  height: 238px;
-  margin: 0 0 20px;
-  font-family: Interstate;
+  position: relative;
+  font-size: 4rem;
+  text-align: left;
+  padding: 2rem;
+  font-family: "Interstate Greek and Cyrillic Bd";
   font-size: 70px;
   font-weight: bold;
   line-height: 1.07;
   color: #fff; }
 
 .subtitle {
-  width: 570px;
-  height: 60px;
-  margin: 20px 0 50px;
-  font-family: Interstate;
+  position: absolute;
+  margin: 2rem 0;
+  top: 20rem;
+  left: 2rem;
+  font-family: "Interstate Greek and Cyrillic Reg";
   font-size: 22px;
   line-height: 1.36;
   color: #e2e3e6; }
 
-.support-btn {
-  width: 210px;
-  height: 50px;
-  margin: 5px 0 4px 886px;
-  object-fit: contain;
-  background-color: #00a0df;
-  color: #fff;
-  border-color: #fff;
-  padding: 17px 33px;
-  text-align: center;
-  font-family: Interstate;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #fff; }
-  .support-btn:hover {
-    background-color: #fff;
-    color: #202945; }
-
 .contact-btn {
-  width: 169px;
-  height: 50px;
-  margin: 50px 400px 0 1px;
-  object-fit: contain;
-  background-color: #202945;
-  color: #fff;
-  border: #00a0df;
-  padding: 17px 35px;
-  align-content: center;
-  font-family: Interstate;
+  position: absolute;
+  margin: 2rem;
+  top: 32rem;
+  left: 0rem;
+  font-family: "Interstate Greek and Cyrillic Bd";
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #fff; }
+  color: #fff;
+  padding: 17px 35px;
+  background-color: #202945;
+  border: 2px solid #00a0df;
+  align-content: center; }
   .contact-btn:hover {
+    text-decoration: none !important;
     background-color: #fff;
     color: #202945; }
 
 .banner-img {
-  width: 705px;
-  height: 550px;
-  margin: 34px 0 183px 735px;
+  position: relative;
   object-fit: contain; }
 
 /* page.scss */
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem; }
+  .partners-container .partners-container-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .partners-container .partners-container-row h4 {
+      font-family: "Interstate Greek and Cyrillic Bd";
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #202945;
+      width: 16.6666666667%;
+      padding-right: 15px;
+      padding-left: 15px; }
+    .partners-container .partners-container-row img {
+      position: relative;
+      justify-content: space-between;
+      width: 16.6666666667%;
+      padding-right: 15px;
+      padding-left: 15px; }
+      .partners-container .partners-container-row img .dell {
+        min-height: 47px;
+        min-width: 47px; }
+      .partners-container .partners-container-row img .lenovo {
+        min-height: 47px;
+        min-width: 63px; }
+      .partners-container .partners-container-row img .sonic-wall {
+        min-height: 16px;
+        min-width: 91px; }
+      .partners-container .partners-container-row img .datto {
+        min-height: 47px;
+        min-width: 50px; }
+      .partners-container .partners-container-row img .apc {
+        min-height: 59px;
+        min-width: 59px; }
+
+.services__container {
+  display: grid; }
+.services__header {
+  font-family: "Interstate Greek and Cyrillic Bd";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #202945;
+  padding-bottom: 4rem; }
+.services__card {
+  grid-template-rows: max-content 200px 1fr; }
+.services__title {
+  font-family: "Interstate Greek and Cyrillic Reg";
+  font-size: 22px;
+  line-height: 1.36;
+  color: #202945; }
+
 /* home.scss */
 /* footer.scss */
 .site-footer {
@@ -314,16 +393,3 @@ img {
   height: 150px;
   padding: 58px 135px;
   background-color: #202945; }
-
-@font-face {
-  font-family: "Interstate Greek and Cyrillic Reg";
-  src: "//cloud.typenetwork.com/projects/5441/fontface.css/";
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal; }
-@font-face {
-  font-family: "Interstate Greek and Cyrillic Bd";
-  src: "//cloud.typenetwork.com/projects/5441/fontface.css/";
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal; }
