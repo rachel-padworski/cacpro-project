@@ -9,3 +9,6 @@
 03/25/21 11:09:26: style.scss - parse error: failed at `disp` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_page.scss on line 20, at column 9
 03/25/21 11:47:45: style.scss - parse error: failed at `#` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_page.scss on line 36, at column 1
 03/26/21 4:41:02: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_page.scss on line 55, at column 5
+03/28/21 9:07:29: style.scss - parse error: failed at `width: ` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_page.scss on line 69, at column 9
+03/28/21 9:23:36: style.scss - parse error: failed at `padding: ` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_page.scss on line 78, at column 9
+03/28/21 10:32:15: style.scss - parse error: failed at `top:` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_page.scss on line 107, at column 17

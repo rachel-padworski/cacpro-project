@@ -344,6 +344,7 @@ img {
       font-weight: bold;
       letter-spacing: 1px;
       color: #202945;
+      position: relative;
       width: 16.6666666667%;
       padding-right: 15px;
       padding-left: 15px; }
@@ -370,21 +371,41 @@ img {
         min-width: 59px; }
 
 .services__container {
-  display: grid; }
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f1f3f9; }
 .services__header {
   font-family: "Interstate Greek and Cyrillic Bd";
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #202945;
-  padding-bottom: 4rem; }
-.services__card {
-  grid-template-rows: max-content 200px 1fr; }
-.services__title {
-  font-family: "Interstate Greek and Cyrillic Reg";
-  font-size: 22px;
-  line-height: 1.36;
-  color: #202945; }
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: none; }
+  .services__cards article {
+    margin: 5px auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 200px;
+    height: 175px;
+    background-color: #fff; }
+    .services__cards article h3 {
+      font-family: "Interstate Greek and Cyrillic Reg";
+      font-size: 22px;
+      line-height: 1.36;
+      color: #202945;
+      font-size: 18px; }
+
+@media only screen and (max-width: 600px) {
+  article {
+    width: 100%; } }
 
 /* home.scss */
 /* footer.scss */
