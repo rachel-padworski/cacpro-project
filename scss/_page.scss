@@ -97,6 +97,46 @@
     }
 }
 
+
+// contract section
+
+.contract-container {
+  display: border-box;
+}
+
+.contract-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+.contract-items ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.contract-items {
+  width: 50%;
+}
+
+.contract-items li {
+  list-style-type: none;
+}
+
+.non-contract-items {
+  width: 50%;
+}
+
+.non-contract-items li {
+  list-style-type: none;
+}
+
+
+
+
 @media only screen and (max-width: 600px) {
     article{
         width: 100%;
