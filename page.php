@@ -174,86 +174,145 @@
 
 
 <!-- Contract vs Non-Contract -->
-<?php if ( have_rows( 'contract_section' ) ) : ?>
-	<?php while ( have_rows( 'contract_section' ) ) : the_row(); ?>
+<section class="contract-container">
+  	<div class="contract-title">
+	<?php if ( have_rows( 'contract_section' ) ) : ?>
+		<?php while ( have_rows( 'contract_section' ) ) : the_row(); ?>
 		<?php the_sub_field( 'contract_vs_non-contract_title' ); ?>
+	</div>
+  	<div class="contract-lists">
+    	<div class="contract-items">
 		<?php if ( have_rows( 'contract_items' ) ) : ?>
 			<?php while ( have_rows( 'contract_items' ) ) : the_row(); ?>
-				<?php if ( have_rows( 'contract_item_1' ) ) : ?>
-					<?php while ( have_rows( 'contract_item_1' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'contract_item_2' ) ) : ?>
-					<?php while ( have_rows( 'contract_item_2' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'contract_item_3' ) ) : ?>
-					<?php while ( have_rows( 'contract_item_3' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'contract_item_4' ) ) : ?>
-					<?php while ( have_rows( 'contract_item_4' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'contract_item_5' ) ) : ?>
-					<?php while ( have_rows( 'contract_item_5' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php the_sub_field( 'icon' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-			<?php endwhile; ?>
-		<?php else : ?>
-			<?php // no rows found ?>
-		<?php endif; ?>
+			<ul>
+       			<li>
+				   <div class="contract-item-1">
+						<?php if ( have_rows( 'contract_item_1' ) ) : ?>
+							<?php while ( have_rows( 'contract_item_1' ) ) : the_row(); ?>
+								<h3><?php the_sub_field( 'title' ); ?></h3>
+								<i><?php the_sub_field( 'icon' ); ?></i>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</li>
+				<li>
+					<div class="contract-item-2">
+						<?php if ( have_rows( 'contract_item_2' ) ) : ?>
+							<?php while ( have_rows( 'contract_item_2' ) ) : the_row(); ?>
+								<h3><?php the_sub_field( 'title' ); ?></h3>
+								<i><?php the_sub_field( 'icon' ); ?></i>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</li>
+				<li>
+					<div class="contract-item-3">
+						<?php if ( have_rows( 'contract_item_3' ) ) : ?>
+							<?php while ( have_rows( 'contract_item_3' ) ) : the_row(); ?>
+								<h3><?php the_sub_field( 'title' ); ?></h3>
+								<i><?php the_sub_field( 'icon' ); ?></i>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</li>
+				<li>
+					<div class="contract-item-4">
+						<?php if ( have_rows( 'contract_item_4' ) ) : ?>
+							<?php while ( have_rows( 'contract_item_4' ) ) : the_row(); ?>
+								<h3><?php the_sub_field( 'title' ); ?></h3>
+								<i><?php the_sub_field( 'icon' ); ?></i>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</li>
+				<li>
+					<div class="contract-item-5">
+						<?php if ( have_rows( 'contract_item_5' ) ) : ?>
+							<?php while ( have_rows( 'contract_item_5' ) ) : the_row(); ?>
+								<h3><?php the_sub_field( 'title' ); ?></h3>
+								<i><?php the_sub_field( 'icon' ); ?></i>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</li>
+				<?php endwhile; ?>
+			<?php else : ?>
+				<?php // no rows found ?>
+			<?php endif; ?>
+			</ul>
+		</div>
+		<div class="non-contract-items">
 		<?php if ( have_rows( 'non-contract_items' ) ) : ?>
 			<?php while ( have_rows( 'non-contract_items' ) ) : the_row(); ?>
-				<?php if ( have_rows( 'non-contract_item_1' ) ) : ?>
-					<?php while ( have_rows( 'non-contract_item_1' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'non-contract_item_2' ) ) : ?>
-					<?php while ( have_rows( 'non-contract_item_2' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'non-contract_item_3' ) ) : ?>
-					<?php while ( have_rows( 'non-contract_item_3' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'non-contract_item_4' ) ) : ?>
-					<?php while ( have_rows( 'non-contract_item_4' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-				<?php if ( have_rows( 'non-contract_item_5' ) ) : ?>
-					<?php while ( have_rows( 'non-contract_item_5' ) ) : the_row(); ?>
-						<?php the_sub_field( 'title' ); ?>
-						<?php $icon = get_sub_field( 'icon' ); ?>
-						<?php if ( $icon ) : ?>
-							<img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+			<ul>
+				<li>
+					<div class="non-contract-item-1">
+						<?php if ( have_rows( 'non-contract_item_1' ) ) : ?>
+							<?php while ( have_rows( 'non-contract_item_1' ) ) : the_row(); ?>
+								<h3><?php the_sub_field( 'title' ); ?></h3>
+								<i><?php the_sub_field( 'icon' ); ?></i>
+							<?php endwhile; ?>
 						<?php endif; ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
-			<?php endwhile; ?>
-		<?php else : ?>
-			<?php // no rows found ?>
-		<?php endif; ?>
+					</div>
+				</li>
+				<li>
+					<div class="non-contract-item-2">
+						<?php if ( have_rows( 'non-contract_item_2' ) ) : ?>
+							<?php while ( have_rows( 'non-contract_item_2' ) ) : the_row(); ?>
+								<h3><?php the_sub_field( 'title' ); ?></h3>
+								<i><?php the_sub_field( 'icon' ); ?></i>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</li>
+				<li>
+					<div class="non-contract-item-3">
+						<?php if ( have_rows( 'non-contract_item_3' ) ) : ?>
+							<?php while ( have_rows( 'non-contract_item_3' ) ) : the_row(); ?>
+								<h3><?php the_sub_field( 'title' ); ?></h3>
+								<i><?php the_sub_field( 'icon' ); ?></i>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</li>
+				<li>
+					<div class="non-contract-item-4">
+						<?php if ( have_rows( 'non-contract_item_4' ) ) : ?>
+							<?php while ( have_rows( 'non-contract_item_4' ) ) : the_row(); ?>
+								<h3><?php the_sub_field( 'title' ); ?></h3>
+								<i><?php the_sub_field( 'icon' ); ?></i>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</li>
+				<li>
+					<div class="non-contract-item-5">
+						<?php if ( have_rows( 'non-contract_item_5' ) ) : ?>
+							<?php while ( have_rows( 'non-contract_item_5' ) ) : the_row(); ?>
+								<h3><?php the_sub_field( 'title' ); ?></h3>
+								<i><?php $icon = get_sub_field( 'icon' ); ?>
+								<?php if ( $icon ) : ?>
+									<img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+								<?php endif; ?></i>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</li>
+				<?php endwhile; ?>
+			<?php else : ?>
+				<?php // no rows found ?>
+			<?php endif; ?>
+		</ul>
+		</div>
+	<div class="background-image">
 		<?php $background_image = get_sub_field( 'background_image' ); ?>
 		<?php if ( $background_image ) : ?>
 			<img src="<?php echo esc_url( $background_image['url'] ); ?>" alt="<?php echo esc_attr( $background_image['alt'] ); ?>" />
 		<?php endif; ?>
+	</div>
 	<?php endwhile; ?>
 <?php endif; ?>
+</section>
 
 
 <!-- Why Managed IT? -->
