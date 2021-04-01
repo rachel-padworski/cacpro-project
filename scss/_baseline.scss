@@ -1,6 +1,137 @@
 
-$primaryFont: '';
+$primaryFont: 'Interstate Greek and Cyrillic Reg';
 $iconFont: 'icomoon';
+
+/* typography in baseline.scss */
+
+@font-face {
+	font-family: "Interstate Greek and Cyrillic Bd";
+	src: url(http://cloud.typenetwork.com/projects/5441/fontface.css/);
+	font-display: swap;
+	font-style: normal;
+	font-weight: normal;
+  }
+  
+  @font-face {
+	font-family: "Interstate Greek and Cyrillic Reg";
+	src: url(http://cloud.typenetwork.com/projects/5441/fontface.css/);
+	font-display: swap;
+	font-style: normal;
+	font-weight: normal;
+  }
+  
+  $navy: #202945 !important;
+  $sky: #f1f3f9 !important;
+  $light-periwinkle: #e2e3e6 !important;
+  $blue: #00a0df!important;
+  $white: #ffffff !important;
+  $blue-slate: #686e81 !important;
+  $navy-90: rgba(32, 41, 69, 0.9) !important;
+  
+  
+  
+	
+	@mixin h1leftwhite {
+	  font-family: "Interstate Greek and Cyrillic Bd";
+	  font-size: 70px;
+	  font-weight: bold;
+	  line-height: 1.07;
+	  color: $white;
+	}
+	
+	@mixin h2centerblue {
+	  font-family: "Interstate Greek and Cyrillic Bd";
+	  font-size: 25px;
+	  font-weight: bold;
+	  line-height: 1.4;
+	  letter-spacing: 1px;
+	  text-align: center;
+	  color: $navy;
+	}
+	
+	@mixin h2leftblue {
+	  font-family: "Interstate Greek and Cyrillic Bd";
+	  font-size: 25px;
+	  font-weight: bold;
+	  line-height: 1.4;
+	  letter-spacing: 1px;
+	  color: $navy;
+	}
+	
+	@mixin h3leftgrey {
+	  font-family: "Interstate Greek and Cyrillic Reg";
+	  font-size: 22px;
+	  line-height: 1.36;
+	  color: $blue-slate;
+	}
+	
+	@mixin h3leftblue {
+	  font-family: "Interstate Greek and Cyrillic Reg";
+	  font-size: 22px;
+	  line-height: 1.36;
+	  color: $navy;
+	}
+	
+	@mixin h3leftwhite {
+	  font-family: "Interstate Greek and Cyrillic Reg";
+	  font-size: 22px;
+	  line-height: 1.36;
+	  color: $light-periwinkle;
+	}
+	
+	@mixin h3centergrey {
+	  font-family: "Interstate Greek and Cyrillic Reg";
+	  font-size: 22px;
+	  line-height: 1.36;
+	  text-align: center;
+	  color: $blue-slate;
+	}
+	
+	@mixin h5leftblue {
+	  font-family: "Interstate Greek and Cyrillic Reg";
+	  font-size: 20px;
+	  line-height: 1.5;
+	  color: $navy;
+	}
+	
+	@mixin h5leftgrey {
+	  font-family: "Interstate Greek and Cyrillic Reg";
+	  font-size: 20px;
+	  line-height: 1.5;
+	  color: $blue-slate;
+	}
+	
+	@mixin bodyleftblue {
+	  font-family: "Interstate Greek and Cyrillic Reg";
+	  font-size: 18px;
+	  line-height: 1.67;
+	  color: $navy;
+	}
+	
+	@mixin bodyleftgrey {
+	  font-family: "Interstate Greek and Cyrillic Reg";
+	  font-size: 18px;
+	  line-height: 1.67;
+	  color: $blue-slate;
+	}
+	
+	@mixin h4white {
+	  font-family: "Interstate Greek and Cyrillic Reg";
+	  font-size: 14px;
+	  letter-spacing: 1px;
+	  color: $white;
+	}
+	
+	@mixin h4blue {
+	  font-family: "Interstate Greek and Cyrillic Bd";
+	  font-size: 14px;
+	  font-weight: bold;
+	  letter-spacing: 1px;
+	  color: $navy;
+	}
+  
+   
+/* mixins */
 
 @mixin transition($property: all, $duration: 0.4s, $easing: ease-in-out) {
   -webkit-transition: $property $duration $easing;
@@ -57,8 +188,21 @@ $iconFont: 'icomoon';
 	display: none;
 }
 
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
 body, html {
-	height:100%;	
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
 }
 
 body {
@@ -70,27 +214,58 @@ body {
 		left: 0px;
 		right: 0px;		
 	}	
+	margin: 0;
+	padding: 0;
+	line-height: 1.3;
+}
+
+a, a:visited, a:hover {
+	text-decoration: none;
+}
+
+button, .button {
+	padding: 1.063rem 2.063rem;
+	cursor: pointer;
+	border: none;
+}
+
+.flex {
+	display: flex;
+
+	&-jc-sb {
+		justify-content: space-between;
+	}
+	&-jc-c {
+		justify-content: center;
+	}
+	&-ai-c {
+		align-items: center;
+	}
 }
 
 .container {
-    position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	*zoom: 1;
-	max-width:1000px;
-	min-width: 0px;
-	width: 100%;	
+	padding-left: 3.125rem;
+	padding-right: 3.125rem;
 }
+// .container {
+//     position: relative;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	*zoom: 1;
+// 	max-width:1000px;
+// 	min-width: 0px;
+// 	width: 100%;	
+// }
 
-.container-fluid{
-    position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	*zoom: 1;
-	width: 100%;
-	max-width:2000px;
-	min-width: 320px;			
-}
+// .container-fluid{
+//     position: relative;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	*zoom: 1;
+// 	width: 100%;
+// 	max-width:2000px;
+// 	min-width: 320px;			
+// }
 
 
 
@@ -283,3 +458,49 @@ img{
         opacity: 1
     }	
 }
+
+
+
+// Breakpoints
+
+@media (min-width: 64em){
+	// styles go here
+  }
+  
+  // 640px, 1024px, 1400px
+  $breakpoints-up: (medium: "40em", large: "64em", xlarge: "87.5em");
+  
+  // 639px, 1023px, 1399px
+  $breakpoints-down: (small: "39.9375em", medium: "63.9375em", large: "87.4375em");
+  
+  @mixin breakpoint-up($size){
+	@media only screen and (min-width: map-get($breakpoints-up, $size)){
+	  @content;
+	}
+  }
+  
+  @mixin breakpoint-down($size){
+	@media only screen and (max-width: map-get($breakpoints-down, $size)){
+	  @content;
+	}
+  }
+
+
+//   Visibility
+
+.hide-for-mobile {
+	@include breakpoint-down(medium) {
+		display: none;
+	}
+}
+
+.hide-for-desktop {
+	@include breakpoint-up(large) {
+		display: none;
+	}
+}
+
+
+
+
+

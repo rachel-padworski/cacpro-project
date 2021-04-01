@@ -7,10 +7,7 @@
     <?php endwhile; else:?>
 	<?php endif; ?>					
 </div> 
-<div>
-  <h1>hellloooooo</h1>
-  <h2>anyone home??</h2>
-</div>
+
 
 <!-- end #content -->
 

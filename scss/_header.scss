@@ -2,105 +2,215 @@
 
 
 .site-header {
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    background: no-repeat top left;
-    background-size: cover;
-    // display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 
-    &__background {
-      z-index: -50;
-      top: 0;
-      left: 0;
-      width: 75%;
-      height: 100%;
-      display: block;
-      clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%) 
-    }
-    &__content {
-      position: absolute;
-      top: 25%;
-      left: 6%;
-      display: flex;
-    }
-  }
+  position: relative;
+  // z-index: 0;
 
-  .menu-container {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    width: 100vw;
-    padding: 2rem;
-    top: 0;
-    z-index: 1;
-
-    &__logo {
-      max-width: 162px;
-    }
-    &__btn {
-      max-width: 210px;
-      padding: 9px 25px;
-      background-color: $blue;
-      // color: $white;
-      border: none;
-      text-align: center;
-      list-style-type: none;
-      @include h4white;
-      &:hover {
-        text-decoration: none;
-        background-color: $white;
-        color: $navy;
+  &.open {
+  
+    .site-header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
       }
     }
+  }
 
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: $navy;
+  }
+
+  &__toggle {
+    > span {
+      display: block;
+      width: 31px;
+      height: 2px;
+      background-color: $navy;
+      transition: all 300ms ease-in-out;
+      transform-origin: 1.5px 1px;
+      
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  nav {
+    padding-top: 2.313rem;
+    padding-bottom: 2.375rem;
   }
   
-  .title {
-    position: relative;
-    font-size: 4rem;
-    text-align: left;
-    padding: 2rem;
-    @include h1leftwhite;
+  &__logo {
+    img {
+      width: 15.25rem;
+      max-height: 3.688rem;
+    }
   }
 
-  .subtitle {
-    position: absolute;
-    margin: 2rem 0;
-    top: 20rem;
-    left: 2rem;
-    @include h3leftwhite;
+  &__menu {
+    padding: 1.625rem;
+    background: $navy;
+
+    a {
+      display: block;
+      text-align: center;
+      padding: 0.635rem;
+      color: $white;
+    }
   }
 
-  .contact-btn {
-    position: absolute;
-    margin: 2rem;
-    top: 32rem;
-    left: 0rem;
+  &__btn {
+    flex-shrink: 0;
+    background-color: $blue;
     @include h4white;
-    padding: 17px 35px;
-    background-color: $navy;
-    border: 2px solid $blue;
-    align-content: center;
+    width: 210px;
+    height: 50px;
+    padding: 1.063rem 2.063rem;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
     &:hover {
-      text-decoration: none !important;
       background-color: $white;
       color: $navy;
     }
   }
 
-  .banner-img {
-    position: relative;
-    // top: 10%;
-    // left: 3%;
-    object-fit: contain;
+  // &__background {
+  //   display: flex;
+  //   // z-index: -50;
+  //   // top: 0;
+  //   // left: 0;
+  //   // width: 75%;
+  //   // height: 100%;
+  //   // display: block;
+  //   background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png');
+  //   clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%);
+  // }
+
+  &__content {
+    // background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png');
+    // clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%);
+    &__background {
+      // background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png');
+      
+      clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%);
+    }
   }
+
+}
+
+
+
+  //   height: 100vh;
+  //   width: 100%;
+  //   margin: 0;
+  //   background: no-repeat top left;
+  //   background-size: cover;
+  //   // display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   position: relative;
+
+  //   &__background {
+  //     z-index: -50;
+  //     top: 0;
+  //     left: 0;
+  //     width: 75%;
+  //     height: 100%;
+  //     display: block;
+  //     clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%) 
+  //   }
+  //   &__content {
+  //     position: absolute;
+  //     top: 25%;
+  //     left: 6%;
+  //     display: flex;
+  //   }
+  // }
+
+  // .menu-container {
+  //   position: absolute;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   height: 60px;
+  //   width: 100vw;
+  //   padding: 2rem;
+  //   top: 0;
+  //   z-index: 1;
+
+  //   &__logo {
+  //     max-width: 162px;
+  //   }
+  //   &__btn {
+  //     max-width: 210px;
+  //     padding: 9px 25px;
+  //     background-color: $blue;
+  //     // color: $white;
+  //     border: none;
+  //     text-align: center;
+  //     list-style-type: none;
+  //     @include h4white;
+  //     &:hover {
+  //       text-decoration: none;
+  //       background-color: $white;
+  //       color: $navy;
+  //     }
+  //   }
+
+  // }
+  
+  // .title {
+  //   position: relative;
+  //   font-size: 4rem;
+  //   text-align: left;
+  //   padding: 2rem;
+  //   @include h1leftwhite;
+  // }
+
+  // .subtitle {
+  //   position: absolute;
+  //   margin: 2rem 0;
+  //   top: 20rem;
+  //   left: 2rem;
+  //   @include h3leftwhite;
+  // }
+
+  // .contact-btn {
+  //   position: absolute;
+  //   margin: 2rem;
+  //   top: 32rem;
+  //   left: 0rem;
+  //   @include h4white;
+  //   padding: 17px 35px;
+  //   background-color: $navy;
+  //   border: 2px solid $blue;
+  //   align-content: center;
+  //   &:hover {
+  //     text-decoration: none !important;
+  //     background-color: $white;
+  //     color: $navy;
+  //   }
+  // }
+
+  // .banner-img {
+  //   position: relative;
+  //   // top: 10%;
+  //   // left: 3%;
+  //   object-fit: contain;
+  // }
 
   // .contact-btn {
   //   width: 169px;

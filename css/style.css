@@ -4,8 +4,7 @@
  Author: Cross & Crown
  Author URI: http://cacpro.com/
  */
-@import "compass/reset";
-@import bodyleftgrey;
+/* typography in baseline.scss */
 @font-face {
   font-family: "Interstate Greek and Cyrillic Bd";
   src: url(http://cloud.typenetwork.com/projects/5441/fontface.css/);
@@ -18,41 +17,59 @@
   font-display: swap;
   font-style: normal;
   font-weight: normal; }
+/* mixins */
 /*
  Body & HTML setup
  */
 #full-height {
   display: none; }
 
+html {
+  font-size: 100%;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
 body, html {
-  height: 100%; }
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
 
 body {
   color: #000;
-  font: 12px/18px ''; }
+  font: 12px/18px 'Interstate Greek and Cyrillic Reg';
+  margin: 0;
+  padding: 0;
+  line-height: 1.3; }
   body.nav-menu-open {
     position: fixed;
     overflow: hidden;
     left: 0px;
     right: 0px; }
 
-.container {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  *zoom: 1;
-  max-width: 1000px;
-  min-width: 0px;
-  width: 100%; }
+a, a:visited, a:hover {
+  text-decoration: none; }
 
-.container-fluid {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  *zoom: 1;
-  width: 100%;
-  max-width: 2000px;
-  min-width: 320px; }
+button, .button {
+  padding: 1.063rem 2.063rem;
+  cursor: pointer;
+  border: none; }
+
+.flex {
+  display: flex; }
+  .flex-jc-sb {
+    justify-content: space-between; }
+  .flex-jc-c {
+    justify-content: center; }
+  .flex-ai-c {
+    align-items: center; }
+
+.container {
+  padding-left: 3.125rem;
+  padding-right: 3.125rem; }
 
 .wrap {
   position: relative;
@@ -229,215 +246,106 @@ img {
     transform: none !important;
     opacity: 1; } }
 
+@media only screen and (max-width: "63.9375em") {
+  .hide-for-mobile {
+    display: none; } }
+
+@media only screen and (min-width: "64em") {
+  .hide-for-desktop {
+    display: none; } }
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0; }
+  1% {
+    visibility: visible;
+    opacity: 0; }
+  to {
+    visibility: visible;
+    opacity: 1; } }
+
+.fade-in {
+  animation: fade-in 300ms ease-in-out forwards; }
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1; }
+  99% {
+    visibility: visible;
+    opacity: 0; }
+  to {
+    visibility: hidden;
+    opacity: 0; } }
+
+.fade-out {
+  animation: fade-out 300ms ease-in-out forwards; }
+
 /* header.scss */
 .site-header {
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  background: no-repeat top left;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
   position: relative; }
-  .site-header__background {
-    z-index: -50;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 100%;
-    display: block;
-    clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%); }
-  .site-header__content {
-    position: absolute;
-    top: 25%;
-    left: 6%;
-    display: flex; }
-
-.menu-container {
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  width: 100vw;
-  padding: 2rem;
-  top: 0;
-  z-index: 1; }
-  .menu-container__logo {
-    max-width: 162px; }
-  .menu-container__btn {
-    max-width: 210px;
-    padding: 9px 25px;
-    background-color: #00a0df;
-    border: none;
-    text-align: center;
-    list-style-type: none;
-    font-family: "Interstate Greek and Cyrillic Bd";
+  .site-header.open .site-header__toggle > span:first-child {
+    transform: rotate(45deg); }
+  .site-header.open .site-header__toggle > span:nth-child(2) {
+    opacity: 0; }
+  .site-header.open .site-header__toggle > span:last-child {
+    transform: rotate(-45deg); }
+  .site-header .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #202945 !important; }
+    .site-header__toggle > span {
+      display: block;
+      width: 31px;
+      height: 2px;
+      background-color: #202945 !important;
+      transition: all 300ms ease-in-out;
+      transform-origin: 1.5px 1px; }
+      .site-header__toggle > span:not(:last-child) {
+        margin-bottom: 8px; }
+  .site-header nav {
+    padding-top: 2.313rem;
+    padding-bottom: 2.375rem; }
+    .site-header__logo img {
+      width: 15.25rem;
+      max-height: 3.688rem; }
+  .site-header__menu {
+    padding: 1.625rem;
+    background: #202945 !important; }
+    .site-header__menu a {
+      display: block;
+      text-align: center;
+      padding: 0.635rem;
+      color: #fff !important; }
+  .site-header__btn {
+    flex-shrink: 0;
+    background-color: #00a0df !important;
+    font-family: "Interstate Greek and Cyrillic Reg";
     font-size: 14px;
-    font-weight: bold;
     letter-spacing: 1px;
-    color: #fff; }
-    .menu-container__btn:hover {
-      text-decoration: none;
-      background-color: #fff;
-      color: #202945; }
-
-.title {
-  position: relative;
-  font-size: 4rem;
-  text-align: left;
-  padding: 2rem;
-  font-family: "Interstate Greek and Cyrillic Bd";
-  font-size: 70px;
-  font-weight: bold;
-  line-height: 1.07;
-  color: #fff; }
-
-.subtitle {
-  position: absolute;
-  margin: 2rem 0;
-  top: 20rem;
-  left: 2rem;
-  font-family: "Interstate Greek and Cyrillic Reg";
-  font-size: 22px;
-  line-height: 1.36;
-  color: #e2e3e6; }
-
-.contact-btn {
-  position: absolute;
-  margin: 2rem;
-  top: 32rem;
-  left: 0rem;
-  font-family: "Interstate Greek and Cyrillic Bd";
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #fff;
-  padding: 17px 35px;
-  background-color: #202945;
-  border: 2px solid #00a0df;
-  align-content: center; }
-  .contact-btn:hover {
-    text-decoration: none !important;
-    background-color: #fff;
-    color: #202945; }
-
-.banner-img {
-  position: relative;
-  object-fit: contain; }
+    color: #fff !important;
+    width: 210px;
+    height: 50px;
+    padding: 1.063rem 2.063rem;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer; }
+    .site-header__btn:hover {
+      background-color: #fff !important;
+      color: #202945 !important; }
+  .site-header__content__background {
+    clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%); }
 
 /* page.scss */
-.partners-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem; }
-  .partners-container .partners-container-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-    .partners-container .partners-container-row h4 {
-      font-family: "Interstate Greek and Cyrillic Bd";
-      font-size: 14px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      color: #202945;
-      position: relative;
-      width: 16.6666666667%;
-      padding-right: 15px;
-      padding-left: 15px; }
-    .partners-container .partners-container-row img {
-      position: relative;
-      justify-content: space-between;
-      width: 16.6666666667%;
-      padding-right: 15px;
-      padding-left: 15px; }
-      .partners-container .partners-container-row img .dell {
-        min-height: 47px;
-        min-width: 47px; }
-      .partners-container .partners-container-row img .lenovo {
-        min-height: 47px;
-        min-width: 63px; }
-      .partners-container .partners-container-row img .sonic-wall {
-        min-height: 16px;
-        min-width: 91px; }
-      .partners-container .partners-container-row img .datto {
-        min-height: 47px;
-        min-width: 50px; }
-      .partners-container .partners-container-row img .apc {
-        min-height: 59px;
-        min-width: 59px; }
-
-.services__container {
-  margin: 20px 0;
-  padding: 10px;
-  background-color: #f1f3f9; }
-.services__header {
-  font-family: "Interstate Greek and Cyrillic Bd";
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #202945;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  flex-wrap: none; }
-  .services__cards article {
-    margin: 5px auto;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 200px;
-    height: 175px;
-    background-color: #fff; }
-    .services__cards article h3 {
-      font-family: "Interstate Greek and Cyrillic Reg";
-      font-size: 22px;
-      line-height: 1.36;
-      color: #202945;
-      font-size: 18px; }
-
-.contract-container {
-  display: border-box; }
-
-.contract-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 5px; }
-
-.contract-items ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2; }
-
-.contract-items {
-  width: 50%; }
-
-.contract-items li {
-  list-style-type: none; }
-
-.non-contract-items {
-  width: 50%; }
-
-.non-contract-items li {
-  list-style-type: none; }
-
-@media only screen and (max-width: 600px) {
-  article {
-    width: 100%; } }
-
 /* home.scss */
 /* footer.scss */
 .site-footer {
   width: 1440px;
   height: 150px;
   padding: 58px 135px;
-  background-color: #202945; }
+  background-color: #202945 !important; }

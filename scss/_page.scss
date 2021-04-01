@@ -1,151 +1,142 @@
 /* page.scss */
 
-.partners-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-    // margin: 0;
+// .partners-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 4rem;
+//     // margin: 0;
 
-    // position: relative;
-    // flex-wrap: wrap;
-    // flex-direction: row;
+//     // position: relative;
+//     // flex-wrap: wrap;
+//     // flex-direction: row;
    
-    .partners-container-row {
-        display: flex;
-        // flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%; 
-        h4 {
-            @include h4blue;
-            position: relative;
-            width: (100 / 6) * 1%;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-        img {
-            position: relative;
-            justify-content: space-between;
-            width: (100 / 6) * 1%;
-            padding-right: 15px;
-            padding-left: 15px;
-            .dell {
-                min-height: 47px;
-                min-width: 47px;
-            }
-            .lenovo {
-                min-height: 47px;
-                min-width: 63px;
-            }
-            .sonic-wall {
-                min-height: 16px;
-                min-width: 91px;
-            }
-            .datto {
-                min-height: 47px;
-                min-width: 50px;
-            }
-            .apc {
-                min-height: 59px;
-                min-width: 59px; 
-            }
-        }
+//     .partners-container-row {
+//         display: flex;
+//         // flex-direction: row;
+//         justify-content: center;
+//         align-items: center;
+//         width: 100%; 
+//         h4 {
+//             @include h4blue;
+//             position: relative;
+//             width: (100 / 6) * 1%;
+//             padding-right: 15px;
+//             padding-left: 15px;
+//         }
+//         img {
+//             position: relative;
+//             justify-content: space-between;
+//             width: (100 / 6) * 1%;
+//             padding-right: 15px;
+//             padding-left: 15px;
+//             .dell {
+//                 min-height: 47px;
+//                 min-width: 47px;
+//             }
+//             .lenovo {
+//                 min-height: 47px;
+//                 min-width: 63px;
+//             }
+//             .sonic-wall {
+//                 min-height: 16px;
+//                 min-width: 91px;
+//             }
+//             .datto {
+//                 min-height: 47px;
+//                 min-width: 50px;
+//             }
+//             .apc {
+//                 min-height: 59px;
+//                 min-width: 59px; 
+//             }
+//         }
         
-    }
-}
+//     }
+// }
 
 
-.services {
+// .services {
 
-    &__container {
-        margin: 20px 0;
-        padding: 10px;
-        background-color: $sky;
-    }
-    &__header {
-        @include h4blue;
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 50px;
-        flex-wrap: none;
-    }
-    &__cards {
+//     &__container {
+//         margin: 20px 0;
+//         padding: 10px;
+//         background-color: $sky;
+//     }
+//     &__header {
+//         @include h4blue;
+//         font-size: 25px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 50px;
+//         flex-wrap: none;
+//     }
+//     &__cards {
     
-        article {
-            margin: 5px auto;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-sizing: border-box;
-            // float: left;
-            width: 200px;
-            height: 175px;
-            background-color: $white;
-    //         i {
+//         article {
+//             margin: 5px auto;
+//             padding: 15px;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             box-sizing: border-box;
+//             // float: left;
+//             width: 200px;
+//             height: 175px;
+//             background-color: $white;
+//     //         i {
     
-            // }
-            h3 {
-                @include h3leftblue;
-                font-size: 18px;
+//             // }
+//             h3 {
+//                 @include h3leftblue;
+//                 font-size: 18px;
 
-            }
-        }
-    }
-}
-
-
-// contract section
-
-.contract-container {
-  display: border-box;
-}
-
-.contract-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 5px;
-}
-
-.contract-items ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
-
-.contract-items {
-  width: 50%;
-}
-
-.contract-items li {
-  list-style-type: none;
-}
-
-.non-contract-items {
-  width: 50%;
-}
-
-.non-contract-items li {
-  list-style-type: none;
-}
+//             }
+//         }
+//     }
+// }
 
 
+// // contract section
+
+// .contract-container {
+//   display: border-box;
+// }
+
+// .contract-title {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 10px;
+//   margin: 5px;
+// }
+
+// .contract-items ul {
+//   columns: 2;
+//   -webkit-columns: 2;
+//   -moz-columns: 2;
+// }
+
+// .contract-items {
+//   width: 50%;
+// }
+
+// .contract-items li {
+//   list-style-type: none;
+// }
+
+// .non-contract-items {
+//   width: 50%;
+// }
+
+// .non-contract-items li {
+//   list-style-type: none;
+// }
 
 
-@media only screen and (max-width: 600px) {
-    article{
-        width: 100%;
-    }
-    // .services{
-    //     clear: both;
-    //     // padding: 0;
-    // }
-}
+
+
 
 
 
