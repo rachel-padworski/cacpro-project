@@ -8,10 +8,7 @@
  * @website:		cacpro.com
  *
 */
-// echo '<pre>';
-// print_r(get_field('background_image'));
-// echo'</pre>';
-// die();
+
 
 // get_header();
 ?>
@@ -46,6 +43,8 @@
 
 	<!-- begin header -->
 	<header class="site-header" role="banner">
+		<div class="overlay has-fade"></div>
+
 		<!-- begin navbar -->
 		<nav class="container flex flex-jc-sb flex-ai-c">
 			<a href="<?php echo site_url(); ?>" class="site-header__logo">
@@ -66,53 +65,25 @@
 				<a href="<?php echo esc_url( $support_button['url'] ); ?>" class="button site-header__btn hide-for-mobile" target="<?php echo esc_attr( $support_button['target'] ); ?>"><?php echo esc_html( $support_button['title'] ); ?></a>
 			<?php endif; ?>
 
-			<div class="site-header__menu hide-for-desktop container">	
-				<a href="#services">OUR SERVICES</a>
-				<a href="#contractvsnoncontract">CONTRACT VS NON-CONTRACT</a>
-				<a href="#whymanagedit">WHY MANAGED IT?</a>
-				<a href="#contact">CONTACT US</a>
-				
-				<?php $support_button = get_field( 'support_button' ); ?>
-				<?php if ( $support_button ) : ?>
-					<a href="<?php echo esc_url( $support_button['url'] ); ?>" class="button site-header__btn hide-for-desktop" target="<?php echo esc_attr( $support_button['target'] ); ?>"><?php echo esc_html( $support_button['title'] ); ?></a>
-					<?php endif; ?>
-			</div>
-					
-	
-			
-			<div class="overlay"></div>
 						
 		</nav>
-					
 		<!-- end navbar -->
-					
-					
-		<!-- head content -->
-		<div class="site-header__content">
-			<!-- style="background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png')">	 -->
-			<img src="http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png" class="site-header__background"></img>
+		<!-- begin menu overlay -->
+		<div class="site-header__menu hide-for-desktop has-fade">	
+		
+			<a href="#services">OUR SERVICES</a>
+			<a href="#contractvsnoncontract">CONTRACT VS NON-CONTRACT</a>
+			<a href="#whymanagedit">WHY MANAGED IT?</a>
+			<a href="#contact">CONTACT US</a>
 			
-			<div class="title">
-				<h1><?php echo get_field('title'); ?></h1>
-			</div>
-			<div class="subtitle">
-				<h3><?php echo get_field('subtitle'); ?></h3>
-			</div>
-
-			<div class="contact-btn">
-			<?php $contact_button = get_field( 'contact-button' ); ?>
-			<?php if ( $contact_button ) : ?>
-				<a href="<?php echo esc_url( $contact_button['url'] ); ?>" target="<?php echo esc_attr( $contact_button['target'] ); ?>"><?php echo esc_html( $contact_button['title'] ); ?></a>
+			<?php $support_button = get_field( 'support_button' ); ?>
+			<?php if ( $support_button ) : ?>
+				<a href="<?php echo esc_url( $support_button['url'] ); ?>" class="button site-header__btn hide-for-desktop" target="<?php echo esc_attr( $support_button['target'] ); ?>"><?php echo esc_html( $support_button['title'] ); ?></a>
 			<?php endif; ?>
-			</div>
-			
-			<div class="banner-img">
-			<?php $image = get_field( 'image' ); ?>
-			<?php if ( $image ) : ?>
-				<img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
-			<?php endif; ?>
-			</div>
 		</div>
+		<!--end menu overlay  -->
+					
+		
 	
 
 </header>

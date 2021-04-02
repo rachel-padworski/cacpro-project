@@ -13,3 +13,6 @@
 03/28/21 9:23:36: style.scss - parse error: failed at `padding: ` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_page.scss on line 78, at column 9
 03/28/21 10:32:15: style.scss - parse error: failed at `top:` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_page.scss on line 107, at column 17
 03/31/21 7:21:41: style.scss - parse error: failed at `> span: nth-child(2) {` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_header.scss on line 35, at column 7
+04/02/21 2:13:24: style.scss - parse error: failed at `align` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_header.scss on line 81, at column 5
+04/02/21 3:29:49: style.scss - parse error: failed at `border:` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_hero.scss on line 6, at column 9
+04/02/21 4:34:20: style.scss - parse error: failed at `width: ` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_hero.scss on line 59, at column 13

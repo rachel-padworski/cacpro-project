@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+ <?php get_header(); ?>
 
 <!-- begin content -->
 <div id="content" role="main" <?php post_class(); ?>>
@@ -8,6 +8,35 @@
 	<?php endif; ?>					
 </div> 
 
+<!-- hero section -->
+<section class="hero">
+	<div class="hero__image">
+		<!-- <?php $image = get_field( 'image' ); ?>
+		<?php if ( $image ) : ?>
+			<img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+		<?php endif; ?> -->
+	</div>
+
+	<div class="hero__text">
+		<h1><?php echo get_field('title'); ?></h1>
+		<h3><?php echo get_field('subtitle'); ?></h3>
+		<?php $contact_button = get_field( 'contact-button' ); ?>
+		<?php if ( $contact_button ) : ?>
+			<a href="<?php echo esc_url( $contact_button['url'] ); ?>" class="hero__btn" target="<?php echo esc_attr( $contact_button['target'] ); ?>"><?php echo esc_html( $contact_button['title'] ); ?></a>
+		<?php endif; ?>
+	</div>
+	
+
+	
+		
+	<!-- <div class="hero__img">
+		<?php $image = get_field( 'image' ); ?>
+		<?php if ( $image ) : ?>
+			<img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+		<?php endif; ?>
+	</div> -->
+	
+</section>
 
 <!-- Our Partners -->
 <div class="partners-container">
@@ -394,4 +423,4 @@
 
 <!-- end #content -->
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> 
