@@ -6,6 +6,9 @@
         "_utilities.scss",
         "_baseline.scss",
         "_header.scss",
+        "_hero.scss",
+        "_partners.scss",
+        "_services.scss",
         "_page.scss",
         "_home.scss",
         "_footer.scss"

@@ -35,7 +35,7 @@
 	<!-- font -->
 	<link href="//cloud.typenetwork.com/projects/5441/fontface.css/" rel="stylesheet" type="text/css">
 	<!-- end font -->
-	<!-- <link rel="stylesheet" href="./scss/style.scss"> -->
+	<!-- <link rel="stylesheet" href="./css/style.css"> -->
 	<link rel="index" title="<?php bloginfo( 'name' ); ?>" href="<?php echo get_option('home'); ?>/" />
 	<?php wp_head(); ?>
 </head>

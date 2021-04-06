@@ -15,5 +15,9 @@
 </footer>
 <?php wp_footer(); ?>
 <!-- <script src="/js/script.js"></script> -->
+<!-- <script
+  type="text/javascript"
+  src="https://use.fontawesome.com/releases/v5.15.3/js/conflict-detection.js">
+</script> -->
 </body>
 </html>

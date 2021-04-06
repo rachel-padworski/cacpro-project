@@ -4,7 +4,7 @@
  Author: Cross & Crown
  Author URI: http://cacpro.com/
  */
-/* typography in baseline.scss */
+/* typography */
 @font-face {
   font-family: "Interstate Greek and Cyrillic Bd";
   src: url(http://cloud.typenetwork.com/projects/5441/fontface.css/);
@@ -70,8 +70,40 @@ button, .button {
     align-items: center; }
 
 .container {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem; }
+  margin: 0 auto; }
+  .container--pall {
+    padding-top: 4.375rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4.375rem;
+    padding-left: 1.5rem; }
+  @media (min-width: 64em) {
+    .container--pall {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
+  .container--py {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem; }
+  @media (min-width: 64em) {
+    .container--py {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
+  .container--px {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem; }
+  .container--pt {
+    padding-top: 4.375rem; }
+  @media (min-width: 64em) {
+    .container--pt {
+      padding-top: 6rem; } }
+  .container--pr {
+    padding-right: 1.5rem; }
+  .container--pb {
+    padding-bottom: 4.375rem; }
+  @media (min-width: 64em) {
+    .container--pb {
+      padding-bottom: 6rem; } }
+  .container--pl {
+    padding-left: 1.5rem; }
 
 .wrap {
   position: relative;
@@ -248,11 +280,11 @@ img {
     transform: none !important;
     opacity: 1; } }
 
-@media only screen and (max-width: "63.9375em") {
+@media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none; } }
 
-@media only screen and (min-width: "64em") {
+@media (min-width: 64em) {
   .hide-for-desktop {
     display: none; } }
 
@@ -352,45 +384,147 @@ img {
     color: #202945 !important; }
 
 /* hero.scss */
-.hero__image {
-  position: relative;
-  background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 40.313rem;
-  width: 100%; }
-.hero__text {
-  text-align: center;
-  position: absolute;
-  width: 21.875rem;
-  height: 9.938rem;
-  top: 31%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  .hero__text h1 {
-    font-size: 3.125rem;
-    color: #fff !important;
-    text-align: left; }
-  .hero__text h3 {
+.hero {
+  max-height: 40.313rem; }
+  .hero__image {
+    position: relative;
+    background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 40.313rem;
+    width: 100%; }
+  .hero__text {
     text-align: left;
-    font-family: "Interstate Greek and Cyrillic Reg";
-    font-size: 22px;
-    line-height: 1.36;
-    color: #e2e3e6 !important; }
-  .hero__text .hero__btn {
-    position: absolute;
-    border: 2px solid #00a0df !important;
-    cursor: pointer;
-    width: 10.563rem;
-    height: 3.125rem;
-    padding: 1.063rem 2.188rem;
-    top: 169%;
-    left: 0%;
-    font-family: "Interstate Greek and Cyrillic Reg";
+    position: relative;
+    width: 21.875rem;
+    height: 9.938rem;
+    top: -24.188rem;
+    left: 12.688rem;
+    transform: translate(-50%, -50%); }
+    .hero__text h1 {
+      font-size: 3.125rem;
+      color: #fff !important;
+      text-align: left; }
+    .hero__text h3 {
+      text-align: left;
+      font-family: "Interstate Greek and Cyrillic Reg";
+      font-size: 22px;
+      line-height: 1.36;
+      color: #e2e3e6 !important; }
+    .hero__text .hero__btn {
+      position: absolute;
+      border: 2px solid #00a0df !important;
+      cursor: pointer;
+      width: 10.563rem;
+      height: 3.125rem;
+      padding: 1.063rem 2.188rem;
+      top: 169%;
+      left: 0%;
+      font-family: "Interstate Greek and Cyrillic Reg";
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #fff !important; }
+
+.partners {
+  position: relative;
+  align-items: center;
+  text-align: center; }
+  .partners__span {
+    width: 100%; }
+  .partners__title {
+    padding-top: 2.625rem;
+    padding-bottom: 1.313rem;
+    font-family: "Interstate Greek and Cyrillic Bd";
     font-size: 14px;
+    font-weight: bold;
     letter-spacing: 1px;
-    color: #fff !important; }
+    color: #202945 !important;
+    font-size: 14px; }
+  .partners__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 37px; }
+    .partners__logos .dell {
+      padding: 5px;
+      min-height: 47px;
+      min-width: 47px; }
+    .partners__logos .lenovo {
+      padding: 5px;
+      min-height: 47px;
+      min-width: 63px; }
+    .partners__logos .sonic-wall {
+      padding: 5px;
+      min-height: 16px;
+      min-width: 91px; }
+    .partners__logos .datto {
+      padding: 5px;
+      min-height: 47px;
+      min-width: 50px; }
+    .partners__logos .apc {
+      padding: 5px;
+      min-height: 59px;
+      min-width: 59px; }
+
+.services {
+  background-color: #f1f3f9 !important;
+  width: 100%; }
+  .services h4 {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: 0 0 50px;
+    font-family: "Interstate Greek and Cyrillic Bd";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #202945 !important;
+    font-size: 25px; }
+  .services__cards {
+    justify-content: center;
+    align-items: center; }
+  @media (min-width: 40em) {
+    .services__cards {
+      display: flex;
+      flex-wrap: wrap;
+      padding-right: 8.438rem;
+      padding-left: 8.438rem; } }
+  .services__card {
+    padding: 0.9375rem;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    background-color: #fff !important; }
+  @media (min-width: 40em) {
+    .services__card {
+      flex: 0 0 50%; } }
+@media (min-width: 64em) {
+  .services__card {
+    width: 270px;
+    height: 230px;
+    flex: 1 0 25%; } }
+.services__card i {
+  font-size: 35px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  padding: 8px 15px 8px 0;
+  color: #00a0df !important;
+  background-color: rgba(75, 141, 167, 0.1);
+  border-radius: 50px; }
+.services__card h3 {
+  font-family: "Interstate Greek and Cyrillic Reg";
+  font-size: 22px;
+  line-height: 1.36;
+  color: #202945 !important; }
+@media (max-width: 39.9375em) {
+  .services__card h3 {
+    display: inline-block;
+    flex-wrap: wrap; } }
 
 /* page.scss */
 /* home.scss */

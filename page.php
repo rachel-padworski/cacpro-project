@@ -39,14 +39,14 @@
 </section>
 
 <!-- Our Partners -->
-<div class="partners-container">
-	<span class="partners-container-row">
+<section class="partners">
+	<span class="partners__span">
 		<?php if ( have_rows( 'partners_section' ) ) : ?>
 			<?php while ( have_rows( 'partners_section' ) ) : the_row(); ?>
-			<div class="partners-container__title">
+			<div class="partners__title">
 				<h4 class="title" id="partners-section-title"><?php the_sub_field( 'partners_section_title' ); ?></h4>
 			</div>	
-			<div class="partners-container__logos">
+			<div class="partners__logos">
 				<?php if ( have_rows( 'partners' ) ) : ?>
 					<?php while ( have_rows( 'partners' ) ) : the_row(); ?>
 						<?php $dell = get_sub_field( 'dell' ); ?>
@@ -78,132 +78,118 @@
 
 		<?php endif; ?>
 	</span>
-</div>
+</section>
 
 
 <!-- Services -->
-<section class="services">
-	<div class="services__container">
-		
+<section class="services container container--pall">
 
-		<div class="services__header">
+		<h4>
 		<?php if ( have_rows( 'services_section' ) ) : ?>
-			<?php while ( have_rows( 'services_section' ) ) : the_row(); ?>
-				<?php the_sub_field( 'services_section_title' ); ?>
-		</div>
+		<?php while ( have_rows( 'services_section' ) ) : the_row(); ?>
+			<?php the_sub_field( 'services_section_title' ); ?>
+		</h4>
 
 
 		<div class="services__cards">
 			<?php if ( have_rows( 'services' ) ) : ?>
 				<?php while ( have_rows( 'services' ) ) : the_row(); ?>
-						<?php if ( have_rows( 'servers' ) ) : ?>
-							<?php while ( have_rows( 'servers' ) ) : the_row(); ?>
-							<article class="services__card">
-								<h3 class="services__title">
-									<?php the_sub_field( 'title' ); ?>
-								</h3>
-								<i class="services__icon">
-									<?php the_sub_field( 'icon' ); ?>
-								</i>
-							</article>	
-							<?php endwhile; ?>
-						<?php endif; ?>
-						<?php if ( have_rows( 'data_backup_recovery' ) ) : ?>
-							<?php while ( have_rows( 'data_backup_recovery' ) ) : the_row(); ?>
-							<article class="services__card">
-								<h3 class="services__title">
-									<?php the_sub_field( 'title' ); ?>
-								</h3>
-								<i class="services__icon">
-									<?php the_sub_field( 'icon' ); ?>
-								</i>
-							</article>	
-							<?php endwhile; ?>
-						<?php endif; ?>
-						<?php if ( have_rows( 'workstations' ) ) : ?>
-							<?php while ( have_rows( 'workstations' ) ) : the_row(); ?>
-							<article class="services__card">
-								<h3 class="services__title">
-									<?php the_sub_field( 'title' ); ?>
-								</h3>
-								<i class="services__icon">
-									<?php the_sub_field( 'icon' ); ?>
-								</i>
-							</article>	
-							<?php endwhile; ?>
-						<?php endif; ?>
-						<?php if ( have_rows( 'networking' ) ) : ?>
-							<?php while ( have_rows( 'networking' ) ) : the_row(); ?>
-							<article class="services__card">
-								<h3 class="services__title">
-									<?php the_sub_field( 'title' ); ?>
-								</h3>
-								<i class="services__icon">
-									<?php the_sub_field( 'icon' ); ?>
-								</i>
-							</article>	
-							<?php endwhile; ?>
-						<?php endif; ?>
-						<?php if ( have_rows( 'microsoft_office_solutions' ) ) : ?>
-							<?php while ( have_rows( 'microsoft_office_solutions' ) ) : the_row(); ?>
-							<article class="services__card">
-								<h3 class="services__title">
-									<?php the_sub_field( 'title' ); ?>
-								</h3>
-								<i class="services__icon">
-									<?php the_sub_field( 'icon' ); ?>
-								</i>
-							</article>	
-							<?php endwhile; ?>
-						<?php endif; ?>
-						<?php if ( have_rows( 'cloud_solutions' ) ) : ?>
-							<?php while ( have_rows( 'cloud_solutions' ) ) : the_row(); ?>
-							<article class="services__card">
-								<h3 class="services__title">
-									<?php the_sub_field( 'title' ); ?>
-								</h3>
-								<i class="services__icon">
-									<?php the_sub_field( 'icon' ); ?>
-								</i>
-							</article>	
-							<?php endwhile; ?>
-						<?php endif; ?>
-						<?php if ( have_rows( 'voip_phone_systems' ) ) : ?>
-							<?php while ( have_rows( 'voip_phone_systems' ) ) : the_row(); ?>
-							<article class="services__card">
-								<h3 class="services__title">
-									<?php the_sub_field( 'title' ); ?>
-								</h3>
-								<i class="services__icon">
-									<?php the_sub_field( 'icon' ); ?>
-								</i>
-							</article>	
-							<?php endwhile; ?>
-						<?php endif; ?>
-						<?php if ( have_rows( 'video_surveillance_systems' ) ) : ?>
-							<?php while ( have_rows( 'video_surveillance_systems' ) ) : the_row(); ?>
-							<article class="services__card">
-								<h3 class="services__title">
-									<?php the_sub_field( 'title' ); ?>
-								</h3>
-								<i class="services__icon">
-									<?php the_sub_field( 'icon' ); ?>
-								</i>
-							</article>	
-							<?php endwhile; ?>
-						<?php endif; ?>
+						<div class="services__card">
+							<?php if ( have_rows( 'servers' ) ) : ?>
+								<?php while ( have_rows( 'servers' ) ) : the_row(); ?>
+									<i class="fa <?php the_sub_field( 'icon' ); ?>"></i>
+									<h3>
+										<?php the_sub_field( 'title' ); ?>
+									</h3>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>	
+						<div class="services__card">
+							<?php if ( have_rows( 'data_backup_recovery' ) ) : ?>
+								<?php while ( have_rows( 'data_backup_recovery' ) ) : the_row(); ?>
+									<i class="fa <?php the_sub_field( 'icon' ); ?>"></i>
+
+									<h3>
+										<?php the_sub_field( 'title' ); ?>
+									</h3>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>	
+						<div class="services__card">
+							<?php if ( have_rows( 'workstations' ) ) : ?>
+								<?php while ( have_rows( 'workstations' ) ) : the_row(); ?>
+									<i class="fa <?php the_sub_field( 'icon' ); ?>"></i>
+
+									<h3>
+										<?php the_sub_field( 'title' ); ?>
+									</h3>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>	
+						<div class="services__card">
+							<?php if ( have_rows( 'networking' ) ) : ?>
+								<?php while ( have_rows( 'networking' ) ) : the_row(); ?>
+									<i class="fa <?php the_sub_field( 'icon' ); ?>"></i>
+									<h3>
+										<?php the_sub_field( 'title' ); ?>
+									</h3>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>	
+						<div class="services__card">
+							<?php if ( have_rows( 'microsoft_office_solutions' ) ) : ?>
+								<?php while ( have_rows( 'microsoft_office_solutions' ) ) : the_row(); ?>
+									<i class="fa <?php the_sub_field( 'icon' ); ?>"></i>
+									<h3>
+										<?php the_sub_field( 'title' ); ?>
+									</h3>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>	
+						<div class="services__card">
+							<?php if ( have_rows( 'cloud_solutions' ) ) : ?>
+								<?php while ( have_rows( 'cloud_solutions' ) ) : the_row(); ?>
+									<i class="fa <?php the_sub_field( 'icon' ); ?>"></i>
+
+									<h3>
+										<?php the_sub_field( 'title' ); ?>
+									</h3>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>	
+						<div class="services__card">
+							<?php if ( have_rows( 'voip_phone_systems' ) ) : ?>
+								<?php while ( have_rows( 'voip_phone_systems' ) ) : the_row(); ?>
+									<i class="fa <?php the_sub_field( 'icon' ); ?>"></i>
+
+									<h3>
+										<?php the_sub_field( 'title' ); ?>
+									</h3>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>	
+						<div class="services__card">
+							<?php if ( have_rows( 'video_surveillance_systems' ) ) : ?>
+								<?php while ( have_rows( 'video_surveillance_systems' ) ) : the_row(); ?>
+									<i class="fa <?php the_sub_field( 'icon' ); ?>"></i>
+									<h3>
+										<?php the_sub_field( 'title' ); ?>
+									</h3>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>	
 				<?php endwhile; ?>
 			<?php else : ?>
 				<?php // no rows found ?>
 			<?php endif; ?>
 		<?php endwhile; ?>
 	<?php endif; ?>
-	</div>
+	
 </section>
 
 
-<!-- Contract vs Non-Contract -->
-<section class="contract-container">
+<!--Contract vs Non-Contract -->
+<!--<section class="contract-container">
   	<div class="contract-title">
 	<?php if ( have_rows( 'contract_section' ) ) : ?>
 		<?php while ( have_rows( 'contract_section' ) ) : the_row(); ?>
@@ -219,7 +205,7 @@
 						<?php if ( have_rows( 'contract_item_1' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_1' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
-								<i><?php the_sub_field( 'icon' ); ?></i>
+								<img><?php the_sub_field( 'icon' ); ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
@@ -229,7 +215,7 @@
 						<?php if ( have_rows( 'contract_item_2' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_2' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
-								<i><?php the_sub_field( 'icon' ); ?></i>
+								<img><?php the_sub_field( 'icon' ); ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
@@ -239,7 +225,7 @@
 						<?php if ( have_rows( 'contract_item_3' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_3' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
-								<i><?php the_sub_field( 'icon' ); ?></i>
+								<img><?php the_sub_field( 'icon' ); ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
@@ -249,7 +235,7 @@
 						<?php if ( have_rows( 'contract_item_4' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_4' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
-								<i><?php the_sub_field( 'icon' ); ?></i>
+								<img><?php the_sub_field( 'icon' ); ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
@@ -259,7 +245,7 @@
 						<?php if ( have_rows( 'contract_item_5' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_5' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
-								<i><?php the_sub_field( 'icon' ); ?></i>
+								<img><?php the_sub_field( 'icon' ); ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
@@ -279,7 +265,7 @@
 						<?php if ( have_rows( 'non-contract_item_1' ) ) : ?>
 							<?php while ( have_rows( 'non-contract_item_1' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
-								<i><?php the_sub_field( 'icon' ); ?></i>
+								<img><?php the_sub_field( 'icon' ); ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
@@ -289,7 +275,7 @@
 						<?php if ( have_rows( 'non-contract_item_2' ) ) : ?>
 							<?php while ( have_rows( 'non-contract_item_2' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
-								<i><?php the_sub_field( 'icon' ); ?></i>
+								<img><?php the_sub_field( 'icon' ); ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
@@ -299,7 +285,7 @@
 						<?php if ( have_rows( 'non-contract_item_3' ) ) : ?>
 							<?php while ( have_rows( 'non-contract_item_3' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
-								<i><?php the_sub_field( 'icon' ); ?></i>
+								<img><?php the_sub_field( 'icon' ); ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
@@ -309,7 +295,7 @@
 						<?php if ( have_rows( 'non-contract_item_4' ) ) : ?>
 							<?php while ( have_rows( 'non-contract_item_4' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
-								<i><?php the_sub_field( 'icon' ); ?></i>
+								<img><?php the_sub_field( 'icon' ); ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
@@ -319,10 +305,10 @@
 						<?php if ( have_rows( 'non-contract_item_5' ) ) : ?>
 							<?php while ( have_rows( 'non-contract_item_5' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
-								<i><?php $icon = get_sub_field( 'icon' ); ?>
+								<img><?php $icon = get_sub_field( 'icon' ); ?>
 								<?php if ( $icon ) : ?>
 									<img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
-								<?php endif; ?></i>
+								<?php endif; ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
 					</div>
@@ -344,7 +330,7 @@
 </section>
 
 
-<!-- Why Managed IT? -->
+Why Managed IT?
 <?php if ( have_rows( 'why_mit_section' ) ) : ?>
 	<?php while ( have_rows( 'why_mit_section' ) ) : the_row(); ?>
 		<?php the_sub_field( 'why_mit_section_title' ); ?>
@@ -402,7 +388,7 @@
 <?php endif; ?>
 
 
-<!-- Testimonials -->
+Testimonials
 <?php if ( have_rows( 'testimonials' ) ) : ?>
 	<?php while ( have_rows( 'testimonials' ) ) : the_row(); ?>
 		<?php if ( have_rows( 'testimonial_1' ) ) : ?>
@@ -418,7 +404,7 @@
 	<?php endwhile; ?>
 <?php else : ?>
 	<?php // no rows found ?>
-<?php endif; ?>
+<?php endif; ?> -->
 
 
 <!-- end #content -->

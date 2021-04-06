@@ -2,7 +2,31 @@
 $primaryFont: 'Interstate Greek and Cyrillic Reg';
 $iconFont: 'icomoon';
 
-/* typography in baseline.scss */
+// Breakpoints
+@media (min-width: 64em){
+  // styles go here
+}
+
+// 640px, 1024px, 1400px
+$breakpoints-up: ("medium": 40em, "large": 64em, "xlarge": 87.5em);
+
+// 639px, 1023px, 1399px
+$breakpoints-down: ("small": 39.9375em, "medium": 63.9375em, "large": 87.4375em);
+
+@mixin breakpoint-up($size){
+  @media (min-width: map-get($breakpoints-up, $size)){
+	@content;
+  }
+}
+
+@mixin breakpoint-down($size){
+  @media (max-width: map-get($breakpoints-down, $size)){
+	@content;
+  }
+}
+
+
+/* typography */
 
 @font-face {
 	font-family: "Interstate Greek and Cyrillic Bd";
@@ -29,7 +53,7 @@ $iconFont: 'icomoon';
   $navy-90: rgba(32, 41, 69, 0.9) !important;
   
   
-  
+
 	
 	@mixin h1leftwhite {
 	  font-family: "Interstate Greek and Cyrillic Bd";
@@ -233,6 +257,8 @@ button, .button {
 	border: none;
 }
 
+
+// Flexbox
 .flex {
 	display: flex;
 
@@ -247,10 +273,58 @@ button, .button {
 	}
 }
 
+
+
+// Spacing
 .container {
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
-}
+	// max-width: 69.375rem;
+	margin: 0 auto;
+  
+	&--pall {
+	  padding-top: 4.375rem;
+	  padding-right: 1.5rem;
+	  padding-bottom: 4.375rem;
+	  padding-left: 1.5rem;
+  
+	  @include breakpoint-up(large){
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	  }
+	}
+	&--py {
+	  padding-top: 4.375rem;
+	  padding-bottom: 4.375rem;
+	  
+	  @include breakpoint-up(large){
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	  }
+	}
+	&--px {
+	  padding-right: 1.5rem;
+	  padding-left: 1.5rem;
+	}
+	&--pt {
+	  padding-top: 4.375rem;
+	  
+	  @include breakpoint-up(large){
+		padding-top: 6rem;
+	  }
+	}
+	&--pr {
+	  padding-right: 1.5rem;
+	}
+	&--pb {
+	  padding-bottom: 4.375rem;
+	  
+	  @include breakpoint-up(large){
+		padding-bottom: 6rem;
+	  }
+	}
+	&--pl {
+	  padding-left: 1.5rem;
+	}
+  }
 // .container {
 //     position: relative;
 // 	margin-left: auto;
@@ -465,29 +539,6 @@ img{
 
 
 
-// Breakpoints
-
-@media (min-width: 64em){
-	// styles go here
-  }
-  
-  // 640px, 1024px, 1400px
-  $breakpoints-up: (medium: "40em", large: "64em", xlarge: "87.5em");
-  
-  // 639px, 1023px, 1399px
-  $breakpoints-down: (small: "39.9375em", medium: "63.9375em", large: "87.4375em");
-  
-  @mixin breakpoint-up($size){
-	@media only screen and (min-width: map-get($breakpoints-up, $size)){
-	  @content;
-	}
-  }
-  
-  @mixin breakpoint-down($size){
-	@media only screen and (max-width: map-get($breakpoints-down, $size)){
-	  @content;
-	}
-  }
 
 
 //   Visibility
