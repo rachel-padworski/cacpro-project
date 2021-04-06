@@ -1,25 +1,18 @@
 .contract {
     width: 100%;
     &__title {
-        padding-top: 70px;
-        padding-bottom: 50px;
-        text-align: center;
-        margin: 0 0 50px;
-        @include h4blue;
-        font-size: 25px;
-        line-height: 35px;
+        padding: 70px 80px 50px 80px;
+        @include h2centerblue;
     }
     &__lists {
         justify-content: center;
         align-items: center;
+        font-size: 18px !important;
         
-
         @include breakpoint-up(medium){
             display: flex;
             flex-wrap: wrap;
-            padding-right: 8.438rem;
-            padding-left: 8.438rem;
-            
+            width: 100%;
         }
         ul {
             list-style-type: none;
@@ -28,24 +21,53 @@
             
             li {
                 position: relative;
+                margin-top: 10px;
+                border-bottom: 2px solid $light-periwinkle;
             }
         }
     }
     &__items {
+        background-color: $sky;
+        padding: 30px 20px;
+        color: $navy;
+        align-items: center;
+        text-align: left;
+        
+        
         @include breakpoint-up(medium){
+            padding: 80px 60px 80px 180px;
             width: 50%;
+            clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%);
         }
         i{
-            display: inline-block;
-            float: right;
-            position: relative;
-            top: 5px;
-            left: 5px;
+            
+            display: flex;
+            justify-content: space-between;
+            color: $blue;
+        }
+    }
+    &__li-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        span {
+            font-size: 1.5rem;
+            line-height: 2rem;
         }
     }
     &__nonitems {
+        
+        padding: 20px 0;
+        color: $blue-slate;
+
         @include breakpoint-up(medium){
+            padding: 80px 180px 80px 60px;
             width: 50%;
+        }
+        i{
+            display: flex;
+            justify-content: space-between;
+            color: $blue-slate;
         }
     }
 }

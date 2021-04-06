@@ -25,3 +25,13 @@
 04/06/21 3:39:59: style.scss - parse error: failed at `background-b` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_services.scss on line 42, at column 13
 04/06/21 4:16:25: style.scss - parse error: failed at `padding: 8px` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_services.scss on line 42, at column 13
 04/06/21 4:30:36: style.scss - parse error: failed at `max-width: ` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_services.scss on line 27, at column 9
+04/06/21 8:19:38: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
+04/06/21 8:21:39: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
+04/06/21 8:23:18: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
+04/06/21 8:23:20: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
+04/06/21 8:23:21: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
+04/06/21 8:23:21: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
+04/06/21 8:23:22: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
+04/06/21 8:24:26: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
+04/06/21 8:25:26: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
+04/06/21 8:27:06: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5

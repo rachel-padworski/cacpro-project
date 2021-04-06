@@ -1321,7 +1321,7 @@
                                     "key": "field_6058cf869bbdb",
                                     "label": "Icon",
                                     "name": "icon",
-                                    "type": "image",
+                                    "type": "font-awesome",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1330,16 +1330,19 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
-                                    "preview_size": "thumbnail",
-                                    "library": "",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    "icon_sets": [
+                                        "fas",
+                                        "far"
+                                    ],
+                                    "custom_icon_set": "ACFFA_custom_icon_list_v5_ContractIcons",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "element",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 0,
+                                    "fa_live_preview": "",
+                                    "choices": []
                                 }
                             ]
                         },
@@ -1381,7 +1384,7 @@
                                     "key": "field_6058cf979bbde",
                                     "label": "Icon",
                                     "name": "icon",
-                                    "type": "image",
+                                    "type": "font-awesome",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1390,16 +1393,19 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
-                                    "preview_size": "thumbnail",
-                                    "library": "",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    "icon_sets": [
+                                        "fas",
+                                        "far"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "element",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 0,
+                                    "fa_live_preview": "",
+                                    "choices": []
                                 }
                             ]
                         },
@@ -1441,7 +1447,7 @@
                                     "key": "field_6058cf999bbe1",
                                     "label": "Icon",
                                     "name": "icon",
-                                    "type": "image",
+                                    "type": "font-awesome",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1450,16 +1456,19 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
-                                    "preview_size": "thumbnail",
-                                    "library": "",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    "icon_sets": [
+                                        "fas",
+                                        "far"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "element",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 0,
+                                    "fa_live_preview": "",
+                                    "choices": []
                                 }
                             ]
                         },
@@ -1501,7 +1510,7 @@
                                     "key": "field_6058cf9c9bbe4",
                                     "label": "Icon",
                                     "name": "icon",
-                                    "type": "image",
+                                    "type": "font-awesome",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1510,16 +1519,19 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
-                                    "preview_size": "thumbnail",
-                                    "library": "",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    "icon_sets": [
+                                        "fas",
+                                        "far"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "element",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 0,
+                                    "fa_live_preview": "",
+                                    "choices": []
                                 }
                             ]
                         },
@@ -1561,7 +1573,7 @@
                                     "key": "field_6058cf9d9bbe7",
                                     "label": "Icon",
                                     "name": "icon",
-                                    "type": "image",
+                                    "type": "font-awesome",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1570,16 +1582,19 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    "icon_sets": [
+                                        "fas",
+                                        "far"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "element",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 0,
+                                    "fa_live_preview": "",
+                                    "choices": []
                                 }
                             ]
                         }
@@ -1704,6 +1719,32 @@
                             "layout": "block",
                             "sub_fields": [
                                 {
+                                    "key": "field_6058c11f8d5ea",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "font-awesome",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "icon_sets": [
+                                        "far"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "class",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 0,
+                                    "fa_live_preview": "",
+                                    "choices": []
+                                },
+                                {
                                     "key": "field_6058c0f58d5e9",
                                     "label": "Title",
                                     "name": "title",
@@ -1723,10 +1764,10 @@
                                     "maxlength": ""
                                 },
                                 {
-                                    "key": "field_6058c11f8d5ea",
-                                    "label": "Icon",
-                                    "name": "icon",
-                                    "type": "image",
+                                    "key": "field_606ccdad8995d",
+                                    "label": "Paragraph",
+                                    "name": "paragraph",
+                                    "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1735,16 +1776,11 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": 100,
+                                    "rows": "",
+                                    "new_lines": ""
                                 }
                             ]
                         },
@@ -1763,6 +1799,32 @@
                             },
                             "layout": "block",
                             "sub_fields": [
+                                {
+                                    "key": "field_6058c1468d5ed",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "font-awesome",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "icon_sets": [
+                                        "far"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "class",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 0,
+                                    "fa_live_preview": "",
+                                    "choices": []
+                                },
                                 {
                                     "key": "field_6058c1468d5ec",
                                     "label": "Title",
@@ -1783,10 +1845,10 @@
                                     "maxlength": ""
                                 },
                                 {
-                                    "key": "field_6058c1468d5ed",
-                                    "label": "Icon",
-                                    "name": "icon",
-                                    "type": "image",
+                                    "key": "field_606ccdde8995e",
+                                    "label": "Paragraph",
+                                    "name": "paragraph",
+                                    "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1795,16 +1857,11 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
                                 }
                             ]
                         },
@@ -1823,6 +1880,32 @@
                             },
                             "layout": "block",
                             "sub_fields": [
+                                {
+                                    "key": "field_6058c1938d5f0",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "font-awesome",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "icon_sets": [
+                                        "far"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "class",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 0,
+                                    "fa_live_preview": "",
+                                    "choices": []
+                                },
                                 {
                                     "key": "field_6058c1938d5ef",
                                     "label": "Title",
@@ -1843,10 +1926,10 @@
                                     "maxlength": ""
                                 },
                                 {
-                                    "key": "field_6058c1938d5f0",
-                                    "label": "Icon",
-                                    "name": "icon",
-                                    "type": "image",
+                                    "key": "field_606ccdf38995f",
+                                    "label": "Paragraph",
+                                    "name": "paragraph",
+                                    "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1855,16 +1938,11 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
                                 }
                             ]
                         },
@@ -1883,6 +1961,32 @@
                             },
                             "layout": "block",
                             "sub_fields": [
+                                {
+                                    "key": "field_6058c1c18d5f3",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "font-awesome",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "icon_sets": [
+                                        "far"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "class",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 0,
+                                    "fa_live_preview": "",
+                                    "choices": []
+                                },
                                 {
                                     "key": "field_6058c1c18d5f2",
                                     "label": "Title",
@@ -1903,10 +2007,10 @@
                                     "maxlength": ""
                                 },
                                 {
-                                    "key": "field_6058c1c18d5f3",
-                                    "label": "Icon",
-                                    "name": "icon",
-                                    "type": "image",
+                                    "key": "field_606cce0689960",
+                                    "label": "Paragraph",
+                                    "name": "paragraph",
+                                    "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1915,16 +2019,11 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
                                 }
                             ]
                         }
@@ -2090,5 +2189,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1617676924
+    "modified": 1617744356
 }

@@ -472,7 +472,8 @@ img {
 
 .services {
   background-color: #f1f3f9 !important;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 30px; }
   .services h4 {
     padding-top: 70px;
     padding-bottom: 50px;
@@ -530,44 +531,94 @@ img {
 .contract {
   width: 100%; }
   .contract__title {
-    padding-top: 70px;
-    padding-bottom: 50px;
-    text-align: center;
-    margin: 0 0 50px;
+    padding: 70px 80px 50px 80px;
     font-family: "Interstate Greek and Cyrillic Bd";
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #202945 !important;
     font-size: 25px;
-    line-height: 35px; }
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #202945 !important; }
   .contract__lists {
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    font-size: 18px !important; }
   @media (min-width: 40em) {
     .contract__lists {
       display: flex;
       flex-wrap: wrap;
-      padding-right: 8.438rem;
-      padding-left: 8.438rem; } }
+      width: 100%; } }
   .contract__lists ul {
     list-style-type: none;
     padding-left: 0;
     padding-right: 15px; }
     .contract__lists ul li {
-      position: relative; }
-@media (min-width: 40em) {
+      position: relative;
+      margin-top: 10px;
+      border-bottom: 2px solid #e2e3e6 !important; }
   .contract__items {
-    width: 50%; } }
-.contract__items i {
-  display: inline-block;
-  float: right;
-  position: relative;
-  top: 5px;
-  left: 5px; }
-@media (min-width: 40em) {
+    background-color: #f1f3f9 !important;
+    padding: 30px 20px;
+    color: #202945 !important;
+    align-items: center;
+    text-align: left; }
+  @media (min-width: 40em) {
+    .contract__items {
+      padding: 80px 60px 80px 180px;
+      width: 50%;
+      clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%); } }
+  .contract__items i {
+    display: flex;
+    justify-content: space-between;
+    color: #00a0df !important; }
+  .contract__li-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0; }
+    .contract__li-content span {
+      font-size: 1.5rem;
+      line-height: 2rem; }
   .contract__nonitems {
-    width: 50%; } }
+    padding: 20px 0;
+    color: #686e81 !important; }
+  @media (min-width: 40em) {
+    .contract__nonitems {
+      padding: 80px 180px 80px 60px;
+      width: 50%; } }
+  .contract__nonitems i {
+    display: flex;
+    justify-content: space-between;
+    color: #686e81 !important; }
+
+.why-mit {
+  padding-top: 200px; }
+  .why-mit__title {
+    padding: 50px 100px;
+    text-align: left;
+    font-family: "Interstate Greek and Cyrillic Bd";
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: #202945 !important; }
+  .why-mit__list {
+    display: flex; }
+  @media (min-width: 40em) {
+    .why-mit__list {
+      flex: 0 0 50%; } }
+  .why-mit__list ul {
+    list-style: none; }
+  .why-mit__list li {
+    width: auto; }
+    .why-mit__list li i {
+      font-size: 35px;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      padding: 8px 15px 8px 0;
+      color: #00a0df !important;
+      background-color: rgba(75, 141, 167, 0.1);
+      border-radius: 50px; }
 
 /* page.scss */
 /* home.scss */
