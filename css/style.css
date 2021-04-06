@@ -527,6 +527,48 @@ img {
     display: inline-block;
     flex-wrap: wrap; } }
 
+.contract {
+  width: 100%; }
+  .contract__title {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: 0 0 50px;
+    font-family: "Interstate Greek and Cyrillic Bd";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #202945 !important;
+    font-size: 25px;
+    line-height: 35px; }
+  .contract__lists {
+    justify-content: center;
+    align-items: center; }
+  @media (min-width: 40em) {
+    .contract__lists {
+      display: flex;
+      flex-wrap: wrap;
+      padding-right: 8.438rem;
+      padding-left: 8.438rem; } }
+  .contract__lists ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 15px; }
+    .contract__lists ul li {
+      position: relative; }
+@media (min-width: 40em) {
+  .contract__items {
+    width: 50%; } }
+.contract__items i {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 5px;
+  left: 5px; }
+@media (min-width: 40em) {
+  .contract__nonitems {
+    width: 50%; } }
+
 /* page.scss */
 /* home.scss */
 /* footer.scss */

@@ -10,9 +10,42 @@
         line-height: 35px;
     }
     &__lists {
+        justify-content: center;
+        align-items: center;
+        
 
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 8.438rem;
+            padding-left: 8.438rem;
+            
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            padding-right: 15px;
+            
+            li {
+                position: relative;
+            }
+        }
+    }
+    &__items {
+        @include breakpoint-up(medium){
+            width: 50%;
+        }
+        i{
+            display: inline-block;
+            float: right;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
     }
     &__nonitems {
-
+        @include breakpoint-up(medium){
+            width: 50%;
+        }
     }
 }

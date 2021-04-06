@@ -201,14 +201,14 @@
 			<?php while ( have_rows( 'contract_items' ) ) : the_row(); ?>
 			<ul>
        			<li>
-				   <div class="contract__1">
+				   
 						<?php if ( have_rows( 'contract_item_1' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_1' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
 								<img><?php the_sub_field( 'icon' ); ?></img>
 							<?php endwhile; ?>
 						<?php endif; ?>
-					</div>
+					
 				</li>
 				<li>
 					<div class="contract__2">
@@ -330,7 +330,7 @@
 </section>
 
 
-Why Managed IT?
+<!--Why Managed IT?-->
 <!-- <?php if ( have_rows( 'why_mit_section' ) ) : ?>
 	<?php while ( have_rows( 'why_mit_section' ) ) : the_row(); ?>
 		<?php the_sub_field( 'why_mit_section_title' ); ?>
