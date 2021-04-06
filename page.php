@@ -82,7 +82,7 @@
 
 
 <!-- Services -->
-<section class="services container container--pall">
+<section class="services container">
 
 		<h4>
 		<?php if ( have_rows( 'services_section' ) ) : ?>
@@ -189,19 +189,19 @@
 
 
 <!--Contract vs Non-Contract -->
-<!--<section class="contract-container">
-  	<div class="contract-title">
+<section class="contract">
+  	<div class="contract__title">
 	<?php if ( have_rows( 'contract_section' ) ) : ?>
 		<?php while ( have_rows( 'contract_section' ) ) : the_row(); ?>
 		<?php the_sub_field( 'contract_vs_non-contract_title' ); ?>
 	</div>
-  	<div class="contract-lists">
-    	<div class="contract-items">
+  	<div class="contract__lists">
+    	<div class="contract__items">
 		<?php if ( have_rows( 'contract_items' ) ) : ?>
 			<?php while ( have_rows( 'contract_items' ) ) : the_row(); ?>
 			<ul>
        			<li>
-				   <div class="contract-item-1">
+				   <div class="contract__1">
 						<?php if ( have_rows( 'contract_item_1' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_1' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
@@ -211,7 +211,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="contract-item-2">
+					<div class="contract__2">
 						<?php if ( have_rows( 'contract_item_2' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_2' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
@@ -221,7 +221,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="contract-item-3">
+					<div class="contract__3">
 						<?php if ( have_rows( 'contract_item_3' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_3' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
@@ -231,7 +231,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="contract-item-4">
+					<div class="contract__4">
 						<?php if ( have_rows( 'contract_item_4' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_4' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
@@ -241,7 +241,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="contract-item-5">
+					<div class="contract__5">
 						<?php if ( have_rows( 'contract_item_5' ) ) : ?>
 							<?php while ( have_rows( 'contract_item_5' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
@@ -256,12 +256,12 @@
 			<?php endif; ?>
 			</ul>
 		</div>
-		<div class="non-contract-items">
+		<div class="contract__nonitems">
 		<?php if ( have_rows( 'non-contract_items' ) ) : ?>
 			<?php while ( have_rows( 'non-contract_items' ) ) : the_row(); ?>
 			<ul>
 				<li>
-					<div class="non-contract-item-1">
+					<div class="contract__non1">
 						<?php if ( have_rows( 'non-contract_item_1' ) ) : ?>
 							<?php while ( have_rows( 'non-contract_item_1' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
@@ -271,7 +271,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="non-contract-item-2">
+					<div class="contract__non2">
 						<?php if ( have_rows( 'non-contract_item_2' ) ) : ?>
 							<?php while ( have_rows( 'non-contract_item_2' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
@@ -281,7 +281,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="non-contract-item-3">
+					<div class="contract__non3">
 						<?php if ( have_rows( 'non-contract_item_3' ) ) : ?>
 							<?php while ( have_rows( 'non-contract_item_3' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
@@ -291,7 +291,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="non-contract-item-4">
+					<div class="contract__non4">
 						<?php if ( have_rows( 'non-contract_item_4' ) ) : ?>
 							<?php while ( have_rows( 'non-contract_item_4' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
@@ -301,7 +301,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="non-contract-item-5">
+					<div class="contract__non5">
 						<?php if ( have_rows( 'non-contract_item_5' ) ) : ?>
 							<?php while ( have_rows( 'non-contract_item_5' ) ) : the_row(); ?>
 								<h3><?php the_sub_field( 'title' ); ?></h3>
@@ -319,7 +319,7 @@
 			<?php endif; ?>
 		</ul>
 		</div>
-	<div class="background-image">
+	<div class="contract__bkgimage">
 		<?php $background_image = get_sub_field( 'background_image' ); ?>
 		<?php if ( $background_image ) : ?>
 			<img src="<?php echo esc_url( $background_image['url'] ); ?>" alt="<?php echo esc_attr( $background_image['alt'] ); ?>" />
@@ -331,7 +331,7 @@
 
 
 Why Managed IT?
-<?php if ( have_rows( 'why_mit_section' ) ) : ?>
+<!-- <?php if ( have_rows( 'why_mit_section' ) ) : ?>
 	<?php while ( have_rows( 'why_mit_section' ) ) : the_row(); ?>
 		<?php the_sub_field( 'why_mit_section_title' ); ?>
 		<?php $why_mit_image = get_sub_field( 'why_mit_image' ); ?>

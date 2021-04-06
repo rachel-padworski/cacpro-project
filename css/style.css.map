@@ -9,6 +9,7 @@
         "_hero.scss",
         "_partners.scss",
         "_services.scss",
+        "_contracts.scss",
         "_page.scss",
         "_home.scss",
         "_footer.scss"
