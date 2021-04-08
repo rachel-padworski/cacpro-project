@@ -1,26 +1,73 @@
 .why-mit {
     padding-top: 200px;
-
-    img {
+    &__grid {
+        width: 100%;
+        @include breakpoint-up(medium){
+            display: flex;
+        }
     }
-    &__div {
+    &__img {
+        float: left;
+        background-repeat: no-repeat;
+        
+        @include breakpoint-down(small){
+            width: 100%;
+        }
+        
+        @include breakpoint-up(large){
+            width: 25%;
+            float: left;
+            // flex: 1;
+        }
+        // background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/04/Screen-Shot-2021-04-06-at-10.07.41-PM.png');
+       
+        // -ms-background-position-x: center;
+        // -ms-background-position-y: bottom;
+        // background-position: center bottom;
+        // background-size: cover;
 
+        // ie8 workaround - http://louisremi.github.io/background-size-polyfill/
+        // -ms-behavior: url(/backgroundsize.min.htc);
+
+        // @include breakpoint-up(medium) {
+        //     img {
+        //         height: 320px;
+        //     }
+        // }
+        // @include breakpoint-up(large) {
+        //     img {
+        //         height: 400px;
+        //     }
+        // }
+    }
+    &__text {
+        @include breakpoint-up(large){
+            width: 75%;
+        }
     }
     &__title {
-        padding: 50px 100px;
+        padding-left: 9%;
         text-align: left;
         @include h2leftblue;
     }
     &__list {
-        display: flex;
         @include breakpoint-up(medium){
-            flex: 0 0 50%;
+            display: flex;
+            flex-wrap: wrap;
         }
+        
         ul {
             list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
         }
         li {
-            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            width: 350px;
             i {
                 font-size: 35px;
                 text-align: center;
@@ -32,14 +79,31 @@
                 border-radius: 50px;
             }
             h3 {
-
+                padding: 20px;
+                @include h3leftblue;
             }
             p {
-
+                padding-left: 70px;
+                @include bodyleftgrey;
             }
         }
     }
     &__btn {
-
+        width: 190px;
+        height: 58px;
+        padding: 1.063rem;
+        margin-left: 9%;
+        justify-content: center;
+        text-align: center;
+        text-transform:capitalize;
+        cursor: pointer;
+        border: 3px solid;
+        border-color: $blue;
+        @include h4blue;
+        &:hover {
+            background-color: $navy;
+            color: $white;
+            border: none;
+        }
     }
 }

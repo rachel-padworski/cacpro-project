@@ -249,12 +249,13 @@ body {
 
 a, a:visited, a:hover {
 	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
 }
 
 button, .button {
 	padding: 1.063rem 2.063rem;
 	cursor: pointer;
-	border: none;
 }
 
 

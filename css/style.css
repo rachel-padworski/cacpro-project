@@ -53,12 +53,13 @@ body {
     overflow: hidden; }
 
 a, a:visited, a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
 
 button, .button {
   padding: 1.063rem 2.063rem;
-  cursor: pointer;
-  border: none; }
+  cursor: pointer; }
 
 .flex {
   display: flex; }
@@ -351,7 +352,8 @@ img {
   padding-bottom: 6.25rem; }
   .site-header__logo img {
     width: 15.25rem;
-    max-height: 3.688rem; }
+    max-height: 3.688rem;
+    padding-left: 20px; }
 .site-header__menu {
   position: absolute;
   width: 100%;
@@ -394,6 +396,10 @@ img {
     background-position: center center;
     min-height: 40.313rem;
     width: 100%; }
+  @media (min-width: 40em) {
+    .hero__image {
+      width: 75%;
+      clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%); } }
   .hero__text {
     text-align: left;
     position: relative;
@@ -473,19 +479,18 @@ img {
 .services {
   background-color: #f1f3f9 !important;
   width: 100%;
-  padding-bottom: 30px; }
+  padding-bottom: 1.875rem; }
   .services h4 {
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 4.375rem;
+    padding-bottom: 3.125rem;
     text-align: center;
-    margin: 0 0 50px;
     font-family: "Interstate Greek and Cyrillic Bd";
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #202945 !important;
-    font-size: 25px;
-    line-height: 35px; }
+    font-size: 1.5rem;
+    line-height: 2.188rem; }
   .services__cards {
     justify-content: center;
     align-items: center; }
@@ -496,10 +501,10 @@ img {
       padding-right: 8.438rem;
       padding-left: 8.438rem; } }
   .services__card {
-    padding: 0.9375rem;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 30px;
+    padding: 2rem;
+    margin-right: 0.938rem;
+    margin-left: 0.938rem;
+    margin-bottom: 0.75rem;
     background-color: #fff !important; }
   @media (min-width: 40em) {
     .services__card {
@@ -531,7 +536,7 @@ img {
 .contract {
   width: 100%; }
   .contract__title {
-    padding: 70px 80px 50px 80px;
+    padding: 3.75rem 5rem 3.125rem 5rem;
     font-family: "Interstate Greek and Cyrillic Bd";
     font-size: 25px;
     font-weight: bold;
@@ -541,8 +546,7 @@ img {
     color: #202945 !important; }
   .contract__lists {
     justify-content: center;
-    align-items: center;
-    font-size: 18px !important; }
+    align-items: center; }
   @media (min-width: 40em) {
     .contract__lists {
       display: flex;
@@ -558,13 +562,13 @@ img {
       border-bottom: 2px solid #e2e3e6 !important; }
   .contract__items {
     background-color: #f1f3f9 !important;
-    padding: 30px 20px;
+    padding: 55px 20px 75px;
     color: #202945 !important;
     align-items: center;
     text-align: left; }
   @media (min-width: 40em) {
     .contract__items {
-      padding: 80px 60px 80px 180px;
+      padding: 5rem 60px 5rem 15rem;
       width: 50%;
       clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%); } }
   .contract__items i {
@@ -577,13 +581,13 @@ img {
     padding: 20px 0; }
     .contract__li-content span {
       font-size: 1.5rem;
-      line-height: 2rem; }
+      line-height: 1.48rem; }
   .contract__nonitems {
-    padding: 20px 0;
+    padding: 50px 20px;
     color: #686e81 !important; }
   @media (min-width: 40em) {
     .contract__nonitems {
-      padding: 80px 180px 80px 60px;
+      padding: 5rem 15rem 5rem 60px;
       width: 50%; } }
   .contract__nonitems i {
     display: flex;
@@ -592,33 +596,89 @@ img {
 
 .why-mit {
   padding-top: 200px; }
-  .why-mit__title {
-    padding: 50px 100px;
-    text-align: left;
-    font-family: "Interstate Greek and Cyrillic Bd";
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 1.4;
-    letter-spacing: 1px;
-    color: #202945 !important; }
-  .why-mit__list {
-    display: flex; }
+  .why-mit__grid {
+    width: 100%; }
   @media (min-width: 40em) {
-    .why-mit__list {
-      flex: 0 0 50%; } }
-  .why-mit__list ul {
-    list-style: none; }
-  .why-mit__list li {
-    width: auto; }
-    .why-mit__list li i {
-      font-size: 35px;
-      text-align: center;
-      width: 50px;
-      height: 50px;
-      padding: 8px 15px 8px 0;
-      color: #00a0df !important;
-      background-color: rgba(75, 141, 167, 0.1);
-      border-radius: 50px; }
+    .why-mit__grid {
+      display: flex; } }
+  .why-mit__img {
+    float: left;
+    background-repeat: no-repeat; }
+  @media (max-width: 39.9375em) {
+    .why-mit__img {
+      width: 100%; } }
+@media (min-width: 64em) {
+  .why-mit__img {
+    width: 25%;
+    float: left; } }
+@media (min-width: 64em) {
+  .why-mit__text {
+    width: 75%; } }
+.why-mit__title {
+  padding-left: 9%;
+  text-align: left;
+  font-family: "Interstate Greek and Cyrillic Bd";
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  color: #202945 !important; }
+@media (min-width: 40em) {
+  .why-mit__list {
+    display: flex;
+    flex-wrap: wrap; } }
+.why-mit__list ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px; }
+.why-mit__list li {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 350px; }
+  .why-mit__list li i {
+    font-size: 35px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 8px 15px 8px 0;
+    color: #00a0df !important;
+    background-color: rgba(75, 141, 167, 0.1);
+    border-radius: 50px; }
+  .why-mit__list li h3 {
+    padding: 20px;
+    font-family: "Interstate Greek and Cyrillic Reg";
+    font-size: 22px;
+    line-height: 1.36;
+    color: #202945 !important; }
+  .why-mit__list li p {
+    padding-left: 70px;
+    font-family: "Interstate Greek and Cyrillic Reg";
+    font-size: 18px;
+    line-height: 1.67;
+    color: #686e81 !important; }
+.why-mit__btn {
+  width: 190px;
+  height: 58px;
+  padding: 1.063rem;
+  margin-left: 9%;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 3px solid;
+  border-color: #00a0df !important;
+  font-family: "Interstate Greek and Cyrillic Bd";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #202945 !important; }
+  .why-mit__btn:hover {
+    background-color: #202945 !important;
+    color: #fff !important;
+    border: none; }
 
 /* page.scss */
 /* home.scss */
