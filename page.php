@@ -420,6 +420,13 @@
 	<?php // no rows found ?>
 <?php endif; ?>-->
 
+<section class="contact">
+	<?php $contact_us = get_field( 'contact_us' ); ?>
+	<?php if ( $contact_us ) : ?>
+		<?php gravity_form( $contact_us['id'] ); ?>
+	<?php endif; ?>
+</section>
+
 
 <!-- end #content -->
 
