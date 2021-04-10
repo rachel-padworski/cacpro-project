@@ -700,6 +700,59 @@ img {
       margin: 0 60px;
       border: 3px solid; } }
 
+body #gform_wrapper_1 {
+  background-color: #f1f3f9 !important;
+  padding: 60px; }
+  body #gform_wrapper_1 .gform_title {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "Interstate Greek and Cyrillic Bd";
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #202945 !important; }
+  body #gform_wrapper_1 .gfield_required {
+    color: #00a0df !important; }
+  body #gform_wrapper_1 [type="checkbox"]:not(:checked), body #gform_wrapper_1 [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px; }
+  body #gform_wrapper_1 [type="checkbox"]:not(:checked) + label, body #gform_wrapper_1 [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer; }
+  body #gform_wrapper_1 [type="checkbox"]:not(:checked) + label:before, body #gform_wrapper_1 [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 20px;
+    height: 25px;
+    background: #fff;
+    border-radius: 3px;
+    background-color: #fff !important;
+    outline: none; }
+  body #gform_wrapper_1 [type="checkbox"]:not(:checked) + label:after, body #gform_wrapper_1 [type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    font-size: 12px;
+    line-height: 0.8;
+    color: #00a0df !important;
+    transition: all 0.2s; }
+  body #gform_wrapper_1 [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0); }
+  body #gform_wrapper_1 [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1); }
+  body #gform_wrapper_1 input, body #gform_wrapper_1 textarea {
+    border: none; }
+    body #gform_wrapper_1 input:hover, body #gform_wrapper_1 textarea:hover {
+      box-shadow: #686e81 !important; }
+
 /* page.scss */
 /* home.scss */
 /* footer.scss */
