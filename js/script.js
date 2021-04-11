@@ -23,3 +23,12 @@ btnHamburger.addEventListener('click', function() {
         })
     }
 });
+
+// Swiper
+const swiper = new Swiper('.swiper-container', {
+    speed: 400,
+    spaceBetween: 100,
+  });
+
+const swiper = document.querySelector('.swiper-container').swiper;
+// end Swiper

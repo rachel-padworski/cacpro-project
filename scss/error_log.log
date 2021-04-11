@@ -35,3 +35,5 @@
 04/06/21 8:24:26: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
 04/06/21 8:25:26: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
 04/06/21 8:27:06: style.scss - parse error: failed at `&__` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_why-mit.scss on line 9, at column 5
+04/10/21 5:39:07: style.scss - parse error: failed at `font-weight: ` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_contact.scss on line 50, at column 5
+04/10/21 8:40:47: style.scss - parse error: failed at `box-shadow: ;` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_contact.scss on line 72, at column 9

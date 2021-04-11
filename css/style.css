@@ -702,8 +702,14 @@ img {
 
 body #gform_wrapper_1 {
   background-color: #f1f3f9 !important;
-  padding: 60px; }
+  padding: 130px;
+  font-weight: normal;
+  font-family: "Interstate Greek and Cyrillic Reg";
+  font-size: 22px;
+  line-height: 1.36;
+  color: #686e81 !important; }
   body #gform_wrapper_1 .gform_title {
+    padding-bottom: 20px;
     text-align: center;
     text-transform: capitalize;
     font-family: "Interstate Greek and Cyrillic Bd";
@@ -714,22 +720,23 @@ body #gform_wrapper_1 {
     text-align: center;
     color: #202945 !important; }
   body #gform_wrapper_1 .gfield_required {
-    color: #00a0df !important; }
-  body #gform_wrapper_1 [type="checkbox"]:not(:checked), body #gform_wrapper_1 [type="checkbox"]:checked {
+    color: #00a0df !important;
+    /* checkbox */ }
+  body #gform_wrapper_1 input[type="checkbox"]:not(:checked), body #gform_wrapper_1 input[type="checkbox"]:checked {
     position: absolute;
     left: -9999px; }
-  body #gform_wrapper_1 [type="checkbox"]:not(:checked) + label, body #gform_wrapper_1 [type="checkbox"]:checked + label {
+  body #gform_wrapper_1 input[type="checkbox"]:not(:checked) + label, body #gform_wrapper_1 input[type="checkbox"]:checked + label {
     position: relative;
     padding-left: 25px;
     cursor: pointer; }
-  body #gform_wrapper_1 [type="checkbox"]:not(:checked) + label:before, body #gform_wrapper_1 [type="checkbox"]:checked + label:before {
+  body #gform_wrapper_1 input[type="checkbox"]:not(:checked) + label:before, body #gform_wrapper_1 input[type="checkbox"]:checked + label:before {
     content: '';
     position: absolute;
     left: 0;
     top: -5px;
     width: 20px;
     height: 25px;
-    background: #fff;
+    background: #fff !important;
     border-radius: 3px;
     background-color: #fff !important;
     outline: none; }
@@ -748,10 +755,25 @@ body #gform_wrapper_1 {
   body #gform_wrapper_1 [type="checkbox"]:checked + label:after {
     opacity: 1;
     transform: scale(1); }
+  body #gform_wrapper_1 label {
+    font-weight: 100; }
+  body #gform_wrapper_1 label:hover {
+    font-weight: 900; }
+  body #gform_wrapper_1 [type="checkbox"]:checked + label {
+    font-weight: 900;
+    /* end checkbox */ }
   body #gform_wrapper_1 input, body #gform_wrapper_1 textarea {
     border: none; }
-    body #gform_wrapper_1 input:hover, body #gform_wrapper_1 textarea:hover {
-      box-shadow: #686e81 !important; }
+  body #gform_wrapper_1 .ginput_container input:hover, body #gform_wrapper_1 textarea:hover {
+    box-shadow: 0 4px 13px -8px rgba(0, 0, 0, 0.4); }
+
+.gf_right_third {
+  grid-area: 1 / col3-start / last-line / 3; }
+
+.gform_footer input[type="submit"] {
+  background-color: #00a0df !important;
+  color: #fff !important;
+  float: right; }
 
 /* page.scss */
 /* home.scss */

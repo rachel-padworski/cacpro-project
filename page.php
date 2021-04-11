@@ -403,23 +403,51 @@
 
 
 <!-- Testimonials -->
-<!--<?php if ( have_rows( 'testimonials' ) ) : ?>
-	<?php while ( have_rows( 'testimonials' ) ) : the_row(); ?>
-		<?php if ( have_rows( 'testimonial_1' ) ) : ?>
-			<?php while ( have_rows( 'testimonial_1' ) ) : the_row(); ?>
-				<?php the_sub_field( 'icon' ); ?>
-				<?php the_sub_field( 'text' ); ?>
-				<?php $logo = get_sub_field( 'logo' ); ?>
-				<?php if ( $logo ) : ?>
-					<img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" />
+<!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+	  <!-- Slides -->
+		<?php if ( have_rows( 'testimonials' ) ) : ?>
+			<?php while ( have_rows( 'testimonials' ) ) : the_row(); ?>
+				<div class="swiper-slide"><?php if ( have_rows( 'testimonial_1' ) ) : ?>
+					<?php while ( have_rows( 'testimonial_1' ) ) : the_row(); ?>
+						<?php the_sub_field( 'icon' ); ?>
+						<?php the_sub_field( 'text' ); ?>
+						<?php $logo = get_sub_field( 'logo' ); ?>
+						<?php if ( $logo ) : ?>
+							<img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" />
+						<?php endif; ?>
+					<?php endwhile; ?>
+				</div>
+				<?php endif; ?>
+				<div class="swiper-slide"><?php if ( have_rows( 'testimonial_1' ) ) : ?>
+					<?php while ( have_rows( 'testimonial_2' ) ) : the_row(); ?>
+						<?php the_sub_field( 'icon' ); ?>
+						<?php the_sub_field( 'text' ); ?>
+						<?php $logo = get_sub_field( 'logo' ); ?>
+						<?php if ( $logo ) : ?>
+							<img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" />
+						<?php endif; ?>
+					<?php endwhile; ?>
+				</div>
 				<?php endif; ?>
 			<?php endwhile; ?>
+		<?php else : ?>
+			<?php // no rows found ?>
 		<?php endif; ?>
-	<?php endwhile; ?>
-<?php else : ?>
-	<?php // no rows found ?>
-<?php endif; ?>-->
 
+  </div>
+  <!-- pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+
+<!-- Contact Form -->
 <section class="contact">
 	<?php $contact_us = get_field( 'contact_us' ); ?>
 	<?php if ( $contact_us ) : ?>

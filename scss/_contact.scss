@@ -1,13 +1,12 @@
-// .contact {
-//     // #gform_wrapper_1.gf_browser_chrome.gform_wrapper.contact_wrapper{
-//     //     background-color: $light-periwinkle;
-//     //     padding: 40px;
 
-//     // }
 body #gform_wrapper_1 {
     background-color: $sky;
-    padding: 60px;
+    padding: 130px;
+    font-weight: normal;
+    @include h3leftgrey;
+
     .gform_title {
+        padding-bottom: 20px;
         text-align: center;
         text-transform: capitalize;
         @include h2centerblue;
@@ -16,44 +15,45 @@ body #gform_wrapper_1 {
         color: $blue;
     }
 
+    /* checkbox */
 
-    [type="checkbox"]:not(:checked),
-    [type="checkbox"]:checked {
-    position: absolute;
-    left: -9999px;
+    input[type="checkbox"]:not(:checked),
+    input[type="checkbox"]:checked {
+        position: absolute;
+        left: -9999px;
     }
 
-    [type="checkbox"]:not(:checked)+label,
-    [type="checkbox"]:checked+label {
-    position: relative;
-    padding-left: 25px;
-    cursor: pointer;
+    input[type="checkbox"]:not(:checked)+label,
+    input[type="checkbox"]:checked+label {
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
     }
 
-    [type="checkbox"]:not(:checked)+label:before,
-    [type="checkbox"]:checked+label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: -5px;
-    width: 20px;
-    height: 25px;
-    background: #fff;
-    border-radius: 3px;
-    background-color: $white;
-    outline: none;
+    input[type="checkbox"]:not(:checked)+label:before,
+    input[type="checkbox"]:checked+label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -5px;
+        width: 20px;
+        height: 25px;
+        background: $white;
+        border-radius: 3px;
+        background-color: $white;
+        outline: none;
     }
 
     [type="checkbox"]:not(:checked)+label:after,
     [type="checkbox"]:checked+label:after {
-    content: '✔';
-    position: absolute;
-    top: 3px;
-    left: 5px;
-    font-size: 12px;
-    line-height: 0.8;
-    color: $blue;
-    transition: all .2s;
+        content: '✔';
+        position: absolute;
+        top: 3px;
+        left: 5px;
+        font-size: 12px;
+        line-height: 0.8;
+        color: $blue;
+        transition: all .2s;
     }
 
     [type="checkbox"]:not(:checked)+label:after {
@@ -65,17 +65,38 @@ body #gform_wrapper_1 {
     opacity: 1;
     transform: scale(1);
     }
+   
+    label {
+        font-weight: 100;
+    }
+    label:hover{
+        font-weight: 900;
+    }
+    [type="checkbox"]:checked+label{
+        font-weight: 900;
+    }
+    /* end checkbox */
 
+    
     input, textarea {
         border: none;
-        &:hover{
-            box-shadow: $blue-slate;
-        }
+    }
+    .ginput_container input:hover, textarea:hover{
+        box-shadow: 0 4px 13px -8px rgba(0,0,0,0.4);
     }
     
 }
 
+.gf_right_third {
+    grid-area: 1 / col3-start / last-line / 3
+}
+
+.gform_footer{
+    input[type="submit"]{
+        background-color: $blue;
+        color: $white;
+        float: right;
+    }
+}
 
 
-    
-// }
