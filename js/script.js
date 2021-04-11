@@ -1,3 +1,13 @@
+// imports Swiper JS
+import Swiper from 'swiper';
+// imports Swiper styles
+import 'swiper/swiper-bundle.css';
+  // core version + navigation, pagination modules:
+import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+
+// configures Swiper to use modules
+SwiperCore.use([Navigation, Pagination]);
+
 const btnHamburger = document.querySelector('#btnHamburger');
 const body = document.querySelector('body');
 const header = document.querySelector('.site-header');
