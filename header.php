@@ -48,7 +48,7 @@
 		<div class="overlay has-fade"></div>
 
 		<!-- begin navbar -->
-		<nav class="container flex flex-jc-sb flex-ai-c">
+		<nav class="container flex  flex-ai-c"> <!-- flex-jc-sb -->
 			<a href="<?php echo site_url(); ?>" class="site-header__logo">
 				<?php $logo = get_field( 'logo' ); ?>
 				<?php if ( $logo ) : ?>
@@ -64,7 +64,7 @@
 				
 			<?php $support_button = get_field( 'support_button' ); ?>
 			<?php if ( $support_button ) : ?>
-				<a href="<?php echo esc_url( $support_button['url'] ); ?>" class="button site-header__btn hide-for-mobile" target="<?php echo esc_attr( $support_button['target'] ); ?>"><?php echo esc_html( $support_button['title'] ); ?></a>
+				<a href="<?php echo esc_url( $support_button['url'] ); ?>" class="site-header__btn hide-for-mobile" target="<?php echo esc_attr( $support_button['target'] ); ?>"><?php echo esc_html( $support_button['title'] ); ?></a>
 			<?php endif; ?>
 
 						

@@ -1,4 +1,4 @@
-			<div class="push"></div>
+			
 		</div> <!-- end .wrap -->
 
 <!-- begin footer -->

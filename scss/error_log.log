@@ -39,3 +39,12 @@
 04/10/21 8:40:47: style.scss - parse error: failed at `box-shadow: ;` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_contact.scss on line 72, at column 9
 04/12/21 4:37:48: style.scss - Undefined variable $themeColor: /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_swiper.scss on line 62, at column 3
 04/12/21 4:39:49: style.scss - Undefined variable $themeColor: /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_swiper.scss on line 62, at column 3
+04/12/21 4:41:51: style.scss - Undefined variable $themeColor: /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_swiper.scss on line 62, at column 3
+04/12/21 5:28:30: style.scss - parse error: failed at `b` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_header.scss on line 108, at column 7
+04/12/21 1:58:42: style.scss - parse error: failed at `text-transform:` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_header.scss on line 19, at column 5
+04/12/21 2:33:13: style.scss - parse error: failed at `justify-content: ;` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_header.scss on line 15, at column 5
+04/12/21 3:21:46: style.scss - unclosed block: failed at `` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_header.scss on line 371, at column 0
+04/12/21 3:23:52: style.scss - unclosed block: failed at `` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_header.scss on line 371, at column 0
+04/12/21 4:22:22: style.scss - Undefined mixin break: /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_hero.scss on line 43, at column 9
+04/12/21 6:11:31: style.scss - parse error: failed at `text-` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_hero.scss on line 68, at column 13
+04/12/21 8:57:57: style.scss - parse error: failed at `font-size: ;` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_hero.scss on line 64, at column 17

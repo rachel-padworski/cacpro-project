@@ -2,9 +2,20 @@
     position: relative;
     align-items: center;
     text-align: center;
+    @include breakpoint-up(medium){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     
     &__span {
         width: 100%;
+        @include breakpoint-up(medium){
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
     }
     
     &__title {
@@ -12,6 +23,13 @@
         padding-bottom: 1.313rem;
         @include h4blue;
         font-size: 14px;
+        @include breakpoint-up(medium){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 200px;
+        }
     }
 
     &__logos {
@@ -22,6 +40,10 @@
         width: 100%;
         overflow: hidden;
         margin-bottom: 37px;
+        @include breakpoint-up(medium){
+            justify-content: left;
+            padding: 20px;
+        }
         
     
         .dell {
