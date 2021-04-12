@@ -37,6 +37,8 @@
 	<!-- end font -->
 	<!-- <link rel="stylesheet" href="./css/style.css"> -->
 	<link rel="index" title="<?php bloginfo( 'name' ); ?>" href="<?php echo get_option('home'); ?>/" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<?php wp_head(); ?>
 </head>
 <body id="preload" <?php body_class(); ?>>

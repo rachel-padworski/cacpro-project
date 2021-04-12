@@ -412,22 +412,22 @@
 			<?php while ( have_rows( 'testimonials' ) ) : the_row(); ?>
 				<div class="swiper-slide"><?php if ( have_rows( 'testimonial_1' ) ) : ?>
 					<?php while ( have_rows( 'testimonial_1' ) ) : the_row(); ?>
-						<?php the_sub_field( 'icon' ); ?>
-						<?php the_sub_field( 'text' ); ?>
+						<span class="icon"><?php the_sub_field( 'icon' ); ?></span>
+						<span class="text"><?php the_sub_field( 'text' ); ?></span>
 						<?php $logo = get_sub_field( 'logo' ); ?>
 						<?php if ( $logo ) : ?>
-							<img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" />
+							<span><img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" /></span>
 						<?php endif; ?>
 					<?php endwhile; ?>
 				</div>
 				<?php endif; ?>
 				<div class="swiper-slide"><?php if ( have_rows( 'testimonial_1' ) ) : ?>
 					<?php while ( have_rows( 'testimonial_2' ) ) : the_row(); ?>
-						<?php the_sub_field( 'icon' ); ?>
-						<?php the_sub_field( 'text' ); ?>
+						<span class="icon"><?php the_sub_field( 'icon' ); ?></span>
+						<span class="text"><?php the_sub_field( 'text' ); ?></span>
 						<?php $logo = get_sub_field( 'logo' ); ?>
 						<?php if ( $logo ) : ?>
-							<img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" />
+							<span><img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" /></span>
 						<?php endif; ?>
 					<?php endwhile; ?>
 				</div>
