@@ -545,9 +545,10 @@ img {
 .services {
   background-color: #f1f3f9 !important;
   width: 100%;
-  padding-bottom: 1.875rem; }
+  padding: 5.875rem 0;
+  margin: 1.5rem 0; }
   .services h4 {
-    padding-top: 4.375rem;
+    padding-top: 1.5rem;
     padding-bottom: 3.125rem;
     text-align: center;
     font-family: "Interstate Greek and Cyrillic Bd";
@@ -567,7 +568,10 @@ img {
       padding-right: 8.438rem;
       padding-left: 8.438rem; } }
   .services__card {
-    padding: 2rem;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    padding: 1rem;
     margin-right: 0.938rem;
     margin-left: 0.938rem;
     margin-bottom: 0.75rem;
@@ -577,26 +581,28 @@ img {
       flex: 0 0 50%; } }
 @media (min-width: 64em) {
   .services__card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 270px;
-    height: 230px;
-    flex: 1 0 25%; } }
+    height: 200px;
+    flex: 1 0 20%;
+    margin-bottom: 1.938rem; } }
 .services__card i {
   font-size: 35px;
-  text-align: center;
+  text-align: left;
   width: 50px;
   height: 50px;
   padding: 8px 15px 8px 0;
   color: #00a0df !important;
   background-color: rgba(75, 141, 167, 0.1);
-  border-radius: 50px; }
+  border-radius: 50px;
+  margin: 10%; }
 .services__card h3 {
-  font-family: "Interstate Greek and Cyrillic Reg";
-  font-size: 22px;
-  line-height: 1.36;
-  color: #202945 !important; }
+  font-size: 20px;
+  text-align: left; }
 @media (max-width: 39.9375em) {
   .services__card h3 {
-    display: inline-block;
     flex-wrap: wrap; } }
 
 .contract {
