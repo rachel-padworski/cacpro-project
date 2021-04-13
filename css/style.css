@@ -570,17 +570,19 @@ img {
   .services__card {
     display: flex;
     align-items: left;
-    justify-content: center;
     padding: 1rem;
     margin-right: 0.938rem;
     margin-left: 0.938rem;
     margin-bottom: 0.75rem;
     background-color: #fff !important; }
-  @media (min-width: 40em) {
+  @media (max-width: 63.9375em) {
     .services__card {
-      flex: 0 0 50%; } }
+      align-items: center;
+      justify-content: start;
+      flex: 1 0 50%; } }
 @media (min-width: 64em) {
   .services__card {
+    justify-content: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -598,6 +600,9 @@ img {
   background-color: rgba(75, 141, 167, 0.1);
   border-radius: 50px;
   margin: 10%; }
+@media (max-width: 39.9375em) {
+  .services__card i {
+    margin-left: 0; } }
 .services__card h3 {
   font-size: 20px;
   text-align: left; }
