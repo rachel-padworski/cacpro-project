@@ -28,7 +28,7 @@
 			<title><?php wp_title('', true, 'right'); echo ' | ' . get_bloginfo('name'); ?></title>
 	<?php
 		}
-	?>
+		?>
 	<meta name="MobileOptimized" content="width" />
 	<meta name="HandheldFriendly" content="True"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
@@ -37,18 +37,32 @@
 	<!-- end font -->
 	<!-- <link rel="stylesheet" href="./css/style.css"> -->
 	<link rel="index" title="<?php bloginfo( 'name' ); ?>" href="<?php echo get_option('home'); ?>/" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 	<?php wp_head(); ?>
 </head>
 <body id="preload" <?php body_class(); ?>>
-
+	
 	<!-- begin header -->
 	<header class="site-header" role="banner">
-		<div class="overlay has-fade"></div>
+		<!-- begin menu overlay -->
+		<div class="overlay hidden"></div>
+
+		<div id="mobile-menu"class="site-header__menu hidden">	
+			<a href="#services">OUR SERVICES</a>
+			<a href="#contractvsnoncontract">CONTRACT VS NON-CONTRACT</a>
+			<a href="#whymanagedit">WHY MANAGED IT?</a>
+			<a href="#contact">CONTACT US</a>
+			
+			<?php $support_button = get_field( 'support_button' ); ?>
+			<?php if ( $support_button ) : ?>
+				<a href="<?php echo esc_url( $support_button['url'] ); ?>" class="button site-header__btn" target="<?php echo esc_attr( $support_button['target'] ); ?>"><?php echo esc_html( $support_button['title'] ); ?></a>
+			<?php endif; ?>
+		</div>
+		<!--end menu overlay  -->
 
 		<!-- begin navbar -->
-		<nav class="container flex  flex-ai-c"> <!-- flex-jc-sb -->
+		<nav class="container flex flex-jc-sb flex-ai-c"> <!-- flex-jc-sb -->
 			<a href="<?php echo site_url(); ?>" class="site-header__logo">
 				<?php $logo = get_field( 'logo' ); ?>
 				<?php if ( $logo ) : ?>
@@ -70,20 +84,6 @@
 						
 		</nav>
 		<!-- end navbar -->
-		<!-- begin menu overlay -->
-		<div class="site-header__menu hide-for-desktop has-fade">	
-		
-			<a href="#services">OUR SERVICES</a>
-			<a href="#contractvsnoncontract">CONTRACT VS NON-CONTRACT</a>
-			<a href="#whymanagedit">WHY MANAGED IT?</a>
-			<a href="#contact">CONTACT US</a>
-			
-			<?php $support_button = get_field( 'support_button' ); ?>
-			<?php if ( $support_button ) : ?>
-				<a href="<?php echo esc_url( $support_button['url'] ); ?>" class="button site-header__btn hide-for-desktop" target="<?php echo esc_attr( $support_button['target'] ); ?>"><?php echo esc_html( $support_button['title'] ); ?></a>
-			<?php endif; ?>
-		</div>
-		<!--end menu overlay  -->
 					
 		
 	

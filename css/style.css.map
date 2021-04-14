@@ -10,6 +10,7 @@
         "_partners.scss",
         "_services.scss",
         "_contracts.scss",
+        "_swiper.scss",
         "_page.scss",
         "_home.scss",
         "_footer.scss"

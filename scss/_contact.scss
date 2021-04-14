@@ -5,6 +5,9 @@ body #gform_wrapper_1 {
     font-weight: normal;
     @include h3leftgrey;
     margin-bottom: 0;
+    @include breakpoint-down(small){
+        padding: 100px 15px 175px;
+    }
 
     .gform_title {
         padding-bottom: 20px;
@@ -93,11 +96,20 @@ body #gform_wrapper_1 {
 }
 
 .gform_footer{
+    position: relative;
     input[type="submit"]{
         background-color: $blue;
         color: $white;
         float: right;
+        @include breakpoint-down(small){
+            width: 40% !important;
+            float: none;
+            position: absolute;
+            top: 150%;
+            right: 30%;
+        }
     }
+
 }
 
 

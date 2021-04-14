@@ -30,7 +30,7 @@
         }
     }
     &__text {
-        @include breakpoint-up(large){
+        @include breakpoint-up(medium){
             width: 70%;
             padding: 60px;
         }
@@ -40,7 +40,7 @@
         text-align: left;
         @include h2leftblue;
 
-        @include breakpoint-up(large){
+        @include breakpoint-up(medium){
             padding: 25px 60px;
         }
     }
@@ -67,7 +67,6 @@
             flex-wrap: wrap;
             padding: 20px 0;
             width: 350px;
-            // max-width: 450px;
             i {
                 font-size: 35px;
                 text-align: center;

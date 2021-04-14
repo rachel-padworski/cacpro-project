@@ -1,20 +1,24 @@
-// Swiper
+// // Swiper
 
-// // imports Swiper JS
-// import Swiper from 'swiper';
-// // imports Swiper styles
-// import 'swiper/swiper-bundle.css';
-//   // core version + navigation, pagination modules:
-// import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+// imports Swiper JS
+import Swiper from 'swiper';
+// imports Swiper styles
+import 'swiper/swiper-bundle.css';
+  // core version + navigation, pagination modules:
+import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 
-// // configures Swiper to use modules
-// SwiperCore.use([Navigation, Pagination]);
+// configures Swiper to use modules
+SwiperCore.use([Navigation, Pagination]);
 
 
-var swiper = new Swiper('.swiper-container', {
-    speed: 400,
-    spaceBetween: 100,
+const swiper = new Swiper('.swiper-container', {
+    // speed: 400,
+    // spaceBetween: 100,
    
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
@@ -22,5 +26,6 @@ var swiper = new Swiper('.swiper-container', {
     },
   });
 
-// const swiper = document.querySelector('.swiper-container').swiper;
+const swiper = document.querySelector('.swiper-container').swiper;
+swiper.slideNext()
 // end Swiper

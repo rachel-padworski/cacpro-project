@@ -1,9 +1,28 @@
 /* footer.scss */
 
 .site-footer {
-    width: 1440px;
-    height: 150px;
-    padding: 58px 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    object-fit: contain;
+    padding: 1.875rem;
     background-color: $navy;
-    // @import bodyleftgrey;
+    &__container{
+        text-align: center;
+    }
+    &__copyright{
+        padding: 1.25rem;
+        @include bodyleftgrey;
+        img{
+            width: 1.563rem;
+            height: 1.563rem;
+            color: $white;
+        }
+    }
+    &__cacpro{
+        padding: 1.25rem;
+        @include bodyleftgrey;
+    }
 }

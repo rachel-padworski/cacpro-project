@@ -76,5 +76,10 @@
             }
         }
     }
+    &__card:hover{
+        box-shadow: 0 4px 10px 0px rgba(0,0,0,0.4);
+        transition: box-shadow 0.2s ease-in-out
+    }
+   
     
 }

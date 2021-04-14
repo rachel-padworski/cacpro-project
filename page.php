@@ -44,23 +44,23 @@
 					<?php while ( have_rows( 'partners' ) ) : the_row(); ?>
 						<?php $dell = get_sub_field( 'dell' ); ?>
 						<?php if ( $dell ) : ?>
-							<img class="dell" id="dell-logo" src="<?php echo esc_url( $dell['url'] ); ?>" alt="<?php echo esc_attr( $dell['alt'] ); ?>" />
+							<a href="https://www.dell.com/en-us"><img class="dell" id="dell-logo" src="<?php echo esc_url( $dell['url'] ); ?>" alt="<?php echo esc_attr( $dell['alt'] ); ?>" /></a>
 						<?php endif; ?>
 						<?php $lenovo = get_sub_field( 'lenovo' ); ?>
 						<?php if ( $lenovo ) : ?>
-							<img class="lenovo" id="lenovo-logo" src="<?php echo esc_url( $lenovo['url'] ); ?>" alt="<?php echo esc_attr( $lenovo['alt'] ); ?>" />
+							<a href="https://www.lenovo.com/us/en/"><img class="lenovo" id="lenovo-logo" src="<?php echo esc_url( $lenovo['url'] ); ?>" alt="<?php echo esc_attr( $lenovo['alt'] ); ?>" /></a>
 						<?php endif; ?>
 						<?php $sonic_wall = get_sub_field( 'sonic_wall' ); ?>
 						<?php if ( $sonic_wall ) : ?>
-							<img class="sonic-wall" id="sonic-wall-logo" src="<?php echo esc_url( $sonic_wall['url'] ); ?>" alt="<?php echo esc_attr( $sonic_wall['alt'] ); ?>" />
+							<a href="https://www.sonicwall.com/"><img class="sonic-wall" id="sonic-wall-logo" src="<?php echo esc_url( $sonic_wall['url'] ); ?>" alt="<?php echo esc_attr( $sonic_wall['alt'] ); ?>" /></a>
 						<?php endif; ?>
 						<?php $datto = get_sub_field( 'datto' ); ?>
 						<?php if ( $datto ) : ?>
-							<img class="datto" id="datto-logo" src="<?php echo esc_url( $datto['url'] ); ?>" alt="<?php echo esc_attr( $datto['alt'] ); ?>" />
+							<a href="https://www.datto.com/"><img class="datto" id="datto-logo" src="<?php echo esc_url( $datto['url'] ); ?>" alt="<?php echo esc_attr( $datto['alt'] ); ?>" /></a>
 						<?php endif; ?>
 						<?php $apc = get_sub_field( 'apc' ); ?>
 						<?php if ( $apc ) : ?>
-							<img class="apc" id="apc-logo" src="<?php echo esc_url( $apc['url'] ); ?>" alt="<?php echo esc_attr( $apc['alt'] ); ?>" />
+							<a href="https://www.apc.com/us/en/"><img class="apc" id="apc-logo" src="<?php echo esc_url( $apc['url'] ); ?>" alt="<?php echo esc_attr( $apc['alt'] ); ?>" /></a>
 						<?php endif; ?>
 					<?php endwhile; ?>
 				<?php else : ?>
@@ -430,14 +430,14 @@
 			<?php // no rows found ?>
 		<?php endif; ?>
 
-  </div>
-  <!-- pagination -->
-  <div class="swiper-pagination"></div>
+  	</div>
+
+	<!-- <div class="swiper-pagination"></div> -->
 
   <!-- navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+  
 </div>
 
 <!-- Contact Form -->
