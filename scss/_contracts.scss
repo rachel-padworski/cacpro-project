@@ -7,11 +7,10 @@
     &__lists {
         justify-content: center;
         align-items: center;
-        // font-size: 18px !important;
         
-        @include breakpoint-up(medium){
+        @include breakpoint-up(large){
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             width: 100%;
         }
         ul {
@@ -34,13 +33,12 @@
         text-align: left;
         
         
-        @include breakpoint-up(medium){
+        @include breakpoint-up(large){
             padding: 5rem 60px 5rem 15rem;
             width: 50%;
             clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%);
         }
         i{
-            
             display: flex;
             justify-content: space-between;
             color: $blue;
@@ -56,11 +54,11 @@
         }
     }
     &__nonitems {
-        
+        flex-wrap: nowrap;
         padding: 50px 20px;
         color: $blue-slate;
 
-        @include breakpoint-up(medium){
+        @include breakpoint-up(large){
             padding: 5rem 15rem 5rem 60px;
             width: 50%;
         }

@@ -675,10 +675,10 @@ img {
   .contract__lists {
     justify-content: center;
     align-items: center; }
-  @media (min-width: 40em) {
+  @media (min-width: 64em) {
     .contract__lists {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       width: 100%; } }
   .contract__lists ul {
     list-style-type: none;
@@ -694,7 +694,7 @@ img {
     color: #202945 !important;
     align-items: center;
     text-align: left; }
-  @media (min-width: 40em) {
+  @media (min-width: 64em) {
     .contract__items {
       padding: 5rem 60px 5rem 15rem;
       width: 50%;
@@ -711,9 +711,10 @@ img {
       font-size: 1.5rem;
       line-height: 1.48rem; }
   .contract__nonitems {
+    flex-wrap: nowrap;
     padding: 50px 20px;
     color: #686e81 !important; }
-  @media (min-width: 40em) {
+  @media (min-width: 64em) {
     .contract__nonitems {
       padding: 5rem 15rem 5rem 60px;
       width: 50%; } }
