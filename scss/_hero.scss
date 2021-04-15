@@ -29,24 +29,30 @@
             top: 106px;
             right: 0px;
             width: 600px;
+            
         }
     }
     
 
     &__text {
-        // display: flex;
-        // flex-direction: column;
-        position: relative;
+        display: block;
+        position: absolute;
         text-align: left;
-        width: 600px;
-        height: 450px;
-        top: -18.188rem;
-        left: 24.688rem;
-        transform: translate(-50%, -50%);
-        @include breakpoint-down(small){
-            left: 10.688rem;
-            width: 75%;
-            
+        width: 80%;
+        // height: 30%;
+        // top: -18.188rem;
+        // left: 21.688rem;
+        top: 50%;
+        left: 50%;
+        @include translate(-50%, -50%);
+        
+        @include breakpoint-up(medium){
+            @include translate(-75%, -50%);
+            width: 52%;
+        }
+        @include breakpoint-up(large){
+            @include translate(-124%, -50%);
+            width: 35%;
         }
         
         h1 {
@@ -71,15 +77,19 @@
         }
         
         .hero__btn {
-            // position: absolute;
             border: 2px solid $blue;
             cursor: pointer;
             width: 10.563rem;
             height: 3.125rem;
             padding: 1.063rem 2.188rem;
-            // top: 169%;
-            // left: 0%;
+            text-transform: capitalize;
             @include h4white;
+            &:hover{
+                @include transition;
+                background-color: $white;
+                color: $navy;
+                border: $white;
+            }
         }
     }
 

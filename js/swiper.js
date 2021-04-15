@@ -1,10 +1,10 @@
-// // Swiper
+// Swiper
 
 // imports Swiper JS
 import Swiper from 'swiper';
 // imports Swiper styles
 import 'swiper/swiper-bundle.css';
-  // core version + navigation, pagination modules:
+// core version + navigation, pagination modules:
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 
 // configures Swiper to use modules
@@ -26,6 +26,6 @@ const swiper = new Swiper('.swiper-container', {
     },
   });
 
-const swiper = document.querySelector('.swiper-container').swiper;
-swiper.slideNext()
+// const swiper = document.querySelector('.swiper-container').swiper;
+// swiper.slideNext()
 // end Swiper

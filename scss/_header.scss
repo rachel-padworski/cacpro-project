@@ -25,9 +25,6 @@
   &__toggle {
     > span {
       display: block;
-      // position: absolute;
-      // top: 50px;
-      // right: -145px;
       width: 31px;
       height: 2px;
       background-color: $white;
@@ -65,7 +62,7 @@
         width: 15.25rem;
         height: 3.688rem;
         padding-left: 20px;
-        margin-right: 80vw;
+        margin-right: 65vw;
       }
       
     }
@@ -115,6 +112,7 @@
     text-align: center;
     cursor: pointer;
     &:hover {
+      @include transition;
       background-color: $white;
       color: $navy;
     }
@@ -124,176 +122,4 @@
   }
 
   
-  // &__content {
-  //   // background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png');
-  //   // clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%);
-  //   &__background {
-  //     // background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png');
-      
-  //     // clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%);
-  //   }
-  // }
-  
-  // &__background {
-  //   display: relative;
-  //   // z-index: -50;
-  //   // top: 0;
-  //   // left: 0;
-  //   // width: 75%;
-  //   // height: 100%;
-  //   // display: block;
-  //   background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png');
-  //   clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%);
-  // }
 }
-
-
-
-  //   height: 100vh;
-  //   width: 100%;
-  //   margin: 0;
-  //   background: no-repeat top left;
-  //   background-size: cover;
-  //   // display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   position: relative;
-
-  //   &__background {
-  //     z-index: -50;
-  //     top: 0;
-  //     left: 0;
-  //     width: 75%;
-  //     height: 100%;
-  //     display: block;
-  //     clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%) 
-  //   }
-  //   &__content {
-  //     position: absolute;
-  //     top: 25%;
-  //     left: 6%;
-  //     display: flex;
-  //   }
-  // }
-
-  // .menu-container {
-  //   position: absolute;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   height: 60px;
-  //   width: 100vw;
-  //   padding: 2rem;
-  //   top: 0;
-  //   z-index: 1;
-
-  //   &__logo {
-  //     max-width: 162px;
-  //   }
-  //   &__btn {
-  //     max-width: 210px;
-  //     padding: 9px 25px;
-  //     background-color: $blue;
-  //     // color: $white;
-  //     border: none;
-  //     text-align: center;
-  //     list-style-type: none;
-  //     @include h4white;
-  //     &:hover {
-  //       text-decoration: none;
-  //       background-color: $white;
-  //       color: $navy;
-  //     }
-  //   }
-
-  // }
-  
-  // .title {
-  //   position: relative;
-  //   font-size: 4rem;
-  //   text-align: left;
-  //   padding: 2rem;
-  //   @include h1leftwhite;
-  // }
-
-  // .subtitle {
-  //   position: absolute;
-  //   margin: 2rem 0;
-  //   top: 20rem;
-  //   left: 2rem;
-  //   @include h3leftwhite;
-  // }
-
-  // .contact-btn {
-  //   position: absolute;
-  //   margin: 2rem;
-  //   top: 32rem;
-  //   left: 0rem;
-  //   @include h4white;
-  //   padding: 17px 35px;
-  //   background-color: $navy;
-  //   border: 2px solid $blue;
-  //   align-content: center;
-  //   &:hover {
-  //     text-decoration: none !important;
-  //     background-color: $white;
-  //     color: $navy;
-  //   }
-  // }
-
-  // .banner-img {
-  //   position: relative;
-  //   // top: 10%;
-  //   // left: 3%;
-  //   object-fit: contain;
-  // }
-
-  // .contact-btn {
-  //   width: 169px;
-  //   height: 50px;
-  //   margin: 50px 400px 0 1px;
-  //   object-fit: contain;
-  //   background-color: $navy;
-  //   color: $white;
-  //   border: 2px solid $blue;
-  //   padding: 17px 35px;
-  //   align-content: center;
-  //   @include h4white;
-  //   &:hover {
-  //     text-decoration: none;
-  //     background-color: $white;
-  //     color: $navy;
-  //   }
-  // }
-
-  // .support-btn {
-  //   width: 210px;
-  //   height: 50px;
-  //   padding: 17px 33px;
-  //   display: table-cell;
-  //   // text-align: center;
-  //   width: 25%;
-  //   padding: 1rem;
-  //   // align-self: flex-end;
-  //   // display: flex;
-  //   // flex-wrap: wrap;
-  //   // object-fit: contain;
-  //   // position: relative;
-  //   // top: 32px;
-  //   // right: 50px;
-  //   background-color: $blue;
-  //   border: none;
-  //   text-align: center;
-  //   @include h4white;
-  //   &:hover {
-  //     text-decoration: none;
-  //     background-color: $white;
-  //     color: $navy;
-  //   }
-  // }
-
-  
-
-
-

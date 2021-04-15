@@ -166,11 +166,11 @@ $breakpoints-down: ("small": 39.9375em, "medium": 63.9375em, "large": 87.4375em)
 }
 
 @mixin transform($transforms) {
-	   -moz-transform: $transforms;
-	     -o-transform: $transforms;
-	    -ms-transform: $transforms;
+		-moz-transform: $transforms;
+			-o-transform: $transforms;
+		-ms-transform: $transforms;
 	-webkit-transform: $transforms;
-          transform: $transforms;
+			transform: $transforms;
 }
 
  @mixin rotate($degrees) {

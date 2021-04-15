@@ -12,27 +12,28 @@
 <section class="hero">
 	<div class="hero__container">
 		<div class="hero__image"></div>
-		
-		<div class="hero__img2">
-			<?php $image = get_field( 'image' ); ?>
-			<?php if ( $image ) : ?>
-				<img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
-			<?php endif; ?>
+		<div class="animatedParent">
+			<div class="hero__img2 animated fadeInRight">
+				<?php $image = get_field( 'image' ); ?>
+				<?php if ( $image ) : ?>
+					<img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+				<?php endif; ?>
+			</div>
 		</div>
 
-		<div class="hero__text">
+		<div class="hero__text flex">
 			<h1><?php echo get_field('title'); ?></h1>
 			<h3><?php echo get_field('subtitle'); ?></h3>
 			<?php $contact_button = get_field( 'contact-button' ); ?>
 			<?php if ( $contact_button ) : ?>
-				<a href="<?php echo esc_url( $contact_button['url'] ); ?>" class="hero__btn" target="<?php echo esc_attr( $contact_button['target'] ); ?>"><?php echo esc_html( $contact_button['title'] ); ?></a>
+				<a href="<?php echo esc_url( $contact_button['url'] ); ?>" class="hero__btn animsition-link" target="<?php echo esc_attr( $contact_button['target'] ); ?>"><?php echo esc_html( $contact_button['title'] ); ?></a>
 			<?php endif; ?>
 		</div>
 	</div>
 </section>
 
 <!-- Our Partners -->
-<section class="partners">
+<section class="partners" id="partners-section">
 	<span class="partners__span">
 		<?php if ( have_rows( 'partners_section' ) ) : ?>
 			<?php while ( have_rows( 'partners_section' ) ) : the_row(); ?>
@@ -75,7 +76,7 @@
 
 
 <!-- Services -->
-<section class="services container">
+<section class="services container" id="services-section">
 
 		<h4>
 		<?php if ( have_rows( 'services_section' ) ) : ?>
@@ -182,7 +183,7 @@
 
 
 <!--Contract vs Non-Contract -->
-<section class="contract">
+<section class="contract" id="contract-section">
   	<div class="contract__title">
 		<?php if ( have_rows( 'contract_section' ) ) : ?>
 			<?php while ( have_rows( 'contract_section' ) ) : the_row(); ?>
@@ -321,7 +322,7 @@
 
 
 	<!--Why Managed IT?-->
-<section class="why-mit">
+<section class="why-mit" id="why-mit-section">
 	<div class="why-mit__grid">
 		<?php if ( have_rows( 'why_mit_section' ) ) : ?>
 			<?php while ( have_rows( 'why_mit_section' ) ) : the_row(); ?>
@@ -441,7 +442,7 @@
 </div>
 
 <!-- Contact Form -->
-<section class="contact">
+<section class="contact animsition" id="contact-us">
 	<?php $contact_us = get_field( 'contact_us' ); ?>
 	<?php if ( $contact_us ) : ?>
 		<?php gravity_form( $contact_us['id'] ); ?>

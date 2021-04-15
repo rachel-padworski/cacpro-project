@@ -4,6 +4,7 @@
  Author: Cross & Crown
  Author URI: http://cacpro.com/
  */
+@import "animsition";
 /* typography */
 @font-face {
   font-family: "Interstate Greek and Cyrillic Bd";
@@ -362,7 +363,7 @@ img {
     width: 15.25rem;
     height: 3.688rem;
     padding-left: 20px;
-    margin-right: 80vw; } }
+    margin-right: 65vw; } }
 .site-header .overlay {
   opacity: 0;
   position: fixed;
@@ -401,6 +402,11 @@ img {
   text-align: center;
   cursor: pointer; }
   .site-header__btn:hover {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background-color: #fff !important;
     color: #202945 !important; }
   @media (max-width: 39.9375em) {
@@ -433,47 +439,73 @@ img {
       right: 0px;
       width: 600px; } }
   .hero__text {
-    position: relative;
+    display: block;
+    position: absolute;
     text-align: left;
-    width: 600px;
-    height: 450px;
-    top: -18.188rem;
-    left: 24.688rem;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-  @media (max-width: 39.9375em) {
+  @media (min-width: 40em) {
     .hero__text {
-      left: 10.688rem;
-      width: 75%; } }
+      -moz-transform: translate(-75%, -50%);
+      -o-transform: translate(-75%, -50%);
+      -ms-transform: translate(-75%, -50%);
+      -webkit-transform: translate(-75%, -50%);
+      transform: translate(-75%, -50%);
+      width: 52%; } }
+@media (min-width: 64em) {
+  .hero__text {
+    -moz-transform: translate(-124%, -50%);
+    -o-transform: translate(-124%, -50%);
+    -ms-transform: translate(-124%, -50%);
+    -webkit-transform: translate(-124%, -50%);
+    transform: translate(-124%, -50%);
+    width: 35%; } }
+.hero__text h1 {
+  font-size: 5vw;
+  color: #fff !important;
+  text-align: left; }
+@media (max-width: 39.9375em) {
   .hero__text h1 {
-    font-size: 5vw;
-    color: #fff !important;
-    text-align: left; }
-  @media (max-width: 39.9375em) {
-    .hero__text h1 {
-      font-size: 8vw; } }
+    font-size: 8vw; } }
+.hero__text h3 {
+  padding: 20px 0;
+  width: 100%;
+  text-align: left;
+  font-size: 1.75vw;
+  margin-bottom: 20px;
+  font-family: "Interstate Greek and Cyrillic Reg";
+  font-size: 22px;
+  line-height: 1.36;
+  color: #e2e3e6 !important; }
+@media (max-width: 39.9375em) {
   .hero__text h3 {
-    padding: 20px 0;
-    width: 100%;
-    text-align: left;
-    font-size: 1.75vw;
-    margin-bottom: 20px;
-    font-family: "Interstate Greek and Cyrillic Reg";
-    font-size: 22px;
-    line-height: 1.36;
-    color: #e2e3e6 !important; }
-  @media (max-width: 39.9375em) {
-    .hero__text h3 {
-      width: 100%; } }
-  .hero__text .hero__btn {
-    border: 2px solid #00a0df !important;
-    cursor: pointer;
-    width: 10.563rem;
-    height: 3.125rem;
-    padding: 1.063rem 2.188rem;
-    font-family: "Interstate Greek and Cyrillic Reg";
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #fff !important; }
+    width: 100%; } }
+.hero__text .hero__btn {
+  border: 2px solid #00a0df !important;
+  cursor: pointer;
+  width: 10.563rem;
+  height: 3.125rem;
+  padding: 1.063rem 2.188rem;
+  text-transform: capitalize;
+  font-family: "Interstate Greek and Cyrillic Reg";
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff !important; }
+  .hero__text .hero__btn:hover {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #fff !important;
+    color: #202945 !important;
+    border: #fff !important; }
 
 .partners {
   position: relative;
@@ -623,7 +655,11 @@ img {
     flex-wrap: wrap; } }
 .services__card:hover {
   box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.2s ease-in-out; }
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
 
 .contract {
   width: 100%; }
@@ -929,7 +965,6 @@ body #gform_wrapper_1 .ginput_container input:hover, body #gform_wrapper_1 texta
       top: 150%;
       right: 30%; } }
 
-/* page.scss */
 /* home.scss */
 /* footer.scss */
 .site-footer {

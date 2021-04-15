@@ -42,27 +42,31 @@
 	<?php wp_head(); ?>
 </head>
 <body id="preload" <?php body_class(); ?>>
+
+	<div class="animsition">
 	
+	
+
 	<!-- begin header -->
 	<header class="site-header" role="banner">
 		<!-- begin menu overlay -->
 		<div class="overlay hidden"></div>
 
 		<div id="mobile-menu"class="site-header__menu hidden">	
-			<a href="#services">OUR SERVICES</a>
-			<a href="#contractvsnoncontract">CONTRACT VS NON-CONTRACT</a>
-			<a href="#whymanagedit">WHY MANAGED IT?</a>
-			<a href="#contact">CONTACT US</a>
+			<a href="#services-section">OUR SERVICES</a>
+			<a href="#contract-section">CONTRACT VS NON-CONTRACT</a>
+			<a href="#why-mit-section">WHY MANAGED IT?</a>
+			<a href="#contact-us">CONTACT US</a>
 			
 			<?php $support_button = get_field( 'support_button' ); ?>
 			<?php if ( $support_button ) : ?>
-				<a href="<?php echo esc_url( $support_button['url'] ); ?>" class="button site-header__btn" target="<?php echo esc_attr( $support_button['target'] ); ?>"><?php echo esc_html( $support_button['title'] ); ?></a>
+				<a href="<?php echo esc_url( $support_button['url'] ); ?>" class="site-header__btn button animsition-link" target="<?php echo esc_attr( $support_button['target'] ); ?>"><?php echo esc_html( $support_button['title'] ); ?></a>
 			<?php endif; ?>
 		</div>
 		<!--end menu overlay  -->
 
 		<!-- begin navbar -->
-		<nav class="container flex flex-jc-sb flex-ai-c"> <!-- flex-jc-sb -->
+		<nav class="container flex flex-ai-c">
 			<a href="<?php echo site_url(); ?>" class="site-header__logo">
 				<?php $logo = get_field( 'logo' ); ?>
 				<?php if ( $logo ) : ?>

@@ -50,3 +50,4 @@
 04/12/21 8:57:57: style.scss - parse error: failed at `font-size: ;` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_hero.scss on line 64, at column 17
 04/14/21 4:34:08: style.scss - parse error: failed at `margin-top: ;` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_header.scss on line 101, at column 5
 04/14/21 4:43:13: style.scss - parse error: failed at `.site-header__btn` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_header.scss on line 102, at column 5
+04/15/21 12:35:36: style.scss - parse error: failed at `.animsition-` /Users/rachelpadworski/Local Sites/managed-it-solutions/app/public/wp-content/themes/WordPress Theme/scss/_baseline.scss on line 512, at column 1
