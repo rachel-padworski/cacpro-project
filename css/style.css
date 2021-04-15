@@ -830,8 +830,8 @@ img {
       border: 3px solid; } }
 
 .swiper_container {
-  width: 600px;
-  height: 300px; }
+  max-width: 600px;
+  max-height: 300px; }
 
 .swiper-slide {
   text-align: center;
@@ -864,7 +864,7 @@ img {
 
 .swiper-slide .text {
   padding-top: 20px;
-  width: 80%;
+  width: 100%;
   font-size: 3vw;
   line-height: 1.55;
   font-weight: 100;
@@ -879,17 +879,27 @@ img {
     font-size: 24px; } }
 
 body #gform_wrapper_1 {
-  background-color: #f1f3f9 !important;
-  padding: 130px;
+  max-width: 100%;
+  margin-bottom: 0;
+  padding: 9.375rem;
+  text-align: center;
   font-weight: normal;
+  background-color: #f1f3f9 !important;
   font-family: "Interstate Greek and Cyrillic Reg";
   font-size: 22px;
   line-height: 1.36;
-  color: #686e81 !important;
-  margin-bottom: 0; }
-@media (max-width: 39.9375em) {
+  color: #686e81 !important; }
+@media (min-width: 64em) {
   body #gform_wrapper_1 {
-    padding: 100px 15px 175px; } }
+    padding: 11.938rem; } }
+body #gform_wrapper_1 ul#gform_fields_1 {
+  width: 60%;
+  padding-left: 1.25rem; }
+body #gform_wrapper_1 ul.column_2 {
+  width: 40%; }
+  body #gform_wrapper_1 ul.column_2 li {
+    width: 85%;
+    height: 80%; }
 body #gform_wrapper_1 .gform_title {
   padding-bottom: 20px;
   text-align: center;
@@ -915,49 +925,54 @@ body #gform_wrapper_1 input[type="checkbox"]:not(:checked) + label:before, body 
   content: '';
   position: absolute;
   left: 0;
-  top: -5px;
-  width: 20px;
+  top: 0px;
+  width: 25px;
   height: 25px;
   background: #fff !important;
-  border-radius: 3px;
-  background-color: #fff !important;
-  outline: none; }
-body #gform_wrapper_1 [type="checkbox"]:not(:checked) + label:after, body #gform_wrapper_1 [type="checkbox"]:checked + label:after {
+  background-color: #fff !important; }
+body #gform_wrapper_1 input[type="checkbox"]:not(:checked) + label:after, body #gform_wrapper_1 input[type="checkbox"]:checked + label:after {
   content: '✔';
   position: absolute;
-  top: 3px;
-  left: 5px;
-  font-size: 12px;
+  top: 7px;
+  left: 7px;
+  font-size: 14px;
   line-height: 0.8;
   color: #00a0df !important;
   transition: all 0.2s; }
-body #gform_wrapper_1 [type="checkbox"]:not(:checked) + label:after {
+body #gform_wrapper_1 input[type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
   transform: scale(0); }
-body #gform_wrapper_1 [type="checkbox"]:checked + label:after {
+body #gform_wrapper_1 input[type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1); }
 body #gform_wrapper_1 label {
-  font-weight: 100; }
+  font-weight: 100;
+  margin-right: 2px; }
 body #gform_wrapper_1 label:hover {
   font-weight: 900; }
 body #gform_wrapper_1 [type="checkbox"]:checked + label {
   font-weight: 900;
   /* end checkbox */ }
+body #gform_wrapper_1 li {
+  margin-right: 5px; }
 body #gform_wrapper_1 input, body #gform_wrapper_1 textarea {
   border: none; }
+@media (min-width: 64em) {
+  body #gform_wrapper_1 .gfield:not(.gf_list_2col_vertical) {
+    width: 49%; } }
+@media (min-width: 64em) {
+  body #gform_wrapper_1 textarea.medium {
+    width: 125%;
+    height: 100%; } }
 body #gform_wrapper_1 .ginput_container input:hover, body #gform_wrapper_1 textarea:hover {
-  box-shadow: 0 4px 13px -8px rgba(0, 0, 0, 0.4); }
-
-.gf_right_third {
-  grid-area: 1 / col3-start / last-line / 3; }
+  box-shadow: 0 5px 11px -8px rgba(0, 0, 0, 0.4); }
 
 .gform_footer {
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .gform_footer input[type="submit"] {
     background-color: #00a0df !important;
-    color: #fff !important;
-    float: right; }
+    color: #fff !important; }
   @media (max-width: 39.9375em) {
     .gform_footer input[type="submit"] {
       width: 40% !important;
@@ -965,6 +980,9 @@ body #gform_wrapper_1 .ginput_container input:hover, body #gform_wrapper_1 texta
       position: absolute;
       top: 150%;
       right: 30%; } }
+  .gform_footer input[type="submit"]:hover {
+    background-color: #fff !important;
+    color: #202945 !important; }
 
 /* home.scss */
 /* footer.scss */

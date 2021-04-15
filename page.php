@@ -442,7 +442,7 @@
 </div>
 
 <!-- Contact Form -->
-<section class="contact animsition" id="contact-us">
+<section class="contact" id="contact-us">
 	<?php $contact_us = get_field( 'contact_us' ); ?>
 	<?php if ( $contact_us ) : ?>
 		<?php gravity_form( $contact_us['id'] ); ?>

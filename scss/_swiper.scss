@@ -1,6 +1,6 @@
 .swiper_container {
-    width: 600px;
-    height: 300px;
+    max-width: 600px;
+    max-height: 300px;
 }
 .swiper-slide {
     text-align: center;
@@ -50,7 +50,7 @@
 }
 .swiper-slide .text {
     padding-top: 20px;
-    width: 80%;
+    width: 100%;
     font-size: 3vw;
     line-height: 1.55;
     font-weight: 100;
