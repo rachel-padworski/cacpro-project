@@ -1,24 +1,20 @@
-// Swiper
+// // Swiper
 
-// imports Swiper JS
-import Swiper from 'swiper';
-// imports Swiper styles
-import 'swiper/swiper-bundle.css';
-// core version + navigation, pagination modules:
-import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+// // imports Swiper JS
+// import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js';
+// // imports Swiper styles
+// import 'swiper/swiper-bundle.css';
+// // core version + navigation, pagination modules:
+// import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 
-// configures Swiper to use modules
-SwiperCore.use([Navigation, Pagination]);
+// // configures Swiper to use modules
+// SwiperCore.use([Navigation, Pagination]);
 
 
 const swiper = new Swiper('.swiper-container', {
     // speed: 400,
     // spaceBetween: 100,
    
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
-
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',

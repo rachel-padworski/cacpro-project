@@ -397,48 +397,46 @@
 
 
 <!-- Testimonials -->
-<!-- Slider main container -->
-<div class="swiper-container">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-	  <!-- Slides -->
-		<?php if ( have_rows( 'testimonials' ) ) : ?>
-			<?php while ( have_rows( 'testimonials' ) ) : the_row(); ?>
-				<div class="swiper-slide"><?php if ( have_rows( 'testimonial_1' ) ) : ?>
-					<?php while ( have_rows( 'testimonial_1' ) ) : the_row(); ?>
-						<span class="icon"><?php the_sub_field( 'icon' ); ?></span>
-						<span class="text"><?php the_sub_field( 'text' ); ?></span>
-						<?php $logo = get_sub_field( 'logo' ); ?>
-						<?php if ( $logo ) : ?>
-							<span><img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" /></span>
-						<?php endif; ?>
-					<?php endwhile; ?>
-				</div>
-				<?php endif; ?>
-				<div class="swiper-slide"><?php if ( have_rows( 'testimonial_1' ) ) : ?>
-					<?php while ( have_rows( 'testimonial_2' ) ) : the_row(); ?>
-						<span class="icon"><?php the_sub_field( 'icon' ); ?></span>
-						<span class="text"><?php the_sub_field( 'text' ); ?></span>
-						<?php $logo = get_sub_field( 'logo' ); ?>
-						<?php if ( $logo ) : ?>
-							<span><img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" /></span>
-						<?php endif; ?>
-					<?php endwhile; ?>
-				</div>
-				<?php endif; ?>
-			<?php endwhile; ?>
-		<?php else : ?>
-			<?php // no rows found ?>
-		<?php endif; ?>
-
-  	</div>
-
-	<!-- <div class="swiper-pagination"></div> -->
-
-  <!-- navigation buttons -->
+<div class="swiper">
+	<!-- Slider main container -->
+	<div class="swiper-container">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+		<!-- Slides -->
+			<?php if ( have_rows( 'testimonials' ) ) : ?>
+				<?php while ( have_rows( 'testimonials' ) ) : the_row(); ?>
+					<div class="swiper-slide"><?php if ( have_rows( 'testimonial_1' ) ) : ?>
+						<?php while ( have_rows( 'testimonial_1' ) ) : the_row(); ?>
+							<span class="icon"><?php the_sub_field( 'icon' ); ?></span>
+							<span class="text"><?php the_sub_field( 'text' ); ?></span>
+							<?php $logo = get_sub_field( 'logo' ); ?>
+							<?php if ( $logo ) : ?>
+								<span><img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" /></span>
+							<?php endif; ?>
+						<?php endwhile; ?>
+					</div>
+					<?php endif; ?>
+					<div class="swiper-slide"><?php if ( have_rows( 'testimonial_1' ) ) : ?>
+						<?php while ( have_rows( 'testimonial_2' ) ) : the_row(); ?>
+							<span class="icon"><?php the_sub_field( 'icon' ); ?></span>
+							<span class="text"><?php the_sub_field( 'text' ); ?></span>
+							<?php $logo = get_sub_field( 'logo' ); ?>
+							<?php if ( $logo ) : ?>
+								<span><img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" /></span>
+							<?php endif; ?>
+						<?php endwhile; ?>
+					</div>
+					<?php endif; ?>
+				<?php endwhile; ?>
+			<?php else : ?>
+				<?php // no rows found ?>
+			<?php endif; ?>
+		</div>
+	</div>
+	
+	<!-- navigation buttons -->
 	<div class="swiper-button-prev"></div>
 	<div class="swiper-button-next"></div>
-  
 </div>
 
 <!-- Contact Form -->
