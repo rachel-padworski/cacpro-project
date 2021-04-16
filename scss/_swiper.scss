@@ -50,9 +50,10 @@ div.swiper-button-next, .swiper-button-prev {
     color: $blue;
     @include breakpoint-down(small){
         top: 76%;
-        width: 255px;
+        width: 230px;
         height: 44px;
     }
+    
 }
 
 .swiper-slide i {

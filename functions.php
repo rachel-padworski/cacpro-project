@@ -21,13 +21,7 @@ function add_scripts()
 		wp_enqueue_script('jquery-custom', get_bloginfo('stylesheet_directory').'/js/jquery.site.js', '', '1.0', true);	
         wp_enqueue_script('js-script', get_bloginfo('stylesheet_directory').'/js/script.js', '', '1.0', true);
         wp_enqueue_script('swiper-js', get_bloginfo('stylesheet_directory').'/js/swiper.js', '', '1.0', true);
-        // wp_enqueue_script('swiper-js', get_bloginfo('stylesheet_directory').'https://unpkg.com/swiper/swiper-bundle.js', array(), '1.0', true);
-        // wp_enqueue_script('swiper-min-js', get_bloginfo('stylesheet_directory').'https://unpkg.com/swiper/swiper-bundle.min.js', array(), '1.0', true);
-
-        
-        
-        // wp_enqueue_style('swiper-style', get_bloginfo('stylesheet_directory').'https://unpkg.com/swiper/swiper-bundle.css');
-        // wp_enqueue_style('swiper-style', get_bloginfo('stylesheet_directory').'https://unpkg.com/swiper/swiper-bundle.min.css');		
+      
         wp_enqueue_style('reset-style', get_bloginfo('stylesheet_directory').'/css/reset.css');	
 		wp_enqueue_style('animsition-style', get_bloginfo('stylesheet_directory').'/css/animsition.min.css');
 		wp_enqueue_style('css3-animate-it-style', get_bloginfo('stylesheet_directory').'/css/animations.css');
@@ -36,13 +30,6 @@ function add_scripts()
 }
 add_action('wp_enqueue_scripts', 'add_scripts');
 
-/* // wp_enqueue_script( 'swiper-js', get_template_directory_uri() . '/js/', array(), '', true );
-// wp_enqueue_style( 'swiper-style', get_template_directory_uri() . 'https://unpkg.com/swiper/swiper-bundle.min.js' );
-// <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-// <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-// wp_enqueue_style('swiper-bundle', get_bloginfo('stylesheet_directory').'/js/swiper-bundle.min.js', '', '1.0', true);
-*/
 
 /* Add a ACF Option menu */
 if( function_exists('acf_add_options_page') ) 
@@ -148,6 +135,9 @@ require_once('include/ajaxcalls.php');
 require_once('include/cpt.php');
 
 
+
+update_option( 'siteurl', 'http://managed-it-solutions.local' );
+update_option( 'home', 'http://managed-it-solutions.local' );
 
 
 ?>
