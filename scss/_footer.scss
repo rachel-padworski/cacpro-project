@@ -11,17 +11,36 @@
     background-color: $navy;
     &__container{
         text-align: center;
+        width: 100%;
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+        @include breakpoint-up(medium){
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+    
+                li{
+                    align-items: center;
+                }
+            }
+        }
     }
     &__copyright{
+        align-items: center;
         padding: 1.25rem;
         @include bodyleftgrey;
         img{
-            width: 1.563rem;
-            height: 1.563rem;
+            height: 2.125rem;
             color: $white;
         }
     }
     &__cacpro{
+        align-items: center;
         padding: 1.25rem;
         @include bodyleftgrey;
     }

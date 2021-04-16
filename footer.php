@@ -7,8 +7,8 @@
 				<div class="site-footer__container">
 					<?php if ( have_rows( 'footer' ) ) : ?>
 						<?php while ( have_rows( 'footer' ) ) : the_row(); ?>
-					<div class="site-footer__col-one">
-						<div class="site-footer__copyright">
+					<ul class="site-footer__col-one">
+						<li class="site-footer__copyright">
 							<?php if ( have_rows( 'copyright' ) ) : ?>
 								<?php while ( have_rows( 'copyright' ) ) : the_row(); ?>
 									<?php the_sub_field( 'managed_it_solutions' ); ?>
@@ -18,8 +18,8 @@
 									<?php endif; ?>
 								<?php endwhile; ?>
 							<?php endif; ?>
-						</div>
-						<div class="site-footer__cacpro">
+						</li>
+						<li class="site-footer__cacpro">
 							<?php if ( have_rows( 'cross_and_crown' ) ) : ?>
 								<?php while ( have_rows( 'cross_and_crown' ) ) : the_row(); ?>
 									<?php the_sub_field( 'handcrafted_by' ); ?>
@@ -29,8 +29,8 @@
 									<?php endif; ?>
 								<?php endwhile; ?>
 							<?php endif; ?>
-						</div>
-					</div>
+						</li>
+					</ul>
 					<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
