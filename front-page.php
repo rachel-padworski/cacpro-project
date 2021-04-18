@@ -401,8 +401,8 @@ get_header(); ?>
 				<div class="why-mit__btn">
 					<?php $why_mit_button = get_sub_field( 'why_mit_button' ); ?>
 					<?php if ( $why_mit_button ) : ?>
-						<a href="<?php echo esc_url( $why_mit_button['url'] ); ?>" target="<?php echo esc_attr( $why_mit_button['target'] ); ?>"><?php echo esc_html( $why_mit_button['title'] ); ?></a>
-						<?php endif; ?>
+						<a class="animsition-link" href="<?php echo esc_url( $why_mit_button['url'] ); ?>" target="<?php echo esc_attr( $why_mit_button['target'] ); ?>"><?php echo esc_html( $why_mit_button['title'] ); ?></a>
+					<?php endif; ?>
 				</div>
 			</div>
 			<?php endwhile; ?>
