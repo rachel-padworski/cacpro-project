@@ -13,9 +13,10 @@
     }
     &__img {
         float: left;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        object-fit: cover;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
 
         @include breakpoint-down(small){
             margin-bottom: 45px;
@@ -58,6 +59,8 @@
             padding: 10px;
             @include breakpoint-up(medium){
                 justify-content: start;
+            }
+            @include breakpoint-up(large){
                 padding: 0 60px;
             }
         }
@@ -83,6 +86,12 @@
             p {
                 padding-left: 70px;
                 @include bodyleftgrey;
+            }
+            @include breakpoint-down(medium){
+                padding: 0px;
+            }
+            @include breakpoint-up(medium){
+                width: 50%;
             }
         }
     }

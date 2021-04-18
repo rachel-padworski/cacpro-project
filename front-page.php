@@ -344,8 +344,8 @@ get_header(); ?>
 			<?php while ( have_rows( 'why_mit_section' ) ) : the_row(); ?>
 			<?php $why_mit_image = get_sub_field( 'why_mit_image' ); ?>
 			<?php if ( $why_mit_image ) : ?>
-				<!-- <img src="<?php echo esc_url( $why_mit_image['url'] ); ?>" alt="<?php echo esc_attr( $why_mit_image['alt'] ); ?>" /> -->
-				<div class="why-mit__img" style="background-image: url('<?php echo esc_url( $why_mit_image['url'] ); ?>')"></div>
+				<img class="why-mit__img" src="<?php echo esc_url( $why_mit_image['url'] ); ?>" alt="<?php echo esc_attr( $why_mit_image['alt'] ); ?>" />
+				<!-- <div class="why-mit__img" style="background-image: url('<?php echo esc_url( $why_mit_image['url'] ); ?>')"></div> -->
 			<?php endif; ?>
 		
 			<div class="why-mit__text">

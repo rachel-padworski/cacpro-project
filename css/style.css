@@ -736,9 +736,7 @@ img {
     display: flex; } }
 .why-mit__img {
   float: left;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  object-fit: cover; }
 @media (max-width: 39.9375em) {
   .why-mit__img {
     margin-bottom: 45px;
@@ -777,7 +775,9 @@ img {
   padding: 10px; }
 @media (min-width: 40em) {
   .why-mit__list ul {
-    justify-content: start;
+    justify-content: start; } }
+@media (min-width: 64em) {
+  .why-mit__list ul {
     padding: 0 60px; } }
 .why-mit__list li {
   display: flex;
@@ -805,6 +805,12 @@ img {
     font-size: 18px;
     line-height: 1.67;
     color: #686e81 !important; }
+  @media (max-width: 63.9375em) {
+    .why-mit__list li {
+      padding: 0px; } }
+@media (min-width: 40em) {
+  .why-mit__list li {
+    width: 50%; } }
 .why-mit__btn {
   width: 190px;
   height: 58px;
