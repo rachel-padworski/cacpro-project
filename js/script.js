@@ -6,7 +6,7 @@ const header = document.querySelector('.site-header');
 const overlay = document.querySelector('.overlay');
 const menu = document.querySelector('#mobile-menu');
 const fadeElems = document.querySelectorAll('.hidden');
-const menuLinks = document.querySelector('._mPS2id-h');
+const menuLinks = document.querySelector('#mobile-menu a');
 
 
 btnHamburger.addEventListener('click', function(){
@@ -30,16 +30,8 @@ btnHamburger.addEventListener('click', function(){
   }  
 });
 
-// menuLinks.addEventListener('click', function(){
-  
-// })
-
-
-
-// (function($){
-//   $(window).on("load",function(){
-//       $(document).on("click","#mobile-menu a",function(){
-//           $(btnHamburger).trigger("click");
-//       });
-//   });
-// })(jQuery);
+// listen for click on menu buttons
+// trigger a click on the btnHamburger so the above function runs
+menuLinks.addEventListener('click', function(){
+  btnHamburger.click();
+})
