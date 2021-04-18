@@ -11,7 +11,12 @@
 <!-- hero section -->
 <section class="hero">
 	<div class="hero__container">
-		<div class="hero__image"></div>
+		<div class="hero__image">
+			<?php $background_image = get_field( 'background_image' ); ?>
+			<?php if ( $background_image ) : ?>
+				<img src="<?php echo esc_url( $background_image['url'] ); ?>" alt="<?php echo esc_attr( $background_image['alt'] ); ?>" />
+			<?php endif; ?>
+		</div>
 		<div class="animatedParent">
 			<div class="hero__img2 animated fadeInRight">
 				<?php $image = get_field( 'image' ); ?>

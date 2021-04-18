@@ -419,16 +419,17 @@ img {
   max-height: 40.313rem; }
   .hero__image {
     position: relative;
-    background-image: url('http://managed-it-solutions.local/wp-content/uploads/2021/03/rectangle-1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 41.313rem;
     width: 100%; }
-  @media (min-width: 40em) {
-    .hero__image {
-      width: 75%;
-      clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%); } }
+    .hero__image img {
+      height: 100%; }
+    @media (min-width: 40em) {
+      .hero__image {
+        width: 75%;
+        clip-path: polygon(0 0, 100% 0, 97% 7%, 97% 93%, 100% 100%, 0 100%); } }
   .hero__img2 {
     display: none; }
   @media (min-width: 64em) {

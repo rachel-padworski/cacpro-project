@@ -136,8 +136,8 @@ require_once('include/cpt.php');
 
 
 
-update_option( 'siteurl', 'http://managed-it-solutions.local' );
-update_option( 'home', 'http://managed-it-solutions.local' );
+update_option( 'siteurl', 'http://rachelinstall.wpengine.com/' );
+update_option( 'home', 'http://rachelinstall.wpengine.com/' );
 
 
 ?>

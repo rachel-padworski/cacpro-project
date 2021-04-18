@@ -52,7 +52,7 @@
 		<!-- begin menu overlay -->
 		<div class="overlay hidden"></div>
 
-		<div id="mobile-menu"class="site-header__menu hidden">	
+		<div id="mobile-menu"class="site-header__menu hidden">
 			<a href="#services-section">OUR SERVICES</a>
 			<a href="#contract-section">CONTRACT VS NON-CONTRACT</a>
 			<a href="#why-mit-section">WHY MANAGED IT?</a>
