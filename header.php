@@ -33,7 +33,8 @@
 	<meta name="HandheldFriendly" content="True"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
 	<!-- font -->
-	<link href="//cloud.typenetwork.com/projects/5441/fontface.css/" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/kmj1muo.css">
+	<!-- <link href="//cloud.typenetwork.com/projects/5441/fontface.css/" rel="stylesheet" type="text/css"> -->
 	<!-- end font -->
 	<!-- <link rel="stylesheet" href="./css/style.css"> -->
 	<link rel="index" title="<?php bloginfo( 'name' ); ?>" href="<?php echo get_option('home'); ?>/" />

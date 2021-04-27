@@ -7,17 +7,17 @@
 @import "animsition";
 /* typography */
 @font-face {
-  font-family: "Interstate Greek and Cyrillic Bd";
-  src: url(http://cloud.typenetwork.com/projects/5441/fontface.css/);
+  font-family: "interstate";
+  src: url(https://use.typekit.net/kmj1muo.css);
   font-display: swap;
   font-style: normal;
-  font-weight: normal; }
+  font-weight: 700; }
 @font-face {
-  font-family: "Interstate Greek and Cyrillic Reg";
-  src: url(http://cloud.typenetwork.com/projects/5441/fontface.css/);
+  font-family: "interstate";
+  src: url(https://use.typekit.net/kmj1muo.css);
   font-display: swap;
   font-style: normal;
-  font-weight: normal; }
+  font-weight: 400; }
 /* mixins */
 /*
  Body & HTML setup
@@ -41,7 +41,8 @@ body, html {
 
 body {
   color: #000;
-  font: 12px/18px 'Interstate Greek and Cyrillic Reg';
+  font: 12px/18px 'interstate';
+  font-weight: 400;
   margin: 0;
   padding: 0;
   line-height: 1.3; }
@@ -391,7 +392,7 @@ img {
 .site-header__btn {
   flex-shrink: 0;
   background-color: #00a0df !important;
-  font-family: "Interstate Greek and Cyrillic Reg";
+  font-family: "interstate";
   font-size: 14px;
   letter-spacing: 1px;
   color: #fff !important;
@@ -480,7 +481,7 @@ img {
   text-align: left;
   font-size: 1.75vw;
   margin-bottom: 20px;
-  font-family: "Interstate Greek and Cyrillic Reg";
+  font-family: "interstate";
   font-size: 22px;
   line-height: 1.36;
   color: #e2e3e6 !important; }
@@ -494,7 +495,7 @@ img {
   height: 3.125rem;
   padding: 1.063rem 2.188rem;
   text-transform: capitalize;
-  font-family: "Interstate Greek and Cyrillic Reg";
+  font-family: "interstate";
   font-size: 14px;
   letter-spacing: 1px;
   color: #fff !important; }
@@ -533,7 +534,7 @@ img {
   padding-top: 2.625rem;
   padding-bottom: 1.313rem;
   font-size: 0.875rem;
-  font-family: "Interstate Greek and Cyrillic Bd";
+  font-family: "interstate";
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -596,7 +597,7 @@ img {
     padding-top: 1.5rem;
     padding-bottom: 3.125rem;
     text-align: center;
-    font-family: "Interstate Greek and Cyrillic Bd";
+    font-family: "interstate";
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -666,7 +667,7 @@ img {
   width: 100%; }
   .contract__title {
     padding: 3.75rem 5rem 3.125rem 5rem;
-    font-family: "Interstate Greek and Cyrillic Bd";
+    font-family: "interstate";
     font-size: 25px;
     font-weight: bold;
     line-height: 1.4;
@@ -754,7 +755,7 @@ img {
 .why-mit__title {
   padding: 20px 10px;
   text-align: left;
-  font-family: "Interstate Greek and Cyrillic Bd";
+  font-family: "interstate";
   font-size: 25px;
   font-weight: bold;
   line-height: 1.4;
@@ -795,13 +796,13 @@ img {
     border-radius: 50px; }
   .why-mit__list li h3 {
     padding: 20px;
-    font-family: "Interstate Greek and Cyrillic Reg";
+    font-family: "interstate";
     font-size: 22px;
     line-height: 1.36;
     color: #202945 !important; }
   .why-mit__list li p {
     padding-left: 70px;
-    font-family: "Interstate Greek and Cyrillic Reg";
+    font-family: "interstate";
     font-size: 18px;
     line-height: 1.67;
     color: #686e81 !important; }
@@ -822,7 +823,7 @@ img {
   cursor: pointer;
   border: 2px solid;
   border-color: #00a0df !important;
-  font-family: "Interstate Greek and Cyrillic Bd";
+  font-family: "interstate";
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -900,7 +901,7 @@ div.swiper-button-next, .swiper-button-prev {
   font-size: 3vw;
   line-height: 1.55;
   font-weight: 100;
-  font-family: "Interstate Greek and Cyrillic Reg";
+  font-family: "interstate";
   text-align: center;
   color: #686e81 !important; }
 @media (min-width: 40em) {
@@ -918,7 +919,7 @@ body #gform_wrapper_1 {
   text-align: center;
   font-weight: normal;
   background-color: #f1f3f9 !important;
-  font-family: "Interstate Greek and Cyrillic Reg";
+  font-family: "interstate";
   font-size: 22px;
   line-height: 1.36;
   color: #686e81 !important; }
@@ -939,7 +940,7 @@ body #gform_wrapper_1 .gform_title {
   padding-bottom: 20px;
   text-align: center;
   text-transform: capitalize;
-  font-family: "Interstate Greek and Cyrillic Bd";
+  font-family: "interstate";
   font-size: 25px;
   font-weight: bold;
   line-height: 1.4;
@@ -1042,7 +1043,7 @@ body #gform_wrapper_1 .ginput_container input:hover, body #gform_wrapper_1 texta
   .site-footer__copyright {
     align-items: center;
     padding: 1.25rem;
-    font-family: "Interstate Greek and Cyrillic Reg";
+    font-family: "interstate";
     font-size: 18px;
     line-height: 1.67;
     color: #686e81 !important; }
@@ -1052,7 +1053,7 @@ body #gform_wrapper_1 .ginput_container input:hover, body #gform_wrapper_1 texta
   .site-footer__cacpro {
     align-items: center;
     padding: 1.25rem;
-    font-family: "Interstate Greek and Cyrillic Reg";
+    font-family: "interstate";
     font-size: 18px;
     line-height: 1.67;
     color: #686e81 !important; }
